@@ -1,0 +1,255 @@
+body{
+    
+}
+
+.header-left-align
+{
+    padding-left: 0px;
+    margin-left: 0px;
+    
+}
+.contact-us-top-right
+{
+    text-decoration: none;
+    color: white;
+    border-radius:20px;
+    box-shadow: 10px 10px 20px black;
+    background-color: #353b48;
+}
+
+.telephone:hover
+{
+    text-decoration: none;
+
+
+}
+
+.shopping-cart-icon
+{
+    padding-top:20px;
+    padding-right:20px;
+    
+    
+}
+
+.header-left-align:active
+{
+ background-color: grey;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+.search-bar-padding
+{
+    padding-top:30px;
+    
+    
+}
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+    
+    box-shadow: 10px 10px 20px black;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 0px;
+    width: 180px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;    
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    }
+
+
+.navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
+.navbar {min-height:32px !important}
+
+.navbar-title
+{
+    color: white;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding-right:20px;
+    
+}
+
+
+
+
+
+.navbar-title:hover
+{
+    text-decoration: none;
+    color: grey;
+    cursor:pointer;
+}
+
+
+.navbar-name
+{
+    display: inline;
+    font-size: 30px;
+    height: 40px;
+    font-weight: 700;
+    
+    
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    
+}
+.nav-border
+{
+    margin-top:2%;
+    border-radius: 20px;
+    margin-bottom:2%;
+    box-shadow: 10px 10px 20px black;
+    padding-top:0px;
+    padding-bottom:5px;
+}
+
+
+
+
+.home-banner
+{
+    background-image: url('media/island.png');
+    margin-top:0px;
+    padding-top:50px;
+    height:1000px;
+    padding-bottom:20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+
+.banner-title
+{
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align:center;
+    font-weight: 900;
+    font-size: 120px;
+}
+
+
+.description
+{
+    background-image: url('media/wave.png');
+    margin-top:0px;
+    padding-top:20px;
+    height:1000px;
+    padding-bottom:20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align:center;
+}
+
+.carousel-item
+{
+    height:40%;
+    object-fit:contain;
+}
+
+.carousel-left { width: 75%; float: left; }
+
+.some-text { float: right; width: 25%; }
+
+.footer
+{
+    background-color: black;
+    margin-top:0px;
+    padding-top:20px;
+    height:400px;
+    padding-bottom:20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffaf1a;
+    text-align:center;
+}
+
+
+  
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px)
+{
+    .navbar-name
+{
+    display: inline;
+    font-size: 30px;
+    font-weight: 700;
+    padding-left:0;
+    padding-right:0;
+    
+   
+
+    
+    
+
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    
+}
+
+
+}
+
+
+
+
+
+
