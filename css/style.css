@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato&family=Roboto:wght@400&family=Sofia&display=swap');
 
 
+
 /*define variables here at the root*/
 :root{
     --primary-color: #EFC711;
@@ -273,6 +274,47 @@ header.site-title
 }
 
 /* Slider Four */
+
+
+
+
+
+
+
+.site-slider-four
+{
+    position:relative;
+    margin-bottom: 5rem;
+
+}
+
+.site-slider-four .product
+{
+    height:100%;
+    padding:0;
+}
+
+.side-slider-four .cart-details
+{
+    margin-top: .5rem;
+    padding: 0 2rem;
+
+}
+
+.rating i
+{
+    font-size: 0.7rem;
+    color: rgb(223, 203, 23);
+}
+
+
+.site-slider-four .pro-price span
+{
+    color: var(--text-color);
+}
+
+/*
+
 .site-slider-four {
     position: relative;
     margin-top: 3rem;
@@ -296,6 +338,8 @@ header.site-title
     margin: 4rem 0;
   }
   
+  */
+
   /* Our Client */
   .slider-client {
     width: 100%;
