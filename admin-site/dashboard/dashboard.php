@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+   include('session.php');
+?>
+
+
+
 <html lang="en" dir="ltr">
 
 <head>
@@ -68,6 +73,11 @@
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="users"></span> Customers
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="addanewadministratotowebsite44534553452636.html">
+                <span data-feather="command"></span>Add Admin
               </a>
             </li>
           </ul>
