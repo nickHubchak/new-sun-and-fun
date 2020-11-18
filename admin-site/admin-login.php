@@ -21,12 +21,34 @@ if ($stmt = $con->prepare('SELECT admin_id, password FROM Admin WHERE username =
         $stmt->bind_result($id, $password);
         $stmt->fetch();
         // Account exists, now we verify the password.
-        $hashed_pass= hash("sha256", $password);
+        
+
+
+        /*Used to pull things from database, specifically a specific cell
+
+
         $my_user_name=$_SESSION['name'];
-        $salt_val="SELECT salt from Admin where username= $my_user_name";
-        echo($salt_val);
+        $my_salt="";
+        $salt_sql = "SELECT salt, username, password FROM Admin";
+        $result = $mysqli -> query($salt_sql);
+        while($rows=mysqli_fetch_assoc($result))
+        {
+            if($rows['username']==$my_user_name)
+            {
+                $my_salt=$rows['salt'];
+            }
+          
+        }
+          Only for internal use  */
+       
+        
+        
+        //$hashed_pass= password_hash($_Post['pass'], PASSWORD_DEFAULT);
+        //echo $_POST['pass']."<br>";
+        //echo $hashed_pass."<br>";
+        //echo $password."<br>";
         // Note: remember to use password_hash in your registration file to store the hashed passwords.
-        if ($_POST['pass'] === $password) {
+        if (password_verify($_POST['pass'], $password)) {
             
             // Verification success! User has loggedin!
             // Create sessions so we know the user is logged in, they basically act like cookies but remember the data on the server.
@@ -35,17 +57,22 @@ if ($stmt = $con->prepare('SELECT admin_id, password FROM Admin WHERE username =
             $_SESSION['name'] = $_POST['username'];
             $_SESSION['id'] = $id;
             echo 'Welcome ' . $_SESSION['name'] . '!';
+            echo $hashed_pass;
         } else {
             // Incorrect password
-            exit( 'Incorrect username and/or password!');
-        }
+            echo'Incorrect username and/or password!';
+            
+            
+        }  
+        
     } else {
         // Incorrect username
         echo 'Incorrect username and/or password!';
+       
     }
 
 
 	$stmt->close();
 }
-?>
 
+?>
