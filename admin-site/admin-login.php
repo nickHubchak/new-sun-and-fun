@@ -43,12 +43,14 @@ if ($stmt = $con->prepare('SELECT admin_id, password FROM Admin WHERE username =
        
         
         
-        //$hashed_pass= password_hash($_Post['pass'], PASSWORD_DEFAULT);
-        //echo $_POST['pass']."<br>";
-        //echo $hashed_pass."<br>";
-        //echo $password."<br>";
+        $hashed_pass= password_hash($_Post['pass'], PASSWORD_DEFAULT);
+        
+        $my_password=$_POST['pass'];
+        //echo "".$_POST['pass']."<br>";
+        //echo "".$hashed_pass."<br>";
+        //echo"".$password."<br>";
         // Note: remember to use password_hash in your registration file to store the hashed passwords.
-        if (password_verify($_POST['pass'], $password)) {
+        if (password_verify($my_password, $hashed_pass)) {
             
             // Verification success! User has loggedin!
             // Create sessions so we know the user is logged in, they basically act like cookies but remember the data on the server.
