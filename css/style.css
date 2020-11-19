@@ -93,7 +93,7 @@ header.site-title
 .position-top
 {
     position:absolute;
-    top:50%;
+    top:40%;
 }
 
 .side-slider .slider-btn .prev,
@@ -209,7 +209,7 @@ header.site-title
 .position-top-special
 {
     position:absolute;
-    top:40%;
+    top:30%;
 }
 
 .hr
