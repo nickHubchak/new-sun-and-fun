@@ -42,15 +42,15 @@ if ($stmt = $con->prepare('SELECT admin_id, password FROM Admin WHERE username =
           Only for internal use  */
        
         
+          $my_password=$_POST['pass'];
+        //$hashed_pass= password_hash($my_password, PASSWORD_DEFAULT);
         
-        $hashed_pass= password_hash($_Post['pass'], PASSWORD_DEFAULT);
         
-        $my_password=$_POST['pass'];
         //echo "".$_POST['pass']."<br>";
-        //echo "".$hashed_pass."<br>";
+        echo "".$hashed_pass."<br>";
         //echo"".$password."<br>";
         // Note: remember to use password_hash in your registration file to store the hashed passwords.
-        if (password_verify($my_password, $hashed_pass)) {
+        if (password_verify($my_password, $password)) {
             
             // Verification success! User has loggedin!
             // Create sessions so we know the user is logged in, they basically act like cookies but remember the data on the server.
@@ -59,7 +59,7 @@ if ($stmt = $con->prepare('SELECT admin_id, password FROM Admin WHERE username =
             $_SESSION['name'] = $_POST['username'];
             $_SESSION['id'] = $id;
             echo 'Welcome ' . $_SESSION['name'] . '!';
-            echo $hashed_pass;
+            header("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/dashboard.php");
         } else {
             // Incorrect password
             echo'Incorrect username and/or password!';
