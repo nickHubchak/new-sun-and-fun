@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 17, 2020 at 06:19 AM
+-- Generation Time: Nov 19, 2020 at 05:32 AM
 -- Server version: 5.6.37
 -- PHP Version: 5.6.31
 
@@ -28,13 +28,19 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `Admin` (
   `admin_id` int(20) NOT NULL,
-  `first name` varchar(20) NOT NULL,
-  `last name` varchar(20) NOT NULL,
-  `email address` varchar(25) NOT NULL,
-  `username` varchar(20) NOT NULL,
-  `password` varchar(40) NOT NULL,
-  `salt` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `first name` varchar(20) CHARACTER SET latin1 NOT NULL,
+  `last name` varchar(20) CHARACTER SET latin1 NOT NULL,
+  `email` varchar(25) CHARACTER SET latin1 NOT NULL,
+  `username` varchar(20) CHARACTER SET latin1 NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `Admin`
+--
+
+INSERT INTO `Admin` (`admin_id`, `first name`, `last name`, `email`, `username`, `password`) VALUES
+(1, 'Nick', 'Hubchak', 'nickhubchak@aol.com', 'nickhubchak', '$2y$10$z6RNP2FqlomEAX4UsJ5rReOEeiizL6miXv8XeuWbmxfqFH032OJMi');
 
 -- --------------------------------------------------------
 
@@ -48,8 +54,7 @@ CREATE TABLE IF NOT EXISTS `Customer` (
   `last name` varchar(25) NOT NULL,
   `phone number` varchar(10) NOT NULL,
   `username` varchar(30) NOT NULL,
-  `password` varchar(40) NOT NULL,
-  `salt` varchar(20) NOT NULL
+  `password` varchar(128) CHARACTER SET utf8 NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
