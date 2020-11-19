@@ -21,12 +21,12 @@
 
 
 <!--Custom StyleSheet-->
-<link rel="stylesheet" href="css/contact-supervisor-form.css">
+<link rel="stylesheet" href="contact-supervisor-form.css">
 
 </head>
 
 <body>
-    <form action="mailto:contact@yourdomain.com" method="POST" enctype="multipart/form-data" name="Login Issue"> 
+    <form  method="POST" action="contact-supervisor.php" name="Login Issue"> 
         <center>
             <h5 style="color:#CC4949;">
                 Please fill out this form and your supervisor will email or contact you with login information.
@@ -34,9 +34,9 @@
             </h5>  
         </center>
            
-        <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-        <input name="email" type="text" class="feedback-input" placeholder="Email" />
-        <textarea name="text" class="feedback-input" placeholder="Description of Issue with login"></textarea>
+        <input style="color:black;" name="name" type="text" class="feedback-input" placeholder="Name" />   
+        <input style="color:black;" name="email" type="text" class="feedback-input" placeholder="Email" />
+        <textarea style="color:black;" name="text" class="feedback-input" placeholder="Description of Issue with login"></textarea>
         <input type="submit" value="SUBMIT"/>
       </form>
     
