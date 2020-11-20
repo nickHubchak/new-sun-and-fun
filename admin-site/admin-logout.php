@@ -1,6 +1,7 @@
-<?php
+<?
 session_start();
+session_unset();
 session_destroy();
-// Redirect to the login page:
- header("Location: http://localhost/new-sun-and-fun/index.html");
+header("Location: http://localhost/new-sun-and-fun/");
+exit();
 ?>
