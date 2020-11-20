@@ -9,6 +9,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
+
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -19,35 +20,63 @@
     <link rel="stylesheet" href="css/contact-vendors.css">
 
     <link rel="stylesheet" href="css/style.css" />
-    
+
 </head>
+
+
 <body>
+
+  <!--Top Navigation-->
+  <nav id="Nav01">
+    <div>
+      <span>
+        <a class="nav-link" href="customer-login.html">SIGN IN</a>
+      </span>
+      <span>
+      <a class="nav-link" href="contact-vendors.html">CONTACT US</a>
+      </span>
+      <span>
+      <a class="nav-link" href="shopping-cart.html">VIEW CART</a>
+      </span>
+      <span>
+        <a class="nav-link" href="order-status.html">ORDER STATUS</a>
+      </span>
+    </div>
+  </nav>
+  <!-- Top Navigation -->
+
     <div class="container">
         <div style ="text-align: center">
-            <h1>Vendor Contact Form</h1>
+            <h1>Contact Us Form</h1>
             <p>If you have any interest in selling your products at Sun N' Fun please fill out this form</p>
             <div class="contact-box">
                 <form action="contact">
                     <!-- first name input-->
-                    <label for="fName">First Name</label>
+                    <label for="fName">First Name:</label>
                     <input type="text" name="firstName" id="fName" placeholder="Enter Your First Name">
+                    <br />
                     <!-- last name input-->
-                    <label for="lName">Last Name</label>
+                    <label for="lName">Last Name:</label>
                     <input type="text" name="lastName" id="lName" placeholder="Enter Your Last Name">
+                    <br />
                     <!-- email input-->
-                    <label for="email">Email Address</label>
+                    <label for="email">Email Address:</label>
                     <input type="text" name="emailAd" id="email" placeholder="Enter Your Email Address">
+                    <br />
                     <!-- phone number input-->
-                    <label for="number">Phone Number</label>
+                    <label for="number">Phone Number:</label>
                     <input type="text" name="phoneNum" id="phone" placeholder="Enter Your Phone Number">
+                    <br />
                     <!-- description input-->
-                    <label for="description">Description</label>
+                    <label for="description">Description:</label> <br />
                     <textarea id="desc" name="description" placeholder="Write a description of what you want to sell" style="height:180px"></textarea>
+                    <br />
                     <input type="submit" Value="Submit"/>
+                    <br />
                 </form>
             </div>
         </div>
-        
+
     </div>
 </body>
 </html>
