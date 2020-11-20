@@ -1,4 +1,20 @@
+<?php
 
+session_start();
+	if ($_SESSION['loggedin']==True) {
+	
+header ("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/dashboard.php");
+
+	}
+
+	if($_SESSION['admin-credentials']=='Incorrect username and/or password!')
+	{
+		echo ('<script type="text/javascript">alert("Incorrect username and/or password!");</script>');
+		$_SESSION['admin-credentials']="";
+	} 
+
+	
+	?>
 <html lang="en">
 <head>
 	<title>Sun N Fun Admin Login</title>
@@ -26,6 +42,7 @@
 
 </head>
 <body>
+	
 	
 	<div class="limiter">
 		<div class="container-login100">

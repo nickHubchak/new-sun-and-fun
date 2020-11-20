@@ -1,8 +1,15 @@
 
 <?php
 
+
 session_start();
 include("config.php");
+
+	
+
+
+
+
 // Now we check if the data from the login form was submitted, isset() will check if the data exists.
 if ( !isset($_POST['username'], $_POST['pass']) ) {
 	// Could not get the data that should have been sent.
@@ -47,7 +54,7 @@ if ($stmt = $con->prepare('SELECT admin_id, password FROM Admin WHERE username =
         
         
         //echo "".$_POST['pass']."<br>";
-        echo "".$hashed_pass."<br>";
+        //echo "".$hashed_pass."<br>";
         //echo"".$password."<br>";
         // Note: remember to use password_hash in your registration file to store the hashed passwords.
         if (password_verify($my_password, $password)) {
@@ -62,14 +69,16 @@ if ($stmt = $con->prepare('SELECT admin_id, password FROM Admin WHERE username =
             header("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/dashboard.php");
         } else {
             // Incorrect password
-            echo'Incorrect username and/or password!';
+            $_SESSION['admin-credentials']='Incorrect username and/or password!';
+            header("Location: http://localhost/new-sun-and-fun/admin-site/admin-login-form.php");
             
             
         }  
         
     } else {
         // Incorrect username
-        echo 'Incorrect username and/or password!';
+        $_SESSION['admin-credentials']='Incorrect username and/or password!';
+            header("Location: http://localhost/new-sun-and-fun/admin-site/admin-login-form.php");
        
     }
 

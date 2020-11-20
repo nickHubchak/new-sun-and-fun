@@ -36,11 +36,12 @@
   
 
   <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Sun N Fun</a>
+    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="http://localhost/new-sun-and-fun/admin-site/admin-login.php
+    ">Sun N Fun</a>
     <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+    <h2 style="color:white;">Have questions? call 609-876-8975</h2>
     <ul class="navbar-nav px-3">
       <li class="nav-item text-nowrap">
         <a class="nav-link" href="http://localhost/new-sun-and-fun/admin-site/admin-logout.php">Sign out</a>
@@ -57,6 +58,11 @@
             <li class="nav-item">
               <a class="nav-link active" href="#">
                 <span data-feather="home"></span> Home <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="http://localhost/new-sun-and-fun/index.html">
+                <span data-feather="flag"></span> Website home <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
