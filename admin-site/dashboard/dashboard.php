@@ -1,5 +1,10 @@
 <?php
    session_start();
+
+   if(!isset($_SESSION['name']))
+   {
+     header("Location: http://localhost/new-sun-and-fun/admin-site/admin-login-form.php");
+   }
 ?>
 
 <html lang="en" dir="ltr">
@@ -8,6 +13,9 @@
   <meta charset="utf-8" />
   <title>SunNFun Admin Homepage</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+   <!--Favicon-->
+   <link rel="icon" type="image/png" href="http://localhost/new-sun-and-fun/media\Stock-images\yellow_beach-chair-and-umbrella_icon-icons.com_59553.ico"/>
 
   <!-- Bootstrap core CSS -->
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -71,7 +79,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="http://localhost/new-sun-and-fun/admin-site/dashboard/manage-inventory.php">
                 <span data-feather="shopping-cart"></span>Manage Inventory
               </a>
             </li>
@@ -94,8 +102,7 @@
           <h1 class="h2">Welcome <?php echo($_SESSION['name']); ?> !</h1>
           <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group mr-2">
-              <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-              <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+              
             </div>
           </div>
         </div>
