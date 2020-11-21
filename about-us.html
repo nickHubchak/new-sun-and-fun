@@ -9,9 +9,6 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!--Favicon-->
-    <link rel="icon" type="image/png" href="http://localhost/new-sun-and-fun/media\Stock-images\yellow_beach-chair-and-umbrella_icon-icons.com_59553.ico"/>
-
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -29,112 +26,36 @@
   </head>
 
   <body>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
 
-    <!--header-->
-    <header>
+    <!--Top Navigation-->
+    <nav id="Nav01">
+      <div>
+        <span>
+          <a class="nav-link" href="home.html">HOME</a>
+        </span>
+        <span>
+          <a class="nav-link" href="customer-login.html">SIGN IN</a>
+        </span>
+        <span>
+          <a class="nav-link" href="contact-vendors.html">CONTACT US</a>
+        </span>
+        <span>
+          <a class="nav-link" href="shopping-cart.html">VIEW CART</a>
+        </span>
+      </div>
+    </nav>
+    <!-- Top Navigation -->
 
-        <div class="container"> <!--Top Banner-->
-            <div class="row">
-                <div class="col-md-3 col-sm-12 col-12">
-                    <div class="btn-group">
-                        <button class="btn border dropdown-toggle my-md-4 my-2 text-white" data-toggle="dropdown" 
-                        aria-haspopup="true" aria-expanded="false" >Contact US
-                        </button>
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Email</a>
-                            <a href="#" class="dropdown-item">Phone Number</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12 text-center primary-color">
-                    <h2 class="my-md-3 site-title text-white">Sun N' Fun</h2>
-                </div>
-                <div class="col-md-3 col-12 text-right">
-                    <p class="my-md-4 header-links">
-                        <a href="customer-login.html" class="px-4">Customer Login </a>
-                       
-                    </p>
-                </div>
-                <div class="col-md-2 col-12 text-right">
-                  <p class="my-md-4 header-links">
-                      
-                      <a href="http://localhost/new-sun-and-fun/admin-site\admin-login-form.php" class="px-1"> Admin Login</a>
-                  </p>
-              </div>
-            </div>
-        </div> 
-
-        <div class="container-fluid p-0 bottom-border">  <!--Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="http://localhost/new-sun-and-fun/index.html">HOME <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">FEATURES</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="http://localhost/new-sun-and-fun/consumer-side/inventory/main-inventory-page.html">COLLECTION</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">SHOP</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="about-us.html">ABOUT US</a>
-                      </li>
-                    
-                  </ul>
-                </div>
-                
-               
-                  <div class="navbar-nav">
-                    <a href="shopping-cart.html">
-                      <li class="nav-item border rounded-circle circle mx-2 basket-icon">
-                        <i class="fas fa-shopping-basket p-2"></i>
-                    </li>
-
-                    </a>
-                    
-                  </div>
-                    
-                
-
-              </nav>
-        </div>
-
-    </header>
-     <!--/header-->
-   
     <!--About us-->
+    <center>
+
     <section id="aboutus">
       <div class="container">
         <div class="row">
           <div class="row">
             <div class="col-sm-7">
-              <h1>About Us</h1>
-              <h2>Welcome to Sun N' Fun!</h2>
+              <h3>About Us</h3>
+              <h5>Welcome to Sun N' Fun!</h5>
               <p>
                 Sun N' Fun is a store located at Ocean City, New Jersey that
                 carries all of your beach day needs. We have a wide variety of
@@ -146,17 +67,24 @@
               </p>
               <!--link to contact us page-->
               <p>If you are interested in selling your crafts at Sun N' Fun <a href="contact-vendors.html">Click Here!</a></p>
+            </center>
               <h2>Here's a list of things we have:</h2>
-              <li>Hand-made benches</li>
-              <li>Flip flop boxes</li>
-              <li>Beach chairs</li>
-              <li>Beach Toys</li>
-              <li>House decor</li>
-              <li>Sun screen</li>
-              <li>Bathing suits</li>
-              <li>Boogie Boards</li>
-              <h4>Come visit us!</h4>
-              <p>
+              <ul>
+                <li>Hand-made benches</li>
+                <li>Flip flop boxes</li>
+                <li>Beach chairs</li>
+                <li>Beach Toys</li>
+                <li>House decor</li>
+                <li>Sun screen</li>
+                <li>Bathing suits</li>
+                <li>Boogie Boards</li>
+
+              </ul>
+              <center>
+                <h4>Come visit us!</h4>
+              </center>
+
+              <br />
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4368.064688219868!2d-74.57742849847583!3d39.27264149624356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c0954c5110b171%3A0x9e44dd1cd897b99a!2s1212%20Boardwalk%2C%20Ocean%20City%2C%20NJ%2008226!5e0!3m2!1sen!2sus!4v1604782892060!5m2!1sen!2sus"
                   width="600"
@@ -266,9 +194,9 @@
                   <i class="fab fa-facebook-f"></i></a>
                   <i class="fab fa-google-plus-g"></i>
                   <i class="fab fa-instagram"></i>
-                
-                
-                  
+
+
+
                 </div>
               </div>
               <div class="row social text-secondary">
@@ -276,11 +204,11 @@
                     <a href="#top">
                     <img src="media/Main Logo.jpg" alt="Main Logo" width=200; height=200;>
                 </a>
-                
-                  
+
+
                 </div>
               </div>
-              
+
             </div>
             <div class="col-md-2 col-sm-12">
               <h4>Our Store Hours</h4>
@@ -292,7 +220,7 @@
                 <small>Friday: 9:00 AM - 10:00 PM</small>
                 <small>Saturday 10:00 AM - 10:00 PM</small>
                 <small>Sunday: 10:00 AM - 10:00 PM</small>
-                
+
 
               </div>
             </div>
