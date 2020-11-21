@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: black solid;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: orange;
+}
+
+.contact {
+  border-radius: 5px;
+  background-color: #f0ba45ee;
+  padding: 10px;
+}
