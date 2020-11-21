@@ -39,143 +39,54 @@
     color:lightblue;
 }
 
+/*header*/
 
-a:hover {
-  cursor: pointer;
+header
+{
+    background-color:var(--primary-color);
+    font-family:var(--roboto);
 }
 
-body {
-  height: 100%;
+header.site-title
+{
+    font-family:var(--gugi);
 }
 
-nav {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-}
-
-#Nav01 {
-  background: white;
-  height: 2.5em;
-  display: flex;
-  align-items: center;
-}
-
-#Nav01>div {
-  width: 400px;
-  margin: 0 auto;
-  font-size: .7em;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-#Nav01>div>span {
-  color: grey;
-  display: flex;
-  align-items: center;
-}
-
-#Nav01 a {
-  color: black;
-}
-
-#Nav01 a:hover {
-  color: grey;
-}
-
-nav a {
-  text-decoration: none;
-}
-
-#Nav02 {
-  margin: 0 auto;
-  height: 2.5em;
-  width: 400px;
-  font-size: 0.7em;
-}
-
-#Nav02_Menu {
-  width: 100%
-}
-
-#Nav02_Menu a {
-  color: black;
-}
-
-#Nav02_Menu a:hover {
-  color: grey;
-}
-
-#Nav02_Menu > #Nav02_Menu_Flex{
-  display:flex;
-  flex-direction:row;
-  justify-content: space-between;
-  align-items:center;
+.header-links a
+{
+    font-size:0.9em;
+    text-decoration: none;
+    color:white;
 }
 
 
-#Nav02_Menu li {
-  display:inline;
-  padding-bottom: 10px;
+/* Navigation Menu**/
+.bottom-border /*maybe delete later, if we can get better banner images for the slider*/
+{
+    border-bottom: 2px solid var(--primary-color);
+   
+}
+.navbar-nav{
+    padding:0.8em 0em;
 }
 
-#Nav02_Menu ul li {
-  float:left;
-  list-style-type:none;
+.navbar-nav .nav-link
+{
+    font-size: 0.9em;
+    color: var(--light-gray) !important;
 }
 
-#Nav02_Menu ul li:hover {
-  background-color: white;
+.navbar-nav .nav-item .nav-link
+{
+    padding:0 1.3em;
+
 }
 
-#Nav02_Menu ul ul {
-  display: none;
-  position: absolute;
-  margin-top: 10px;
-  padding: 15px 15px;
-  background-color: white;
-  border: 1px white solid;
-  width: 300px;
-  height: 200px;
-  box-shadow: -5px 5px 5 px rgba(0, 0, 0, .3);
-  -moz-box-shadow: -5px 5px 5px rgba(0, 0, 0, .3);
-  -webkit-box-shadow: -5px 5px 5px rgba(0, 0, 0.3);
-  -o-box-shadow: -5px 5px 5px rgba(0, 0, 0.3);
+.navbar-nav .basket-icon
+{
+    margin-right: 6.5rem !important;
+
 }
-
-#Nav02_Menu ul li:hover ul {
-  display: block;
-}
-
-#Nav02_Menu ul ul li {
-  float: none;
-}
-
-header > div {
-  margin: 0 auto;
-  width: 200px;
-  height: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header>div>div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.center {
-  display: block;
-  margin-left:auto;
-  margin-right: auto; width: 50%;
-}
-
-
-
-
 
 
 /* Slider one*/
@@ -226,7 +137,7 @@ header>div>div {
 
 .slick-dots li{
     margin: 0 0.6rem;
-
+    
 }
 
 .slick-dots li button
@@ -235,7 +146,7 @@ header>div>div {
     width:0;
     height:0;
     padding:2px;
-
+    
 }
 
 .slick-dots button{
@@ -247,7 +158,7 @@ header>div>div {
     background-color:white;
     text-indent:-99999px;
     border-radius:100%;
-
+    
 }
 
 .slick-dots li.slick-active button
@@ -402,7 +313,32 @@ header>div>div {
     color: var(--text-color);
 }
 
+/*
 
+.site-slider-four {
+    position: relative;
+    margin-top: 3rem;
+  }
+  
+  .slider-four {
+    padding: 0 0.4rem;
+  }
+  
+  .slider-four .product img {
+    width: 80%;
+    border: 1px solid var(--border);
+  }
+  
+  .newseller {
+    margin-top: 8rem;
+  }
+  
+  .slider-brand {
+    position: relative;
+    margin: 4rem 0;
+  }
+  
+  */
 
   /* Our Client */
   .slider-client {
@@ -410,10 +346,10 @@ header>div>div {
     height: 100%;
     background: url("../assets/cup-desk-drink-434337.jpg");
     background-size: cover;
-    padding: 3% 0;
+    padding: 8% 0;
     overflow: hidden;
   }
-
+  
   .slider-box {
     width: 85%;
     height: 100%;
@@ -421,50 +357,49 @@ header>div>div {
     margin: auto;
     border-radius: 0.4rem;
   }
-
+  
   .slider-six p {
     padding: 2% 15%;
-    line-height: 24px;
-    line-width: 200px;
+    line-height: 32px;
     font-family: var(--roboto);
     color: var(--light-gray);
   }
-
+  
   .slider-six .slick-dots {
     bottom: -4rem;
     left: 50%;
   }
-
+  
   .slider-six .slick-dots button {
     background-color: var(--border);
   }
-
+  
   .slider-six .slick-dots li.slick-active button {
     transform: scale(2.5);
     background-color: var(--primary-color);
     box-shadow: 1px 1px 2px 1px var(--border);
   }
-
+  
   .site-info {
     margin-top: 10rem;
   }
-
+  
   /* Footer */
-
+  
   footer h4 {
     padding: 4rem 1rem 0;
     font-family: var(--roboto);
   }
-
+  
   footer .social i {
     padding: 3% 1%;
   }
-
+  
   footer .col-md-2 small {
     color: var(--light-gray);
     padding: 0.7em 0;
   }
-
+  
   footer .follow-us div {
     width: 33%;
     height: 8rem;
@@ -489,7 +424,7 @@ header>div>div {
   {
       text-decoration: none;
       color: black;
-
+      
   }
 
   .special-link:hover
@@ -497,3 +432,4 @@ header>div>div {
       cursor: pointer;
       color: darkgoldenrod;
   }
+
