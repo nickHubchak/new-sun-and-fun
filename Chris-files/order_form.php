@@ -5,23 +5,68 @@
 	<title></title>
 </head>
 <body>
+	<?php
+		$con = mysqli_connect('localhost', 'root', '', 'sunnfun');
+
+		if(!$con)
+		{
+			echo 'Not Connected To Server';
+		}
+		else{
+			echo 'successful connection to server<br/>';
+		}
+
+	//Select DataBase: In our case database is named users
+	if(!mysqli_select_db($con,'sunnfun')){
+	echo 'The database was not selected';
+	}
+	else{
+		echo 'The database was successfully connected';
+	}
+	?>
+	
 	<form>
-		<h2>Notes:</h2>
-		Registered or Not(Default Currently Not Registered):
-		<br/>
-		Registration Requires Sessions
-		<br/>
 		Using Cart Functionality Requires Sessions 
 		<br/>
-		<h2>Hey customer! Ready to place your order?!?</h2>
+		<h2>Customer Clicks Check out and ends up here.</h2>
+		<h2>Sign up in this case to complete the order.</h2>
+		
 				<br/>
 		<b>Registered:[Output Guest ID]</b>
 			<?php
-				#This Code automatically gener
+				
+				$firstname = "catch";
+				$lastname = "";
+				$phone_number = "";
+				$username = "";
+				$password = "";
+				
+				$sql = "INSERT INTO customer(firstname,lastname,phone_number, username, password) VALUES ('$firstname','$lastname','$phone_number','$username','$password')";
+				if(mysqli_query($con,$sql)){
+					echo 'successfully Inserted<br/>';
+				}
+				else{
+					echo 'fail';
+				}
 
+				#Get UserID with the name catch and take guest + 1 as the user name.
 
-				#Create Row for new user
-				#Get guest + # of Row
+				$sql = "SELECT * FROM customer WHERE firstname='catch';";
+				$result = mysqli_query($con,$sql);
+				//output data to table
+
+				$resultCheck = mysqli_num_rows($result);
+				$username = "";
+
+				if($row=mysqli_fetch_assoc($result)){
+					$username = "guest".$row['customer_id'];
+				}
+				echo($username);
+				
+				#Edit Row to populate accurate information
+
+				#$_Request[''];
+				
 			?>
 
 
@@ -30,30 +75,20 @@
 			<?php
 				#Output All the order information based on the order number that is selected
 			?>
-				</br/>
+				<br/>
 		Requested Pick-up time: <input type="text" name="phone"></input>
-				</br/>
+				<br/>
 
 		Customer Name: <input type="text" name="name"></form>
 
 		Phone #: <input type="text" name="user"></input>
-				</br/>
+				<br/>
 		Email: <input type="text" name="password"></input>
-				</br/>
+				<br/>
 
-		New password:
-		
-		verify password: 
-		<?php
-			#If New Password == Verify Password
-			#Insert New Information Into user-table
-		?>
-
-
-		To Be Added - Optional Register - Add User Name
 		Special Note: <input type="text" name="confirm"></input>
 				</br/>
-				<input type="submit" value="Place Order"></input>
+				<input type="submit" value="Sign-Up & Reserve-Order"></input>
 	</form>
 </body>
 </html>
