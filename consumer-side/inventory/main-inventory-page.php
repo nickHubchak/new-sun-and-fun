@@ -1,3 +1,7 @@
+<?php
+  session_start();
+  //var_dump($_SESSION);
+?>
 <!doctype html>
 <html lang="en">
 
@@ -6,10 +10,12 @@
 
   <title>Inventory Page</title>
 
+  <!--Favicon-->
+  <link rel="icon" type="image/png" href="http://localhost/new-sun-and-fun/media\Stock-images\yellow_beach-chair-and-umbrella_icon-icons.com_59553.ico"/>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-   <!--Favicon-->
-   <link rel="icon" type="image/png" href="media\Stock-images\yellow_beach-chair-and-umbrella_icon-icons.com_59553.ico"/>
+  
 
    <!--BootstrapCDN-->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
@@ -65,7 +71,17 @@
             </div>
             <div class="col-md-3 col-12 text-right">
                 <p class="my-md-4 header-links">
-                    <a href="http://localhost/new-sun-and-fun/customer-login.html" class="px-4">Customer Login </a>
+                <?php
+                        if ($_SESSION['customer-loggedin']==True) 
+                        {
+                          echo('<a href="http://localhost/new-sun-and-fun/customer-login-form.php" class="px-4">Customer Logout </a>');
+                        }
+                        else
+                        {
+                          echo('<a href="http://localhost/new-sun-and-fun/customer-login-form.php" class="px-4">Customer Login </a>');
+                        }
+
+                      ?>
                    
                 </p>
             </div>
@@ -87,19 +103,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="http://localhost/new-sun-and-fun/index.html">HOME <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="http://localhost/new-sun-and-fun/index.php">HOME <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">FEATURES</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="http://localhost/new-sun-and-fun/consumer-side/inventory/main-inventory-page.html">COLLECTION</a>
+                  <a class="nav-link" href="http://localhost/new-sun-and-fun/consumer-side/inventory/main-inventory-page.php">COLLECTION</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">SHOP</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="http://localhost/new-sun-and-fun/about-us.html">ABOUT US</a>
+                    <a class="nav-link" href="http://localhost/new-sun-and-fun/about-us.php">ABOUT US</a>
                   </li>
                 
               </ul>
@@ -107,6 +123,14 @@
             
            
               <div class="navbar-nav">
+                <ul class="nav navbar-nav" style="margin-right: 35px;">
+                  <li><?php 
+                  if(isset($_SESSION['customer-username']))
+                  {
+                    echo("Welcome ".($_SESSION['customer-username'])." !");
+                  }  
+                  ?> </li>
+                </ul>
                 <a href="shopping-cart.html">
                   <li class="nav-item border rounded-circle circle mx-2 basket-icon">
                     <i class="fas fa-shopping-basket p-2"></i>
