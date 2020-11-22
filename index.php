@@ -1,3 +1,7 @@
+<?php
+  session_start();
+  //var_dump($_SESSION);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,8 +53,17 @@
                 </div>
                 <div class="col-md-3 col-12 text-right">
                     <p class="my-md-4 header-links">
-                        <a href="customer-login.html" class="px-4">Customer Login </a>
-                       
+                      <?php
+                        if ($_SESSION['customer-loggedin']==True) 
+                        {
+                          echo('<a href="customer-logout.php" class="px-4">Customer Logout </a>');
+                        }
+                        else
+                        {
+                          echo('<a href="customer-login-form.php" class="px-4">Customer Login </a>');
+                        }
+
+                      ?>
                     </p>
                 </div>
                 <div class="col-md-2 col-12 text-right">
@@ -87,14 +100,24 @@
                       </li>
                     
                   </ul>
+                  
                 </div>
                 
                
                   <div class="navbar-nav">
+                    <ul class="nav navbar-nav" style="margin-right: 35px;">
+                      <li><?php 
+                      if(isset($_SESSION['customer-username']))
+                      {
+                        echo("Welcome ".($_SESSION['customer-username'])." !");
+                      }  
+                      ?> </li>
+                    </ul>
                     <a href="shopping-cart.html">
                       <li class="nav-item border rounded-circle circle mx-2 basket-icon">
                         <i class="fas fa-shopping-basket p-2"></i>
                     </li>
+                    
 
                     </a>
                     
