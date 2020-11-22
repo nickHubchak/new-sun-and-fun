@@ -1,3 +1,7 @@
+<?php
+  session_start();
+  //var_dump($_SESSION);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,14 +53,25 @@
         </div>
         <div class="col-md-3 col-12 text-right">
           <p class="my-md-4 header-links">
-            <a href="customer-login.html" class="px-4">Customer Login </a>
+          <?php
+                        if ($_SESSION['customer-loggedin']==True) 
+                        {
+                          echo('<a href="customer-logout.php" class="px-4">Customer Logout </a>');
+                        }
+                        else
+                        {
+                          echo('<a href="customer-login-form.php" class="px-4">Customer Login </a>');
+                        }
+
+                      ?>
+            
 
           </p>
         </div>
         <div class="col-md-2 col-12 text-right">
           <p class="my-md-4 header-links">
 
-            <a href="http://localhost/new-sun-and-fun/admin-site\admin-login.html" class="px-1"> Admin Login</a>
+            <a href="http://localhost/new-sun-and-fun/admin-site\admin-login-form.php" class="px-1"> Admin Login</a>
           </p>
         </div>
       </div>
@@ -78,7 +93,7 @@
               <a class="nav-link" href="#">FEATURES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="http://localhost/new-sun-and-fun/consumer-side/inventory/main-inventory-page.html">COLLECTION</a>
+              <a class="nav-link" href="http://localhost/new-sun-and-fun/consumer-side/inventory/main-inventory-page.php">COLLECTION</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">SHOP</a>
@@ -92,6 +107,14 @@
 
 
         <div class="navbar-nav">
+        <ul class="nav navbar-nav" style="margin-right: 35px;">
+                      <li><?php 
+                      if(isset($_SESSION['customer-username']))
+                      {
+                        echo("Welcome ".($_SESSION['customer-username'])." !");
+                      }  
+                      ?> </li>
+                    </ul>
           <a href="shopping-cart.html">
             <li class="nav-item border rounded-circle circle mx-2 basket-icon">
               <i class="fas fa-shopping-basket p-2"></i>
@@ -111,8 +134,8 @@
 
   <!--About us-->
   <section id="aboutus">
-    <div class="container">
-      <div class="row"> 
+    <div class="container-fluid">
+       
         <div class="row">
           <div class="col-md-4">
             <h1>About Us</h1>
@@ -142,44 +165,51 @@
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4368.064688219868!2d-74.57742849847583!3d39.27264149624356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c0954c5110b171%3A0x9e44dd1cd897b99a!2s1212%20Boardwalk%2C%20Ocean%20City%2C%20NJ%2008226!5e0!3m2!1sen!2sus!4v1604782892060!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-2">
+            
+
+          </div>
+
+          <div class= "col-md-4"><!--vendor contact-->
             <div class="img-logo">
               <img src="media/Logo.png" width="300px" length="300px" />
             </div>
-            <div class= "col-md-4"><!--vendor contact-->
-            
-              <form class="contact" style="border-style: solid; " action="contact-us.php" method="post">
-                <h2>Vendor Contact Us Form</h2>
-                <p>Please you this form to contact Sun N Fun about what you would like to sell</p>
-                <!--name input-->
-                <fieldset>
-                  <input type="text" name="name" placeholder="Full name and/or business name">
-                </fieldset>
-                <!--email input-->
-                <fieldset>
-                  <input type="email" name="email" placeholder="Email address">
-                </fieldset>
-                <!--phone input-->
-                <fieldset>
-                  <input type="phone" name="phone" placeholder="Phone number">
-                </fieldset>
-                <!--description input-->
-                <fieldset>
-                  <textarea id="desc" name="description" placeholder="Write a description of what you want to sell" style="height:100px"></textarea>
-                </fieldset>
-                <!--submit input-->
-                <fieldset>
-                  <input type="submit" name="submit" Value="Submit" />
-                </fieldset>
-              </form>
-              <!--end contact vendor--></div>
             <br>
             <br>
-
+            <br>
+            <br>
+            <br>
             
+            <form class="contact" style="border-style: solid; margin-top:130px; " action="contact-us.php" method="post">
+              <h2>Vendor Contact Us Form</h2>
+              <p>Please you this form to contact Sun N Fun about what you would like to sell</p>
+              <!--name input-->
+              <fieldset>
+                <input type="text" name="name" placeholder="Full name and/or business name">
+              </fieldset>
+              <!--email input-->
+              <fieldset>
+                <input type="email" name="email" placeholder="Email address">
+              </fieldset>
+              <!--phone input-->
+              <fieldset>
+                <input type="phone" name="phone" placeholder="Phone number">
+              </fieldset>
+              <!--description input-->
+              <fieldset>
+                <textarea id="desc" name="description" placeholder="Write a description of what you want to sell" style="height:100px"></textarea>
+              </fieldset>
+              <!--submit input-->
+              <fieldset>
+                <input type="submit" name="submit" Value="Submit" />
+              </fieldset>
+            </form>
+            <!--end contact vendor--></div>
+          <br>
+          <br>
           </div>
         </div>
-      </div>
+    
     </div>
   </section>
   <!-- #end of About us -->
@@ -223,7 +253,7 @@
 <!-- /Facilities -->
 
 
-</main>
+
 <footer>
   <div class="container-fluid px-5">
     <div class="row">

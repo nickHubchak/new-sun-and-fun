@@ -90,13 +90,13 @@
                       <a class="nav-link" href="#">FEATURES</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="http://localhost/new-sun-and-fun/consumer-side/inventory/main-inventory-page.html">COLLECTION</a>
+                      <a class="nav-link" href="http://localhost/new-sun-and-fun/consumer-side/inventory/main-inventory-page.php">COLLECTION</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">SHOP</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="about-us.html">ABOUT US</a>
+                        <a class="nav-link" href="about-us.php">ABOUT US</a>
                       </li>
                     
                   </ul>
