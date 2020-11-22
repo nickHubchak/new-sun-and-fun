@@ -1,7 +1,44 @@
+<?php
 
+session_start();
+//var_dump($_SESSION);
+
+if(isset($_SESSION['name-error']))
+{
+    echo($_SESSION['name-error']);
+    $_SESSION['name-error']=null;
+}
+
+if(isset($_SESSION['email-error']))
+{
+    echo ($_SESSION["email-error"]);
+    $_SESSION["email-error"]=null;
+
+}
+
+
+if(isset($_SESSION['registered']))
+{
+    echo("<br><br>".$_SESSION["registered"]);
+    $_SESSION['registered']=null;
+}
+	if ($_SESSION['customer-loggedin']==True) {
+	
+header ("Location: http://localhost/new-sun-and-fun/index.php");
+
+	}
+
+	if($_SESSION['customer-credentials']=='Incorrect username and/or password!')
+	{
+		echo ('<script type="text/javascript">alert("Incorrect username and/or password!");</script>');
+		$_SESSION['customer-credentials']="";
+	} 
+
+	
+	?>
 <html lang="en">
     <head>
-        <title>Sun N Fun Admin Login</title>
+        <title>Sun N Fun Customer Login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -30,23 +67,29 @@
         <div class="limiter">
             <div class="container-login100">
                 <div class="wrap-login100">
-                    <form class="login100-form validate-form p-l-55 p-r-55 p-t-178" method ="post" action="admin-login.php" >
+                    <form class="login100-form validate-form p-l-55 p-r-55 p-t-178" method ="post" action="customer-login.php" >
                         <span class="login100-form-title">
                             Customer Sign In
                         </span>
     
                         <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
-                            <input class="input100" type="text" name="username" placeholder="Username">
+                            <input class="input100" type="text" name="customer-username" placeholder="Username">
                             <span class="focus-input100"></span>
                         </div>
     
                         <div class="wrap-input100 validate-input" data-validate = "Please enter password">
-                            <input class="input100" type="password" name="pass" placeholder="Password">
+                            <input class="input100" type="password" name="customer-password" placeholder="Password">
                             <span class="focus-input100"></span>
                         </div>
     
                         <div class="text-right p-t-13 p-b-23">
-                            
+                        <span class="txt1">
+							Not Rigistered? 
+						</span>
+
+						<a href="sign-up.html" class="txt2">
+							create an account
+						</a>
                         </div>
     
                         <div class="container-login100-form-btn">
@@ -60,7 +103,7 @@
                                 Don’t have an account?
                             </span>
     
-                            <a href="contact-supervisor-form.html" class="txt3">
+                            <a href="http://localhost/new-sun-and-fun/admin-site/contact-supervisor/contact-supervisor-form.html" class="txt3">
                                 Contact Support
                             </a>
                         </div>
