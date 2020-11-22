@@ -10,6 +10,7 @@
 
 		if(!$con)
 		{
+			#
 			echo 'Not Connected To Server';
 		}
 		else{
