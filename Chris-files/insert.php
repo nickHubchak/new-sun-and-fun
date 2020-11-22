@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect('localhost', 'root', '', 'login');
+$con = mysqli_connect('localhost', 'root', '', 'sunnfun');
 
 if(!$con)
 {
@@ -11,7 +11,7 @@ else{
 }
 
 //Select DataBase: In our case database is named users
-if(!mysqli_select_db($con,'login')){
+if(!mysqli_select_db($con,'sunnfun')){
 	echo 'The database was not selected';
 }
 else{
@@ -25,18 +25,12 @@ $status = "";
 #Then get the date, all the details and then do an insert.
 if(isset($_POST['new']) && $_POST['new']==1)
 {
-$trn_date = date("Y-m-d H:i:s");
 $name =$_REQUEST['name'];
-$age = $_REQUEST['age'];
-$email = "email";
-$phone = "phone";
-$user = "user";
-$pass = "pass";
-#$submittedby = $_SESSION["username"];
+$description = $_REQUEST['description'];
+$quantity = $_SESSION['quantity'];
 
 
-#Change for inventory database.
-$sql = "INSERT INTO Users(name,email,phone, user, pass) VALUES ('$name','$email','$phone','$user','$password')";
+$sql = "INSERT INTO inventory(product_name,quantity,item_description) VALUES ('$name','$quantity','$description');";
 
 
 
@@ -45,7 +39,6 @@ if(mysqli_query($con,$sql)){
 }
 else{
 	$status ="Failed";
-	echo $mysqli_error();
 }
 
 
@@ -74,7 +67,8 @@ else{
 <form name="form" method="post" action=""> 
 <input type="hidden" name="new" value="1" />
 <p><input type="text" name="name" placeholder="Enter Name" required /></p>
-<p><input type="text" name="age" placeholder="Enter Age" required /></p>
+<p><input type="text" name="description" placeholder="Enter Description" required /></p>
+<p><input type="text" name="quantity" placeholder="Quantity" required/></p>
 <p><input name="submit" type="submit" value="Submit" /></p>
 </form>
 <p style="color:#FF0000;"><?php echo $status; ?></p>
