@@ -428,7 +428,7 @@
        <!--Fourth Slider-->
        <div class="container text-center">
         <div class="features">
-            <h1>Great Gifts</h1>
+            <h1>Great Flags</h1>
             <p class="text-secondary">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 In rhoncus ac leo vel maximus. Morbi quis neque erat. 
@@ -440,7 +440,7 @@
         <div class="site-slider-four px-md-4">
             <div class="row slider-four  text-center px-4">
                 <div class="col-md-8 product pt-md-5">
-                    <img src="media/Stock-images/15_3.jpg" class="img-fluid" alt="Image 1">
+                    <img src="media/flag1.png" class="img-fluid" alt="Image 1">
                     <div class="cart-details">
                         <h6 class="pro-title p-0">Product Description</h6>
                         <div class="rating">
@@ -452,8 +452,8 @@
                         </div>
                         <div class="pro-price py-2">
                             <h5>
-                                <small><s class="text-secondary">$125.99</s></small>
-                                <span>$120</span>
+                                <!--<small><s class="text-secondary">$125.99</s></small>-->
+                                <span>Bird house with flowers fLag</span>
                             </h5>
                         </div>
                         <div class="cart mt-4">
@@ -462,51 +462,7 @@
                     </div>
                 </div>
                 <div class="col-md-8 product pt-md-5">
-                    <img src="media/Stock-images/9_21.jpg" class="img-fluid" alt="Image 2">
-                    <div class="cart-details">
-                        <h6 class="pro-title p-0">Product Description</h6>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="pro-price py-2">
-                            <h5>
-                                <small><s class="text-secondary">$100.00</s></small>
-                                <span>$120</span>
-                            </h5>
-                        </div>
-                        <div class="cart mt-4">
-                            <button class="border site-btn btn-span">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8 product pt-md-5">
-                    <img src="media/Stock-images/10_22.jpg" class="img-fluid" alt="Image 3">
-                    <div class="cart-details">
-                        <h6 class="pro-title p-0">Product Description</h6>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="pro-price py-2">
-                            <h5>
-                                <small><s class="text-secondary">$100.00</s></small>
-                                <span>$120</span>
-                            </h5>
-                        </div>
-                        <div class="cart mt-4">
-                            <button class="border site-btn btn-span">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8 product pt-md-5">
-                    <img src="media/Stock-images/12_16.jpg" class="img-fluid" alt="Image 4">
+                    <img src="media/flag2.png" class="img-fluid" alt="Image 2">
                     <div class="cart-details">
                         <h6 class="pro-title p-0">Product Description</h6>
                         <div class="rating">
@@ -519,7 +475,7 @@
                         <div class="pro-price py-2">
                             <h5>
                                 
-                                <span>$120</span>
+                                <span>Beach sand castle flag</span>
                             </h5>
                         </div>
                         <div class="cart mt-4">
@@ -528,7 +484,7 @@
                     </div>
                 </div>
                 <div class="col-md-8 product pt-md-5">
-                    <img src="media/Stock-images/11_18.jpg" class="img-fluid" alt="Image 5">
+                    <img src="media/flag3.png" class="img-fluid" alt="Image 3">
                     <div class="cart-details">
                         <h6 class="pro-title p-0">Product Description</h6>
                         <div class="rating">
@@ -540,8 +496,8 @@
                         </div>
                         <div class="pro-price py-2">
                             <h5>
-                                <small><s class="text-secondary">$100.00</s></small>
-                                <span>$120</span>
+                                
+                                <span>Flip flops flag</span>
                             </h5>
                         </div>
                         <div class="cart mt-4">
@@ -550,7 +506,51 @@
                     </div>
                 </div>
                 <div class="col-md-8 product pt-md-5">
-                    <img src="media/Stock-images/7_22.jpg" class="img-fluid" alt="Image 6">
+                    <img src="media/flag4.png" class="img-fluid" alt="Image 4">
+                    <div class="cart-details">
+                        <h6 class="pro-title p-0">Product Description</h6>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="pro-price py-2">
+                            <h5>
+                                
+                                <span>Sunflower welcome flag</span>
+                            </h5>
+                        </div>
+                        <div class="cart mt-4">
+                            <button class="border site-btn btn-span">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 product pt-md-5">
+                    <img src="media/flag5.png" class="img-fluid" alt="Image 5">
+                    <div class="cart-details">
+                        <h6 class="pro-title p-0">Product Description</h6>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="pro-price py-2">
+                            <h5>
+                               
+                                <span>Sun with sunglasses welcome flag</span>
+                            </h5>
+                        </div>
+                        <div class="cart mt-4">
+                            <button class="border site-btn btn-span">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 product pt-md-5">
+                    <img src="media/flag6.png" class="img-fluid" alt="Image 6">
                     <div class="cart-details">
                         <h6 class="pro-title p-0">Product Description</h6>
                         <div class="rating">
@@ -558,8 +558,8 @@
                         </div>
                         <div class="pro-price py-2">
                             <h5>
-                                <small><s class="text-secondary">$139.00</s></small>
-                                <span>$120</span>
+                                
+                                <span>Colorful balloons Flag</span>
                             </h5>
                         </div>
                         <div class="cart mt-4">
