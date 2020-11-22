@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 21, 2020 at 08:41 PM
+-- Generation Time: Nov 22, 2020 at 03:27 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.2.34
 
@@ -53,39 +53,31 @@ CREATE TABLE `customer` (
   `customer_id` int(30) NOT NULL,
   `firstname` varchar(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `lastname` varchar(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `phone_number` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `phone_number` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `username` varchar(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `password` varchar(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `customer`
---
-
-INSERT INTO `customer` (`customer_id`, `firstname`, `lastname`, `phone_number`, `username`, `password`) VALUES
-(26, 'catch', '', '', '', ''),
-(28, 'catch', '', '', '', ''),
-(29, 'catch', '', '', '', ''),
-(30, 'catch', '', '', '', ''),
-(31, 'catch', '', '', '', ''),
-(32, 'catch', '', '', '', ''),
-(33, 'catch', '', '', '', ''),
-(34, 'catch', '', '', '', ''),
-(35, 'catch', '', '', '', '');
-
 -- --------------------------------------------------------
 
 --
--- Table structure for table `orders`
+-- Table structure for table `inventory`
 --
 
-CREATE TABLE `orders` (
-  `order_id` int(20) NOT NULL,
-  `customer_id` int(20) NOT NULL,
-  `order_status` tinyint(1) NOT NULL,
-  `order_date` date NOT NULL,
-  `order_time` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE `inventory` (
+  `inventory_id` int(11) NOT NULL,
+  `product_name` varchar(80) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `quantity` int(5) NOT NULL,
+  `item_description` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `inventory`
+--
+
+INSERT INTO `inventory` (`inventory_id`, `product_name`, `quantity`, `item_description`) VALUES
+(1, 'Sergey', 2, '12'),
+(2, 'Pink Duck', 0, 'Explain');
 
 -- --------------------------------------------------------
 
@@ -98,18 +90,6 @@ CREATE TABLE `order_item` (
   `order_id` int(20) NOT NULL,
   `product_id` int(20) NOT NULL,
   `quantity` int(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `product`
---
-
-CREATE TABLE `product` (
-  `product_id` int(20) NOT NULL,
-  `Name` varchar(20) NOT NULL,
-  `Description` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -129,11 +109,10 @@ ALTER TABLE `customer`
   ADD PRIMARY KEY (`customer_id`);
 
 --
--- Indexes for table `orders`
+-- Indexes for table `inventory`
 --
-ALTER TABLE `orders`
-  ADD PRIMARY KEY (`order_id`),
-  ADD KEY `customer_id` (`customer_id`);
+ALTER TABLE `inventory`
+  ADD PRIMARY KEY (`inventory_id`);
 
 --
 -- Indexes for table `order_item`
@@ -144,12 +123,6 @@ ALTER TABLE `order_item`
   ADD KEY `product_id` (`product_id`);
 
 --
--- Indexes for table `product`
---
-ALTER TABLE `product`
-  ADD PRIMARY KEY (`product_id`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -157,17 +130,17 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `customer_id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `customer_id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+
+--
+-- AUTO_INCREMENT for table `inventory`
+--
+ALTER TABLE `inventory`
+  MODIFY `inventory_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
 --
-
---
--- Constraints for table `orders`
---
-ALTER TABLE `orders`
-  ADD CONSTRAINT `order_id` FOREIGN KEY (`order_id`) REFERENCES `order_item` (`order_id`);
 
 --
 -- Constraints for table `order_item`
