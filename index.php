@@ -277,7 +277,7 @@
                             <div class="pro-price py-2">
                                 <h5>
                                     
-                                    <span>Two stylish anchor bags (Red and Blue)</span>
+                                    <span>Two stylish anchor bags (Red and Blue)<br><br></span>
                                 </h5>
                             </div>
                             <div class="cart mt-4">
@@ -299,7 +299,7 @@
                             <div class="pro-price py-2">
                                 <h5>
                                     
-                                    <span>Blue pattern sun hat<br><br></span>
+                                    <span>Blue pattern sun hat<br><br><br></span>
                                 </h5>
                             </div>
                             <div class="cart mt-4">
@@ -321,7 +321,7 @@
                             <div class="pro-price py-2">
                                 <h5>
                                    
-                                    <span>Blue with pink anchor beach bag</span>
+                                    <span>Blue with pink anchor beach bag<br><br></span>
                                 </h5>
                             </div>
                             <div class="cart mt-4">
@@ -475,7 +475,7 @@
                         <div class="pro-price py-2">
                             <h5>
                                 
-                                <span>Beach sand castle flag<br><br></span>
+                                <span>Beach sand castle flag<br><br><br></span>
                             </h5>
                         </div>
                         <div class="cart mt-4">
@@ -519,7 +519,7 @@
                         <div class="pro-price py-2">
                             <h5>
                                 
-                                <span>Sunflower welcome flag<br><br></span>
+                                <span>Sunflower welcome flag<br><br><br></span>
                             </h5>
                         </div>
                         <div class="cart mt-4">
@@ -541,7 +541,7 @@
                         <div class="pro-price py-2">
                             <h5>
                                
-                                <span>Sun with sunglasses welcome flag</span>
+                                <span>Sun with sunglasses welcome flag<br><br></span>
                             </h5>
                         </div>
                         <div class="cart mt-4">
@@ -559,7 +559,7 @@
                         <div class="pro-price py-2">
                             <h5>
                                 
-                                <span>Colorful balloons Flag<br><br></span>
+                                <span>Colorful balloons Flag<br><br><br></span>
                             </h5>
                         </div>
                         <div class="cart mt-4">
