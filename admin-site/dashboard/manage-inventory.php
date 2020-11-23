@@ -1,6 +1,22 @@
 <?php
     session_start();
 
+    if(isset($_SESSION['deleted-from-inventory']))
+    {
+        echo($_SESSION['deleted-from-inventory']);
+        $_SESSION['deleted-from-inventory']=null;
+    }
+    if(isset( $_SESSION['added-to-inventory']))
+    {
+        echo($_SESSION['added-to-inventory']);
+        $_SESSION['added-to-inventory']=null;
+    }
+    if(isset($_SESSION['empty-boy']))
+    {
+        echo($_SESSION['empty-boy']);
+        $_SESSION['empty-boy']=null;
+    }
+
 if(!isset($_SESSION['name']))
 {
   header("Location: http://localhost/new-sun-and-fun/admin-site/admin-login-form.php");
@@ -66,6 +82,7 @@ if(!isset($_SESSION['name']))
         <div class="row">
             <div class=" my_form col-md-6">
                 <center><h2>Insert into inventory</h2></center>
+                <!--
                 <div class="row">
                     <div class="col-md-1">
                         
@@ -101,14 +118,19 @@ if(!isset($_SESSION['name']))
 
                     </div>
                 </div>
+                -->
+                <div class="row">
+                
                 <form id="inventory-form" class="inventory" method="POST" action="inventory-add.php">
+                
 
-                <input type="submit" value="Submit">
+                <center><input type="submit" value="Submit"></center>
                 </form>
                 <center>
                     <button class="btn btn-light" onclick="add_field()">Add Field</button>
                     <button class="btn btn-light" onclick="delete_field()">Delete Field</button>
                 </center>
+                </div>
             </div>
 
             <div class="my_form col-md-6">
@@ -129,6 +151,8 @@ if(!isset($_SESSION['name']))
                    
                 </div>
                 <center><form id="inventory-form-delete" class="inventory-delete" method="post" action="inventory-delete.php">
+
+
 
                 <input type="submit" value="Submit">
                 </form>
