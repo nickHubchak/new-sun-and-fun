@@ -180,7 +180,7 @@
             <br>
             <br>
             
-            <form class="contact" style="border-style: solid; margin-top:130px; " action="contact-us.php" method="POST">
+            <form class="contact" style="border-style: solid; margin-top:130px; " action="http://localhost/new-sun-and-fun/contact-us.php" method="POST">
               <h2>Vendor Contact Us Form</h2>
               <p>Please you this form to contact Sun N Fun about what you would like to sell</p>
               <!--name input-->
@@ -362,7 +362,7 @@
           Are you a product Creator?
         </h4>
         <p class="m-0 p-0 text-secondary">
-          <a class="special-link" href="about-us.html">Contact us today, to register your product</a>
+          <a class="special-link" href="about-us.php">Contact us today, to register your product</a>
         </p>
       </div>
       <div class="col-md-6 col-12 my-md-0 my-3 pl-md-0 pl-5">

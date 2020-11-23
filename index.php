@@ -1122,7 +1122,7 @@
                 Are you a product Creator?
               </h4>
               <p class="m-0 p-0 text-secondary">
-               <a class="special-link" href="about-us.html">Contact us today, to register your product</a>
+               <a class="special-link" href="about-us.php">Contact us today, to register your product</a>
               </p>
             </div>
             <div class="col-md-6 col-12 my-md-0 my-3 pl-md-0 pl-5">
