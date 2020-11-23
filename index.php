@@ -7,14 +7,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Sun N' Fun</title>
 
     <!--Favicon-->
     <link rel="icon" type="image/png" href="http://localhost/new-sun-and-fun/media\Stock-images\yellow_beach-chair-and-umbrella_icon-icons.com_59553.ico"/>
 
     <!--BootstrapCDN-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
 
@@ -31,7 +31,7 @@
 
 </head>
 <body onload="checkDate()"><!--The Check Date function is located in main.js and is not functional yet...-->
-   
+
     <!--header-->
     <header>
 
@@ -39,12 +39,12 @@
             <div class="row">
                 <div class="col-md-3 col-sm-12 col-12">
                     <div class="btn-group">
-                        <button class="btn border dropdown-toggle my-md-4 my-2 text-white" data-toggle="dropdown" 
+                        <button class="btn border dropdown-toggle my-md-4 my-2 text-white" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false" >Contact US
                         </button>
                         <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Email</a>
-                            <a href="#" class="dropdown-item">Phone Number</a>
+                            <a href="mailto:sunnfun12st@gmail.com" class="dropdown-item">Email</a>
+                            <a href="tel:609-398-6383" class="dropdown-item">Phone Number</a>
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                 <div class="col-md-3 col-12 text-right">
                     <p class="my-md-4 header-links">
                       <?php
-                        if ($_SESSION['customer-loggedin']==True) 
+                        if ($_SESSION['customer-loggedin']==True)
                         {
                           echo('<a href="customer-logout.php" class="px-4">Customer Logout </a>');
                         }
@@ -62,22 +62,21 @@
                         {
                           echo('<a href="customer-login-form.php" class="px-4">Customer Login </a>');
                         }
-
                       ?>
                     </p>
                 </div>
                 <div class="col-md-2 col-12 text-right">
                   <p class="my-md-4 header-links">
-                      
+
                       <a href="http://localhost/new-sun-and-fun/admin-site\admin-login-form.php" class="px-1"> Admin Login</a>
                   </p>
               </div>
             </div>
-        </div> 
+        </div>
 
-        <div class="container-fluid p-0 bottom-border">  <!--Navigation-->
+        <!--Global Navigation-->
+        <div class="container-fluid p-0 bottom-border">
             <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -87,46 +86,37 @@
                       <a class="nav-link" href="http://localhost/new-sun-and-fun/index.html">HOME <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">FEATURES</a>
+                      <a class="nav-link" href="http://localhost/new-sun-and-fun/in-store-shop.php">WHAT'S IN STORE</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="http://localhost/new-sun-and-fun/consumer-side/inventory/main-inventory-page.php">COLLECTION</a>
+                      <a class="nav-link" href="http://localhost/new-sun-and-fun/consumer-side/inventory/main-inventory-page.php">SHOP ONLINE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">SHOP</a>
+                        <a class="nav-link" href="http://localhost/new-sun-and-fun/custom-home-decor.php">CUSTOM HOME DECOR</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="about-us.php">ABOUT US</a>
+                        <a class="nav-link" href="http://localhost/new-sun-and-fun/about-us.php">ABOUT US</a>
                       </li>
-                    
                   </ul>
-                  
                 </div>
-                
-               
                   <div class="navbar-nav">
                     <ul class="nav navbar-nav" style="margin-right: 35px;">
-                      <li><?php 
+                      <li><?php
                       if(isset($_SESSION['customer-username']))
                       {
                         echo("Welcome ".($_SESSION['customer-username'])." !");
-                      }  
+                      }
                       ?> </li>
                     </ul>
                     <a href="shopping-cart.html">
                       <li class="nav-item border rounded-circle circle mx-2 basket-icon">
                         <i class="fas fa-shopping-basket p-2"></i>
                     </li>
-                    
-
                     </a>
-                    
                   </div>
-                    
-                
-
               </nav>
         </div>
+        <!--/Global Navigation-->
 
     </header>
      <!--/header-->
@@ -205,9 +195,9 @@
             <div class="features">
                 <h1>Features Products</h1>
                 <p class="text-secondary">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    In rhoncus ac leo vel maximus. Morbi quis neque erat. 
-                    Quisque vel dui vel enim mollis pellentesque. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    In rhoncus ac leo vel maximus. Morbi quis neque erat.
+                    Quisque vel dui vel enim mollis pellentesque.
                 </p>
             </div>
         </div>
@@ -237,7 +227,7 @@
                               <form method="post" action="add-to-cart.php">
                                 <button type="submit" name="button1" class="border site-btn btn-span" value="button1">Add to Cart</button>
                               </form>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -298,7 +288,7 @@
                             </div>
                             <div class="pro-price py-2">
                                 <h5>
-                                    
+
                                     <span>$120</span>
                                 </h5>
                             </div>
@@ -347,7 +337,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="slider-btn">
                     <span class="prev position-top-special"><i class="fas fa-chevron-left fa-2x text-secondary"></i></span>
@@ -359,7 +349,7 @@
         <!--/Features third Slider-->
 
 
-         <!-- pop Up 
+         <!-- pop Up
 
       <div class="container-fluid sofa bg-light">
         <div class="row">
@@ -430,9 +420,9 @@
         <div class="features">
             <h1>Great Flags</h1>
             <p class="text-secondary">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                In rhoncus ac leo vel maximus. Morbi quis neque erat. 
-                Quisque vel dui vel enim mollis pellentesque. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                In rhoncus ac leo vel maximus. Morbi quis neque erat.
+                Quisque vel dui vel enim mollis pellentesque.
             </p>
         </div>
        </div>
@@ -474,7 +464,7 @@
                         </div>
                         <div class="pro-price py-2">
                             <h5>
-                                
+
                                 <span>Beach sand castle flag</span>
                             </h5>
                         </div>
@@ -496,7 +486,7 @@
                         </div>
                         <div class="pro-price py-2">
                             <h5>
-                                
+
                                 <span>Flip flops flag</span>
                             </h5>
                         </div>
@@ -518,7 +508,7 @@
                         </div>
                         <div class="pro-price py-2">
                             <h5>
-                                
+
                                 <span>Sunflower welcome flag</span>
                             </h5>
                         </div>
@@ -540,7 +530,7 @@
                         </div>
                         <div class="pro-price py-2">
                             <h5>
-                               
+
                                 <span>Sun with sunglasses welcome flag</span>
                             </h5>
                         </div>
@@ -558,7 +548,7 @@
                         </div>
                         <div class="pro-price py-2">
                             <h5>
-                                
+
                                 <span>Colorful balloons Flag</span>
                             </h5>
                         </div>
@@ -567,7 +557,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
             <div class="slider-btn">
                 <span class="prev position-top-special"><i class="fas fa-chevron-left fa-2x text-secondary"></i></span>
@@ -583,7 +573,7 @@
       <div class="container-fluid">
         <div class="site-slider-four px-md-4">
           <div class="slider-four row text-center">
-            
+
               <div class="col-md-8 product pt-md-5">
                 <div class="card" style="width: 18rem;">
                   <a href="product-pages/boogie-boards.html"> <img src="media/Stock-images/lg001338.jpg" class="card-img-top border img-fluid" alt="Product 1"></a>
@@ -651,7 +641,7 @@
       </div>
       <hr class="hr" />
 
-      
+
       <div class="container my-5">
         <div class="row">
           <div class="col-md-4 col-12">
@@ -672,7 +662,7 @@
       </div>
       -->
 
-    
+
       <!-- New, Best and Features sellers -->
 
         <div class="container">
@@ -926,11 +916,11 @@
             <div>
                 <img src="media\14291808_704289064173_7566163803550967262_n.jpg" alt="Brand 3" class="img-fluid">
             </div>
-            
-        </div>
-        
 
-        
+        </div>
+
+
+
       </div>
     </div>
 
@@ -951,10 +941,10 @@
               </div>
               <div>
                   <p>
-                    Everything you can think of for the beach: chairs, umbrellas, beach buggies, sunscreen, sand toys, 
-                    flip flops, boogie boards, skim boards, hats, bathing suits, cover-ups, stuffed animals, books, flags, 
-                    Eagle's memorabilia, beach towels, sunglasses, summer attire, novelties, jewelry, sweatshirts, hermit-crabs 
-                    and at their little sister store "Down the Shore" - Souvenirs, home decor, sea-shells, 
+                    Everything you can think of for the beach: chairs, umbrellas, beach buggies, sunscreen, sand toys,
+                    flip flops, boogie boards, skim boards, hats, bathing suits, cover-ups, stuffed animals, books, flags,
+                    Eagle's memorabilia, beach towels, sunglasses, summer attire, novelties, jewelry, sweatshirts, hermit-crabs
+                    and at their little sister store "Down the Shore" - Souvenirs, home decor, sea-shells,
                     candles, puzzles, mugs, glasses, and so much more!!!!!
                   </p>
                   <h5 class="m-0">Suzette Crozer Hay</h5>
@@ -970,7 +960,7 @@
                   <div>
                       <p>
                           One of the best and gorgeous benches I have ever bought in my life.
-                          I love the staff and love their products. I just love stopping by every year 
+                          I love the staff and love their products. I just love stopping by every year
                           just to say hellow and pick up some Souvenirs.
                       </p>
                       <h5 class="m-0">Nick Hubchak</h5>
@@ -1059,9 +1049,9 @@
                   <i class="fab fa-facebook-f"></i></a>
                   <i class="fab fa-google-plus-g"></i>
                   <i class="fab fa-instagram"></i>
-                
-                
-                  
+
+
+
                 </div>
               </div>
               <div class="row social text-secondary">
@@ -1069,11 +1059,11 @@
                     <a href="#top">
                     <img src="media/Main Logo.jpg" alt="Main Logo" width=200; height=200;>
                 </a>
-                
-                  
+
+
                 </div>
               </div>
-              
+
             </div>
             <div class="col-md-2 col-sm-12">
               <h4>Our Store Hours</h4>
@@ -1085,7 +1075,7 @@
                 <small>Friday: 9:00 AM - 10:00 PM</small>
                 <small>Saturday 10:00 AM - 10:00 PM</small>
                 <small>Sunday: 10:00 AM - 10:00 PM</small>
-                
+
 
               </div>
             </div>
@@ -1147,10 +1137,10 @@
 
     </footer>
 
-    
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/jquery-3.5.1.js" type="text/javascript"></script>
