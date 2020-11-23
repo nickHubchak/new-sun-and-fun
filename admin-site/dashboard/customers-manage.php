@@ -169,7 +169,7 @@ if(!isset($_SESSION['name']))
             </div>
 
             <div class="my_form col-md-6">
-                <center><h2>Delete from inventory</h2></center>
+                <center><h2>Delete Customers</h2></center>
                 <div class="row">
                     <div class="col-md-5">
                         
