@@ -1,5 +1,5 @@
 <?php
-include('admin-site\config.php');
+include('config.php');
 session_start();
 
 $name = $_REQUEST['name'];
