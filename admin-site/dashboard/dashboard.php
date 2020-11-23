@@ -69,7 +69,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="http://localhost/new-sun-and-fun/index.html">
+              <a class="nav-link active" href="http://localhost/new-sun-and-fun/index.php">
                 <span data-feather="flag"></span> Website home <span class="sr-only">(current)</span>
               </a>
             </li>
