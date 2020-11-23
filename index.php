@@ -186,7 +186,7 @@
                     </div>
                     <div class="col-md-8 product pt-md-5">
                         <img src="media\sweatshirts.png" alt="Sweatshirts">
-                        <span class="border site-btn btn-span">Towels & Clothes</span>
+                        <span class="border site-btn btn-span">Clothes</span>
                     </div>
                 </div>
 
