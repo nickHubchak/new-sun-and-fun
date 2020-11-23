@@ -17,7 +17,7 @@ for($i=0; $i<=count($_POST['name'])-1; $i++)
     
     if(mysqli_query($con, $query)){
         echo("Registered Sussecfully");
-        header("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/dashboard.php");
+        header("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/manage-inventory.php");
     }
     else
     {
@@ -25,11 +25,3 @@ for($i=0; $i<=count($_POST['name'])-1; $i++)
     }
        
 }
-
-
-
-
-
-
-
-?>
