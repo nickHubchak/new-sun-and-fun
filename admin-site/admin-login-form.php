@@ -74,7 +74,7 @@ header ("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/dashboa
 
 					<div class="flex-col-c p-t-170 p-b-40">
 						<span class="txt1 p-b-9">
-							Don’t have an account?
+							Need Help / Don’t have an account?
 						</span>
 
 						<a href="http://localhost/new-sun-and-fun/admin-site/contact-supervisor/contact-supervisor-form.html" class="txt3">

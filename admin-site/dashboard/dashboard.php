@@ -84,7 +84,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="http://localhost/new-sun-and-fun/admin-site/dashboard/customers-manage.php">
                 <span data-feather="users"></span> Customers
               </a>
             </li>

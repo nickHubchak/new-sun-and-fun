@@ -180,7 +180,7 @@
             <br>
             <br>
             
-            <form class="contact" style="border-style: solid; margin-top:130px; " action="contact-us.php" method="post">
+            <form class="contact" style="border-style: solid; margin-top:130px; " action="contact-us.php" method="POST">
               <h2>Vendor Contact Us Form</h2>
               <p>Please you this form to contact Sun N Fun about what you would like to sell</p>
               <!--name input-->
@@ -197,12 +197,12 @@
               </fieldset>
               <!--description input-->
               <fieldset>
-                <textarea id="desc" name="description" placeholder="Write a description of what you want to sell" style="height:100px"></textarea>
+                <input type="text" id="desc" name="description" placeholder="Write a description of what you want to sell" style="height:100px"></textarea>
               </fieldset>
               <!--submit input-->
-              <fieldset>
+              
                 <input type="submit" name="submit" Value="Submit" />
-              </fieldset>
+              
             </form>
             <!--end contact vendor--></div>
           <br>
