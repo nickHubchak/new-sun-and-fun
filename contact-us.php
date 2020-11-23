@@ -14,4 +14,4 @@ $query = mysqli_query($con, "INSERT INTO vendor (name, email, phone, description
 
 mysqli_close($con);
 
-header("location:about-us.html?note=success");
+header("location:about-us.php?note=success");
