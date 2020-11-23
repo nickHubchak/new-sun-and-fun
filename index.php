@@ -203,7 +203,7 @@
         <!--Features-->
         <div class="container text-center">
             <div class="features">
-                <h1>Features Products</h1>
+                <h1>Featured Products</h1>
                 <p class="text-secondary">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     In rhoncus ac leo vel maximus. Morbi quis neque erat. 
@@ -217,7 +217,7 @@
             <div class="site-slider-three px-md-4">
                 <div class="row slider-three  text-center px-4">
                     <div class="col-md-8 product pt-md-5">
-                        <img src="media/Stock-images/15_3.jpg" class="img-fluid" alt="Image 1">
+                        <img src="media/Revamped/14.png" class="img-fluid" alt="Image 1">
                         <div class="cart-details">
                             <h6 class="pro-title p-0">Product Description</h6>
                             <div class="rating">
@@ -229,8 +229,8 @@
                             </div>
                             <div class="pro-price py-2">
                                 <h5>
-                                    <small><s class="text-secondary">$125.99</s></small>
-                                    <span>$120</span>
+                                    
+                                    <span>Red Beach Chair<br><br><br></span>
                                 </h5>
                             </div>
                             <div class="cart mt-4">
@@ -242,7 +242,7 @@
                         </div>
                     </div>
                     <div class="col-md-8 product pt-md-5">
-                        <img src="media/Stock-images/9_21.jpg" class="img-fluid" alt="Image 2">
+                        <img src="media/Revamped/17.png" class="img-fluid" alt="Image 2">
                         <div class="cart-details">
                             <h6 class="pro-title p-0">Product Description</h6>
                             <div class="rating">
@@ -254,8 +254,8 @@
                             </div>
                             <div class="pro-price py-2">
                                 <h5>
-                                    <small><s class="text-secondary">$100.00</s></small>
-                                    <span>$120</span>
+                                   
+                                    <span>Sand shovel<br><br><br></span>
                                 </h5>
                             </div>
                             <div class="cart mt-4">
@@ -264,29 +264,7 @@
                         </div>
                     </div>
                     <div class="col-md-8 product pt-md-5">
-                        <img src="media/Stock-images/10_22.jpg" class="img-fluid" alt="Image 3">
-                        <div class="cart-details">
-                            <h6 class="pro-title p-0">Product Description</h6>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <div class="pro-price py-2">
-                                <h5>
-                                    <small><s class="text-secondary">$100.00</s></small>
-                                    <span>$120</span>
-                                </h5>
-                            </div>
-                            <div class="cart mt-4">
-                                <button class="border site-btn btn-span">Add to Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-8 product pt-md-5">
-                        <img src="http://localhost/new-sun-and-fun/media/Stock-images/12_16.jpg" class="img-fluid" alt="Image 4">
+                        <img src="media/Revamped/7.png" class="img-fluid" alt="Image 3">
                         <div class="cart-details">
                             <h6 class="pro-title p-0">Product Description</h6>
                             <div class="rating">
@@ -299,7 +277,7 @@
                             <div class="pro-price py-2">
                                 <h5>
                                     
-                                    <span>$120</span>
+                                    <span>Two stylish anchor bags (Red and Blue)</span>
                                 </h5>
                             </div>
                             <div class="cart mt-4">
@@ -308,7 +286,7 @@
                         </div>
                     </div>
                     <div class="col-md-8 product pt-md-5">
-                        <img src="media/Stock-images/11_18.jpg" class="img-fluid" alt="Image 5">
+                        <img src="media/Revamped/10.png" class="img-fluid" alt="Image 4">
                         <div class="cart-details">
                             <h6 class="pro-title p-0">Product Description</h6>
                             <div class="rating">
@@ -320,8 +298,8 @@
                             </div>
                             <div class="pro-price py-2">
                                 <h5>
-                                    <small><s class="text-secondary">$100.00</s></small>
-                                    <span>$120</span>
+                                    
+                                    <span>Blue pattern sun hat<br><br></span>
                                 </h5>
                             </div>
                             <div class="cart mt-4">
@@ -330,7 +308,29 @@
                         </div>
                     </div>
                     <div class="col-md-8 product pt-md-5">
-                        <img src="media/Stock-images/7_22.jpg" class="img-fluid" alt="Image 6">
+                        <img src="media/Revamped/8.png" class="img-fluid" alt="Image 5">
+                        <div class="cart-details">
+                            <h6 class="pro-title p-0">Product Description</h6>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="pro-price py-2">
+                                <h5>
+                                   
+                                    <span>Blue with pink anchor beach bag</span>
+                                </h5>
+                            </div>
+                            <div class="cart mt-4">
+                                <button class="border site-btn btn-span">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 product pt-md-5">
+                        <img src="media/Revamped/9.png" class="img-fluid" alt="Image 6">
                         <div class="cart-details">
                             <h6 class="pro-title p-0">Product Description</h6>
                             <div class="rating">
@@ -338,8 +338,8 @@
                             </div>
                             <div class="pro-price py-2">
                                 <h5>
-                                    <small><s class="text-secondary">$139.00</s></small>
-                                    <span>$120</span>
+                                    
+                                    <span>American flag beach bag<br><br></span>
                                 </h5>
                             </div>
                             <div class="cart mt-4">
@@ -453,7 +453,7 @@
                         <div class="pro-price py-2">
                             <h5>
                                 <!--<small><s class="text-secondary">$125.99</s></small>-->
-                                <span>Bird house with flowers fLag</span>
+                                <span>Bird house with flowers fLag<br><br></span>
                             </h5>
                         </div>
                         <div class="cart mt-4">
@@ -475,7 +475,7 @@
                         <div class="pro-price py-2">
                             <h5>
                                 
-                                <span>Beach sand castle flag</span>
+                                <span>Beach sand castle flag<br><br></span>
                             </h5>
                         </div>
                         <div class="cart mt-4">
@@ -497,7 +497,7 @@
                         <div class="pro-price py-2">
                             <h5>
                                 
-                                <span>Flip flops flag</span>
+                                <span>Flip flops flag<br><br><br></span>
                             </h5>
                         </div>
                         <div class="cart mt-4">
@@ -519,7 +519,7 @@
                         <div class="pro-price py-2">
                             <h5>
                                 
-                                <span>Sunflower welcome flag</span>
+                                <span>Sunflower welcome flag<br><br></span>
                             </h5>
                         </div>
                         <div class="cart mt-4">
@@ -559,7 +559,7 @@
                         <div class="pro-price py-2">
                             <h5>
                                 
-                                <span>Colorful balloons Flag</span>
+                                <span>Colorful balloons Flag<br><br></span>
                             </h5>
                         </div>
                         <div class="cart mt-4">
@@ -683,12 +683,12 @@
                 <div class="row py-3">
                   <div class="col-md-3 p-0">
                     <div class="items border">
-                      <img src="media/Stock-images/15_3.jpg" alt="Image 1" class="img-fluid">
+                      <img src="media/Revamped/12.png" alt="Image 1" class="img-fluid">
                     </div>
                   </div>
                   <div class="col-md-9 p-0 py-4 py-md-0">
                     <div class="px-4">
-                      <h6>Vinyl Top Folding Table</h6>
+                      <h6>Light sun hat with black ribbon</h6>
                       <div class="rating pb-2">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -697,8 +697,7 @@
                         <i class="fas fa-star-half-alt"></i>
                       </div>
                       <h5>
-                        <small><s class="text-secondary">$125.99</s></small>
-                        <span class="text-color">$120</span>
+                      
                       </h5>
                     </div>
                   </div>
@@ -706,12 +705,12 @@
                 <div class="row py-3">
                   <div class="col-md-3 p-0">
                     <div class="items border">
-                      <img src="media/Stock-images/11_18.jpg" alt="Image 2" class="img-fluid">
+                      <img src="media/Revamped/13.png" alt="Image 2" class="img-fluid">
                     </div>
                   </div>
                   <div class="col-md-9 p-0 py-4 py-md-0">
                     <div class="px-4">
-                      <h6>Parsons Mordern End Black</h6>
+                      <h6>Curved sun hat with brown ribbon</h6>
                       <div class="rating pb-2">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -720,8 +719,7 @@
                         <i class="fas fa-star"></i>
                       </div>
                       <h5>
-                        <small><s class="text-secondary">$159.99</s></small>
-                        <span class="text-color">$240</span>
+                      
                       </h5>
                     </div>
                   </div>
@@ -729,12 +727,12 @@
                 <div class="row py-3">
                   <div class="col-md-3 p-0">
                     <div class="items border">
-                      <img src="media/Stock-images/9_21.jpg" alt="Image 3" class="img-fluid">
+                      <img src="media/Revamped/14.png" alt="Image 3" class="img-fluid">
                     </div>
                   </div>
                   <div class="col-md-9 p-0 py-4 py-md-0">
                     <div class="px-4">
-                      <h6>Ikea RUSCH 25x4 Wall</h6>
+                      <h6>Red Beach Chair</h6>
                       <div class="rating pb-2">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -743,7 +741,7 @@
                         <i class="fas fa-star"></i>
                       </div>
                       <h5>
-                        <span class="text-color">$103</span>
+                        
                       </h5>
                     </div>
                   </div>
@@ -754,12 +752,12 @@
                 <div class="row py-3">
                   <div class="col-md-3 p-0">
                     <div class="items border">
-                      <img src="media/Stock-images/11_18.jpg" alt="Image 1" class="img-fluid">
+                      <img src="media/Revamped/15.png" alt="Image 1" class="img-fluid">
                     </div>
                   </div>
                   <div class="col-md-9 p-0 py-4 py-md-0">
                     <div class="px-4">
-                      <h6>Parsons Modern End Black</h6>
+                      <h6>colored striped beach chair, with sun protector</h6>
                       <div class="rating pb-2">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -768,8 +766,7 @@
                         <i class="fas fa-star"></i>
                       </div>
                       <h5>
-                        <small><s class="text-secondary">$159.99</s> </small>
-                        <span class="text-color">$240</span>
+                    
                       </h5>
                     </div>
                   </div>
@@ -777,12 +774,12 @@
                 <div class="row py-3">
                     <div class="col-md-3 p-0">
                       <div class="items border">
-                        <img src="media/Stock-images/12_16.jpg" alt="Image 2" class="img-fluid">
+                        <img src="media/Revamped/18.png" alt="Image 2" class="img-fluid">
                       </div>
                     </div>
                     <div class="col-md-9 p-0 py-4 py-md-0">
                       <div class="px-4">
-                        <h6>Table Lamp Beside Desk</h6>
+                        <h6>Purple and pink Dragon kite </h6>
                         <div class="rating pb-2">
                           <i class="fas fa-star"></i>
                           <i class="fas fa-star"></i>
@@ -791,8 +788,7 @@
                           <i class="fas fa-star-half-alt"></i>
                         </div>
                         <h5>
-                          <small><s class="text-secondary">$449.99</s> </small>
-                          <span class="text-color">$469.99</span>
+                          
                         </h5>
                       </div>
                     </div>
@@ -800,12 +796,12 @@
                   <div class="row py-3">
                       <div class="col-md-3 p-0">
                         <div class="items border">
-                          <img src="media/Stock-images/9_21.jpg" alt="Image 3" class="img-fluid">
+                          <img src="media/Revamped/16.png" alt="Image 3" class="img-fluid">
                         </div>
                       </div>
                       <div class="col-md-9 p-0 py-4 py-md-0">
                         <div class="px-4">
-                          <h6>Ikea RUSCH 25x4 Wall</h6>
+                          <h6>Blue beach chair with head pillow</h6>
                           <div class="rating pb-2">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -814,7 +810,7 @@
                             <i class="fas fa-star-half-alt"></i>
                           </div>
                           <h5>
-                            <span class="text-color">$103</span>
+                            
                           </h5>
                         </div>
                       </div>
@@ -825,12 +821,12 @@
                 <div class="row py-3">
                     <div class="col-md-3 p-0">
                       <div class="items border">
-                        <img src="media/Stock-images/8_20.jpg" alt="Image 1" class="img-fluid">
+                        <img src="media/Revamped/19.png" alt="Image 1" class="img-fluid">
                       </div>
                     </div>
                     <div class="col-md-9 p-0 py-4 py-md-0">
                       <div class="px-4">
-                        <h6>Large Wall Clock Sticker</h6>
+                        <h6>Colorful beach volleyball</h6>
                         <div class="rating pb-2">
                           <i class="fas fa-star"></i>
                           <i class="fas fa-star"></i>
@@ -839,8 +835,7 @@
                           <i class="fas fa-star-half-alt"></i>
                         </div>
                         <h5>
-                          <small><s class="text-secondary">$219.99</s> </small>
-                          <span class="text-color">$210</span>
+                        
                         </h5>
                       </div>
                     </div>
@@ -848,12 +843,12 @@
                   <div class="row py-3">
                       <div class="col-md-3 p-0">
                         <div class="items border">
-                          <img src="media/Stock-images/1_11.jpg" alt="Image 2" class="img-fluid">
+                          <img src="media/Revamped/20.png" alt="Image 2" class="img-fluid">
                         </div>
                       </div>
                       <div class="col-md-9 p-0 py-4 py-md-0">
                         <div class="px-4">
-                          <h6>Upholstered Fabric Sofa</h6>
+                          <h6>Beach football</h6>
                           <div class="rating pb-2">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -862,8 +857,7 @@
                             <i class="fas fa-star-half-alt"></i>
                           </div>
                           <h5>
-                            <small><s class="text-secondary">$519.99</s> </small>
-                            <span class="text-color">$499.00</span>
+                            
                           </h5>
                         </div>
                       </div>
@@ -871,12 +865,12 @@
                     <div class="row py-3">
                         <div class="col-md-3 p-0">
                           <div class="items border">
-                            <img src="media/Stock-images/15_3.jpg" alt="Image 3" class="img-fluid">
+                            <img src="media/Revamped/21.png" alt="Image 3" class="img-fluid">
                           </div>
                         </div>
                         <div class="col-md-9 p-0 py-4 py-md-0">
                           <div class="px-4">
-                            <h6>Vinyl Top Folding Table</h6>
+                            <h6>Sand toys with bucket</h6>
                             <div class="rating pb-2">
                               <i class="fas fa-star"></i>
                               <i class="fas fa-star"></i>
@@ -885,8 +879,7 @@
                               <i class="fas fa-star"></i>
                             </div>
                             <h5>
-                              <small><s class="text-secondary">$125.99</s> </small>
-                              <span class="text-color">$120</span>
+                              
                             </h5>
                           </div>
                         </div>
