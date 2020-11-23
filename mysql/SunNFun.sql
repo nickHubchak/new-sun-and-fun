@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 19, 2020 at 05:32 AM
+-- Generation Time: Nov 23, 2020 at 02:20 AM
 -- Server version: 5.6.37
 -- PHP Version: 5.6.31
 
@@ -28,8 +28,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `Admin` (
   `admin_id` int(20) NOT NULL,
-  `first name` varchar(20) CHARACTER SET latin1 NOT NULL,
-  `last name` varchar(20) CHARACTER SET latin1 NOT NULL,
+  `firstname` varchar(20) CHARACTER SET latin1 NOT NULL,
+  `lastname` varchar(20) CHARACTER SET latin1 NOT NULL,
   `email` varchar(25) CHARACTER SET latin1 NOT NULL,
   `username` varchar(20) CHARACTER SET latin1 NOT NULL,
   `password` varchar(255) NOT NULL
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `Admin` (
 -- Dumping data for table `Admin`
 --
 
-INSERT INTO `Admin` (`admin_id`, `first name`, `last name`, `email`, `username`, `password`) VALUES
+INSERT INTO `Admin` (`admin_id`, `firstname`, `lastname`, `email`, `username`, `password`) VALUES
 (1, 'Nick', 'Hubchak', 'nickhubchak@aol.com', 'nickhubchak', '$2y$10$z6RNP2FqlomEAX4UsJ5rReOEeiizL6miXv8XeuWbmxfqFH032OJMi');
 
 -- --------------------------------------------------------
@@ -50,12 +50,20 @@ INSERT INTO `Admin` (`admin_id`, `first name`, `last name`, `email`, `username`,
 
 CREATE TABLE IF NOT EXISTS `Customer` (
   `customer_id` int(20) NOT NULL,
-  `first name` varchar(25) NOT NULL,
-  `last name` varchar(25) NOT NULL,
-  `phone number` varchar(10) NOT NULL,
+  `firstname` varchar(25) NOT NULL,
+  `lastname` varchar(25) NOT NULL,
+  `phonenumber` varchar(10) NOT NULL,
+  `email` varchar(20) NOT NULL,
   `username` varchar(30) NOT NULL,
-  `password` varchar(128) CHARACTER SET utf8 NOT NULL
+  `password` varchar(255) CHARACTER SET utf8 NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `Customer`
+--
+
+INSERT INTO `Customer` (`customer_id`, `firstname`, `lastname`, `phonenumber`, `email`, `username`, `password`) VALUES
+(0, 'John', 'Doe', '6655544333', 'johndoe@gmail.com', 'johndoe', '$2y$10$nqOccFXE34Mr/qPhXxRrRuhJ9L7DoOzRrYeMHvR7FOfmo6v8jdtgu');
 
 -- --------------------------------------------------------
 
@@ -93,8 +101,38 @@ CREATE TABLE IF NOT EXISTS `order_item` (
 CREATE TABLE IF NOT EXISTS `Product` (
   `product_id` int(20) NOT NULL,
   `Name` varchar(20) NOT NULL,
-  `Description` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `quantity_in_stock` int(20) NOT NULL,
+  `Description` text NOT NULL,
+  `image_link` varchar(128) CHARACTER SET utf8 NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `Product`
+--
+
+INSERT INTO `Product` (`product_id`, `Name`, `quantity_in_stock`, `Description`, `image_link`) VALUES
+(1, 'Chair', 3, 'wooden chair', 'http://localhost/new-sun-and-fun/admin-site/dashboard/manage-inventory.php');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `vendor`
+--
+
+CREATE TABLE IF NOT EXISTS `vendor` (
+  `vendor_id` int(20) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `phone` int(10) NOT NULL,
+  `description` text NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `vendor`
+--
+
+INSERT INTO `vendor` (`vendor_id`, `name`, `email`, `phone`, `description`) VALUES
+(1, 'ewqrw', 'qwre@qewr.com', 54155, 'w32ed4yguyew');
 
 --
 -- Indexes for dumped tables
@@ -134,14 +172,28 @@ ALTER TABLE `Product`
   ADD PRIMARY KEY (`product_id`);
 
 --
--- Constraints for dumped tables
+-- Indexes for table `vendor`
+--
+ALTER TABLE `vendor`
+  ADD PRIMARY KEY (`vendor_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- Constraints for table `Customer`
+-- AUTO_INCREMENT for table `Product`
 --
-ALTER TABLE `Customer`
-  ADD CONSTRAINT `customer_id` FOREIGN KEY (`customer_id`) REFERENCES `Orders` (`customer_id`);
+ALTER TABLE `Product`
+  MODIFY `product_id` int(20) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `vendor`
+--
+ALTER TABLE `vendor`
+  MODIFY `vendor_id` int(20) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+--
+-- Constraints for dumped tables
+--
 
 --
 -- Constraints for table `Orders`
