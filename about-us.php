@@ -13,7 +13,7 @@
 
   <!--Favicon-->
   <link rel="icon" type="image/png" href="http://localhost/new-sun-and-fun/media\Stock-images\yellow_beach-chair-and-umbrella_icon-icons.com_59553.ico"/>
-  
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
@@ -32,110 +32,101 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <!--header-->
-  <header>
+  <body onload="checkDate()"><!--The Check Date function is located in main.js and is not functional yet...-->
 
-    <div class="container">
-      <!--Top Banner-->
-      <div class="row">
-        <div class="col-md-3 col-sm-12 col-12">
-          <div class="btn-group">
-            <button class="btn border dropdown-toggle my-md-4 my-2 text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact US
-            </button>
-            <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">Email</a>
-              <a href="#" class="dropdown-item">Phone Number</a>
-            </div>
+      <!--header-->
+      <header>
+
+          <div class="container"> <!--Top Banner-->
+              <div class="row">
+                  <div class="col-md-3 col-sm-12 col-12">
+                      <div class="btn-group">
+                          <button class="btn border dropdown-toggle my-md-4 my-2 text-white" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false" >Contact US
+                          </button>
+                          <div class="dropdown-menu">
+                              <a href="mailto:sunnfun12st@gmail.com" class="dropdown-item">Email</a>
+                              <a href="tel:609-398-6383" class="dropdown-item">Phone Number</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-12 text-center primary-color">
+                      <h2 class="my-md-3 site-title text-white">Sun N' Fun</h2>
+                  </div>
+                  <div class="col-md-3 col-12 text-right">
+                      <p class="my-md-4 header-links">
+                        <?php
+                          if ($_SESSION['customer-loggedin']==True)
+                          {
+                            echo('<a href="customer-logout.php" class="px-4">Customer Logout </a>');
+                          }
+                          else
+                          {
+                            echo('<a href="customer-login-form.php" class="px-4">Customer Login </a>');
+                          }
+                        ?>
+                      </p>
+                  </div>
+                  <div class="col-md-2 col-12 text-right">
+                    <p class="my-md-4 header-links">
+
+                        <a href="http://localhost/new-sun-and-fun/admin-site\admin-login-form.php" class="px-1"> Admin Login</a>
+                    </p>
+                </div>
+              </div>
           </div>
-        </div>
-        <div class="col-md-4 col-12 text-center primary-color">
-          <h2 class="my-md-3 site-title text-white">Sun N' Fun</h2>
-        </div>
-        <div class="col-md-3 col-12 text-right">
-          <p class="my-md-4 header-links">
-          <?php
-                        if ($_SESSION['customer-loggedin']==True) 
-                        {
-                          echo('<a href="customer-logout.php" class="px-4">Customer Logout </a>');
-                        }
-                        else
-                        {
-                          echo('<a href="customer-login-form.php" class="px-4">Customer Login </a>');
-                        }
 
-                      ?>
-            
-
-          </p>
-        </div>
-        <div class="col-md-2 col-12 text-right">
-          <p class="my-md-4 header-links">
-
-            <a href="http://localhost/new-sun-and-fun/admin-site\admin-login-form.php" class="px-1"> Admin Login</a>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid p-0 bottom-border">
-      <!--Navigation-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="http://localhost/new-sun-and-fun/index.php">HOME <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FEATURES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="http://localhost/new-sun-and-fun/consumer-side/inventory/main-inventory-page.php">COLLECTION</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">SHOP</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about-us.html">ABOUT US</a>
-            </li>
-
-          </ul>
-        </div>
-
-
-        <div class="navbar-nav">
-        <ul class="nav navbar-nav" style="margin-right: 35px;">
-                      <li><?php 
-                      if(isset($_SESSION['customer-username']))
-                      {
-                        echo("Welcome ".($_SESSION['customer-username'])." !");
-                      }  
-                      ?> </li>
+          <!--Global Navigation-->
+          <div class="container-fluid p-0 bottom-border">
+              <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="http://localhost/new-sun-and-fun/index.html">HOME <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="http://localhost/new-sun-and-fun/in-store-shop.php">WHAT'S IN STORE</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="http://localhost/new-sun-and-fun/consumer-side/inventory/main-inventory-page.php">SHOP ONLINE</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="http://localhost/new-sun-and-fun/custom-home-decor.php">CUSTOM HOME DECOR</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="http://localhost/new-sun-and-fun/about-us.php">ABOUT US</a>
+                        </li>
                     </ul>
-          <a href="shopping-cart.html">
-            <li class="nav-item border rounded-circle circle mx-2 basket-icon">
-              <i class="fas fa-shopping-basket p-2"></i>
-            </li>
+                  </div>
+                    <div class="navbar-nav">
+                      <ul class="nav navbar-nav" style="margin-right: 35px;">
+                        <li><?php
+                        if(isset($_SESSION['customer-username']))
+                        {
+                          echo("Welcome ".($_SESSION['customer-username'])." !");
+                        }
+                        ?> </li>
+                      </ul>
+                      <a href="shopping-cart.html">
+                        <li class="nav-item border rounded-circle circle mx-2 basket-icon">
+                          <i class="fas fa-shopping-basket p-2"></i>
+                      </li>
+                      </a>
+                    </div>
+                </nav>
+          </div>
+          <!--/Global Navigation-->
 
-          </a>
-
-        </div>
-
-
-
-      </nav>
-    </div>
-
-  </header>
-  <!--/header-->
+      </header>
+       <!--/header-->
 
   <!--About us-->
   <section id="aboutus">
     <div class="container-fluid">
-       
+
         <div class="row">
           <div class="col-md-4">
             <h1>About Us</h1>
@@ -166,7 +157,7 @@
             </p>
           </div>
           <div class="col-md-2">
-            
+
 
           </div>
 
@@ -179,8 +170,13 @@
             <br>
             <br>
             <br>
+<<<<<<< Updated upstream
             
             <form class="contact" style="border-style: solid; margin-top:130px; " action="http://localhost/new-sun-and-fun/contact-us.php" method="POST">
+=======
+
+            <form class="contact" style="border-style: solid; margin-top:130px; " action="contact-us.php" method="post">
+>>>>>>> Stashed changes
               <h2>Vendor Contact Us Form</h2>
               <p>Please you this form to contact Sun N Fun about what you would like to sell</p>
               <!--name input-->
@@ -209,7 +205,7 @@
           <br>
           </div>
         </div>
-    
+
     </div>
   </section>
   <!-- #end of About us -->
