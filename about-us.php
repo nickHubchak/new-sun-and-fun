@@ -85,7 +85,7 @@
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                       <li class="nav-item active">
-                        <a class="nav-link" href="http://localhost/new-sun-and-fun/index.html">HOME <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="http://localhost/new-sun-and-fun/index.php">HOME <span class="sr-only">(current)</span></a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="http://localhost/new-sun-and-fun/in-store-shop.php">WHAT'S IN STORE</a>
@@ -170,13 +170,8 @@
             <br>
             <br>
             <br>
-<<<<<<< Updated upstream
             
             <form class="contact" style="border-style: solid; margin-top:130px; " action="http://localhost/new-sun-and-fun/contact-us.php" method="POST">
-=======
-
-            <form class="contact" style="border-style: solid; margin-top:130px; " action="contact-us.php" method="post">
->>>>>>> Stashed changes
               <h2>Vendor Contact Us Form</h2>
               <p>Please you this form to contact Sun N Fun about what you would like to sell</p>
               <!--name input-->
