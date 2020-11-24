@@ -364,6 +364,7 @@
       </div>
     </div>
   </div>
+  </body>
 <!-- /Facilities -->
   <footer>
     <div class="container-fluid px-5">
@@ -496,5 +497,6 @@
     window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
   </script>
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  
 
 </html>
