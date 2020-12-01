@@ -95,6 +95,13 @@ header.site-title
     position:absolute;
     top:40%;
 }
+.side-slider
+{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
 
 .side-slider .slider-btn .prev,
 .side-slider .slider-btn .next
@@ -114,9 +121,11 @@ header.site-title
     opacity:1;
 }
 
+
+
 .right-0
 {
-    right:18px;
+    right:10%;
 }
 
 
@@ -210,6 +219,12 @@ header.site-title
 {
     position:absolute;
     top:30%;
+}
+
+.position-top-special-2
+{
+    position:absolute;
+    top:60%;
 }
 
 .hr
@@ -332,13 +347,16 @@ header.site-title
   .newseller {
     margin-top: 8rem;
   }
+  */
   
   .slider-brand {
     position: relative;
     margin: 4rem 0;
+  
+    
   }
   
-  */
+  
 
   /* Our Client */
   .slider-client {

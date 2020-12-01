@@ -110,17 +110,20 @@ const breakpoint = [
         {
             if(month==i)
             {
-                window.location.href='siteoff.html';
+              document.wirite("Hello");
+                window.location.href='http://localhost/new-sun-and-fun/consumer-side/off-season-message/siteoff.html';
             }
         }
 
         if(month==11)
         {
-            window.location= 'siteoff.html';
+          document.wirite("Hello");
+            window.location= 'http://localhost/new-sun-and-fun/consumer-side/off-season-message/siteoff.html';
         }
         if(month==12)
         {
-            window.location= 'siteoff.html';
+          document.wirite("Hello");
+            window.location= 'http://localhost/new-sun-and-fun/consumer-side/off-season-message/siteoff.html';
         }
     }
 
