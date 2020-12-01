@@ -30,7 +30,8 @@
 
 
 </head>
-<body onload="checkDate()"><!--The Check Date function is located in main.js and is not functional yet...-->
+<!--       onload="checkDate()"       -->
+<body ><!--The Check Date function is located in main.js and is not functional yet...-->
 
     <!--header-->
     <header>
@@ -83,7 +84,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
                     <li class="nav-item active">
-                      <a class="nav-link" href="http://localhost/new-sun-and-fun/index.html">HOME <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="http://localhost/new-sun-and-fun/index.php">HOME <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="http://localhost/new-sun-and-fun/in-store-shop.php">WHAT'S IN STORE</a>
@@ -125,6 +126,11 @@
     <main>
         <!--First Slider-->
         <div class="container-fluid p-0">
+          <div class="row">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-9">
             <div class="side-slider">
                 <div class="slider-one">
                     <div>
@@ -138,8 +144,8 @@
                     </div>
                     <div>
                       <img src="media\Beach Accesories.png" class="img-fluid" alt="Banner 3">
+                    </div>
                   </div>
-                </div>
 
                 <div class="slider-btn">
                     <span class="prev position-top"><i class="fas fa-chevron-left"></i></span>
@@ -147,6 +153,11 @@
                 </div>
 
             </div>
+
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+           
         </div>
         <!--/First Slider-->
 
@@ -339,6 +350,7 @@
                     </div>
 
                 </div>
+                
                 <div class="slider-btn">
                     <span class="prev position-top-special"><i class="fas fa-chevron-left fa-2x text-secondary"></i></span>
                     <span class="next position-top-special right-0"><i class="fas fa-chevron-right fa-2x text-secondary"></i></span>
@@ -892,8 +904,10 @@
     <!-- Brand -->
 
     <div class="container-fluid">
+      
       <div class="slider-brand">
         <h1 class="pt-5 font-roboto text-center">Some of our happy customers!</h1>
+        
         <div class="slider-five px-5">
             <div>
               <img src="media\116764246_10222927514041039_754006768752273849_n.jpg" alt="Brand 1" class="img-fluid">
@@ -916,12 +930,15 @@
             <div>
                 <img src="media\14291808_704289064173_7566163803550967262_n.jpg" alt="Brand 3" class="img-fluid">
             </div>
-
-        </div>
-
-
+          </div>
+          <div class="slider-btn">
+          <span class="prev position-top-special-2"><i class="fas fa-chevron-left fa-2x text-secondary"></i></span>
+          <span class="next position-top-special-2 right-0"><i class="fas fa-chevron-right fa-2x text-secondary"></i></span>
+        </div>   
 
       </div>
+  
+                 
     </div>
 
   <!-- /Brand -->
