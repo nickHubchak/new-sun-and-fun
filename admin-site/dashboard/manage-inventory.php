@@ -1,21 +1,8 @@
 <?php
     session_start();
+    include("config.php");
 
-    if(isset($_SESSION['deleted-from-inventory']))
-    {
-        echo($_SESSION['deleted-from-inventory']);
-        $_SESSION['deleted-from-inventory']=null;
-    }
-    if(isset( $_SESSION['added-to-inventory']))
-    {
-        echo($_SESSION['added-to-inventory']);
-        $_SESSION['added-to-inventory']=null;
-    }
-    if(isset($_SESSION['empty-boy']))
-    {
-        echo($_SESSION['empty-boy']);
-        $_SESSION['empty-boy']=null;
-    }
+    
 
 if(!isset($_SESSION['name']))
 {
@@ -48,25 +35,63 @@ if(!isset($_SESSION['name']))
 </head>
 
 <body>
-    
+
+
 
 
     <div class="container-fluid">
-        <div class="row">
-           
+        <div class="title row">
+
             <div class="col-md-4">
 
             </div>
             <div class=" header col-md-4">
                 <h1>Manage Inventory</h1>
+                <br>
             </div>
             <div class="col-md-2">
 
             </div>
             <div class="col-md-2">
+                <br>
                 <a href="http://localhost/new-sun-and-fun/admin-site/dashboard/dashboard.php">
-                <button class="btn btn-dark">Back to Dashboard</button>
+                    <button class="btn btn-dark">Back to Dashboard</button>
                 </a>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <?php
+
+if(isset($_SESSION['deleted-from-inventory']))
+{
+    echo($_SESSION['deleted-from-inventory']);
+    $_SESSION['deleted-from-inventory']=null;
+}
+if(isset( $_SESSION['added-to-inventory']))
+{
+    echo($_SESSION['added-to-inventory']);
+    $_SESSION['added-to-inventory']=null;
+}
+if(isset($_SESSION['empty-boy']))
+{
+    echo($_SESSION['empty-boy']);
+    $_SESSION['empty-boy']=null;
+}
+if(isset( $_SESSION['updated-quatity']))
+{
+    echo( $_SESSION['updated-quatity']);
+    $_SESSION['updated-quatity']=null;
+}
+if(isset( $_SESSION['updated-description']))
+{
+    echo( $_SESSION['updated-description']);
+    $_SESSION['updated-description']=null;
+}
+
+    
+    ?>
             </div>
         </div>
         <div class="row">
@@ -80,86 +105,200 @@ if(!isset($_SESSION['name']))
             </div>
         </div>
         <div class="row">
-            <div class=" my_form col-md-6">
-                <center><h2>Insert into inventory</h2></center>
-                <!--
-                <div class="row">
-                    <div class="col-md-1">
-                        
-                    </div>
-                    <div class="col-md-2">
-                        <p class="par-style">
-                            Name
-                        </p>
-                      
-                    </div>
-                    <div class="col-md-3">
-                        <p class="par-style">
-                            Quantity In Stock
+            <div class="col-md-6">
+                <div class="my_form col-md-12">
+                    <center>
+                        <h2>Insert into inventory</h2>
+                    </center>
+                    <form id="inventory-form" class="inventory" method="POST" action="inventory-add.php">
 
-                        </p>
-                        
-                    </div>
-                    <div class="col-md-2">
-                        <p class="par-style">
-                            Description
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <input type="submit" class="btn btn-light" value="Submit">
+                            </div>
+                            <div class="col-md-4"></div>
 
-                        </p>
-                       
-                    </div>
-                    <div class="col-md-2">
-                        <p class="par-style">
-                            image_link
+                        </div>
 
-                        </p>
-                        
-                    </div>
-                    <div class="col-md-1">
+                    </form>
+                    <br>
 
+
+
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <button class="btn btn-light" onclick="add_field()">Add Field</button>
+                            <button class="btn btn-light" onclick="delete_field()">Delete Field</button>
+
+                        </div>
+                        <div class="col-md-2"></div>
                     </div>
+
                 </div>
-                -->
-                <div class="row">
-                
-                <form id="inventory-form" class="inventory" method="POST" action="inventory-add.php">
-                
 
-                <center><input type="submit" value="Submit"></center>
-                </form>
-                <center>
-                    <button class="btn btn-light" onclick="add_field()">Add Field</button>
-                    <button class="btn btn-light" onclick="delete_field()">Delete Field</button>
-                </center>
-                </div>
+
+
+
             </div>
 
-            <div class="my_form col-md-6">
-                <center><h2>Delete from inventory</h2></center>
-                <div class="row">
-                    <div class="col-md-5">
-                        
-                    </div>
-                    <div class="col-md-2">
-                       <p class="par-style">
-                        Name
-                       </p> 
-                    </div>
-                    <div class="col-md-5">
+            <div class="col-md-6">
+                <div class="my_form-2 col-md-12">
+                    <center>
+                        <h2>Delete from inventory</h2>
+                    </center>
 
+
+                    <form id="inventory-form-delete" class="inventory-delete" method="post"
+                        action="inventory-delete.php">
+
+
+
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <input type="submit" class="btn btn-light" value="Submit">
+                            </div>
+                            <div class="col-md-4"></div>
+
+                        </div>
+                    </form>
+                    <br>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <button class="btn btn-light" onclick="add_delete_field()">Add Field</button>
+                            <button class="btn btn-light" onclick="delete_delete_field()">Delete Field</button>
+
+                        </div>
+                        <div class="col-md-2"></div>
                     </div>
-        
-                   
+
+
+
                 </div>
-                <center><form id="inventory-form-delete" class="inventory-delete" method="post" action="inventory-delete.php">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="my_form-2 col-md-12">
+                    <center>
+                        <h2>Change Quantity of Product</h2>
+                    </center>
+
+                    <form id="change-quantity-product" method="post" action="quantity-change.php">
 
 
 
-                <input type="submit" value="Submit">
-                </form>
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <input type="submit" class="btn btn-light" value="Submit">
+                            </div>
+                            <div class="col-md-4"></div>
+
+                        </div>
+                    </form>
+                    <br>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <button class="btn btn-light" onclick="add_quantiy_field()">Add Field</button>
+                            <button class="btn btn-light" onclick="delete_quantity_field()">Delete Field</button>
+
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="my_form col-md-12">
+                    <center>
+                        <h2>Change Description of Product</h2>
+                    </center>
+
+                    <form id="change-description-product" method="post" action="description-change.php">
+
+
+
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <input type="submit" class="btn btn-light" value="Submit">
+                            </div>
+                            <div class="col-md-4"></div>
+
+                        </div>
+                    </form>
+                    <br>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <button class="btn btn-light" onclick="add_description_field()">Add Field</button>
+                            <button class="btn btn-light" onclick="delete_description_field()">Delete Field</button>
+
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Product ID</th>
+                            <th scope="col">Product Name</th>
+                            <th scope="col">Qunatity In Stock</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Image Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <?php
+                    $query = "SELECT * FROM product";
+                    $results=mysqli_query($con,$query);
+                    $row_count=mysqli_num_rows($results);
+                    
+                    $count=0;
+                    $new_color="";
+                    while ($row = mysqli_fetch_array($results)) {
+                        $count++;
+
+                        if($count%2==0)
+                        {
+                            $new_color="table-warning";
+                        }
+                        else
+                        {
+                            $new_color="table-light";
+                        }
+                        
+                        echo "<tr class=$new_color><th scope='row'>".($row['product_id'])."</th><td>".($row['Name'])."</td><td>".($row['quantity_in_stock'])."</td>
+                        <td>".($row['Description'])."</td><td>".($row['image_link'])."</td></tr>";
                 
-                    <button class="btn btn-light" onclick="add_delete_field()">Add Field</button>
-                    <button class="btn btn-light" onclick="delete_delete_field()">Delete Field</button>
-                </center>
+                    }
+                    ?>
+                
+    
+                    </tbody>
+                </table>
+                <br>
+                <br>
+                <h3>End of Table</h3>
             </div>
         </div>
     </div>
