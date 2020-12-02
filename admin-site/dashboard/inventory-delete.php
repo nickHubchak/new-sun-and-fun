@@ -1,13 +1,20 @@
 <?php
+session_start();
 include("config.php");
 //var_dump($_REQUEST);
+if(count($_REQUEST)<=0)
+{
+    $_SESSION['empty-boy']="<h4>One of your entries was empty please rentry</h4>";
+    header("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/manage-inventory.php");
+
+}
 
 //echo(count($_POST['name']));
 for($i=0; $i<=count($_POST['name-delete'])-1; $i++)
 {
     if($_POST['name-delete'][$i]=='')
     {
-        $_SESSION['empty-boy']="One of your entries was empty please rentry";
+        $_SESSION['empty-boy']="<h4>One of your entries was empty please rentry</h4>";
         header("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/manage-inventory.php");
     }
     else

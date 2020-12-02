@@ -1,38 +1,38 @@
 <?php
+session_start();
 include("config.php");
 var_dump($_REQUEST);
-
-//echo(count($_POST['name']));
 if(count($_REQUEST)<=0)
 {
     $_SESSION['empty-boy']="<h4>One of your entries was empty please rentry</h4>";
     header("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/manage-inventory.php");
+
 }
 
-for($i=0; $i<=count($_POST['name'])-1; $i++)
+//echo(count($_POST['name']));
+for($i=0; $i<=count($_POST['description-name'])-1; $i++)
 {
-    
-    if($_POST['name'][$i]==''||$_POST['quantity_in_stock'][$i]==''||$_POST['description'][$i]==''||$_POST['image_url'][$i]=='')
+    if($_POST['description-name'][$i]=='')
     {
         $_SESSION['empty-boy']="<h4>One of your entries was empty please rentry</h4>";
         header("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/manage-inventory.php");
     }
-    
     else
     {
-        $name=$_POST['name'][$i];
-    $quanitity=$_POST['quantity_in_stock'][$i];
-    $desc=$_POST['description'][$i];
-    $image=$_POST['image_url'][$i];
 
+    
 
-    $query = "INSERT INTO Product (Name, quantity_in_stock ,Description, image_link) 
-    VALUES ('$name', '$quanitity', '$desc', '$image')";
+    $name=$_POST['description-name'][$i];
+    $description=$_POST['description-change'][$i];
+    
+
+    $query = "UPDATE product SET Description='$description' WHERE Name='$name'";
+
     
     
     if(mysqli_query($con, $query)){
         echo("Registered Sussecfully");
-        $_SESSION['added-to-inventory']="Successfully added items to inventory!";
+        $_SESSION['updated-description']="<h4>Successfully updated description for items!</h4>";
         header("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/manage-inventory.php");
     }
     else
@@ -40,12 +40,7 @@ for($i=0; $i<=count($_POST['name'])-1; $i++)
         echo"Error Registering";
     }
 
-    }
-
-    
-
-
-    
+}
        
 }
 ?>
