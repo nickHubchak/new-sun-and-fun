@@ -1,6 +1,11 @@
 <?php
   session_start();
   //var_dump($_SESSION);
+  if(isset($_SESSION['not_logged_in_cart']))
+  {
+    echo $_SESSION['not_logged_in_cart'];
+    $_SESSION['not_logged_in_cart']=null;
+  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
