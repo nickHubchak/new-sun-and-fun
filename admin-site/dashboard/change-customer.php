@@ -38,14 +38,14 @@ if(!isset($_SESSION['name']))
 
 
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
 
-        </div>
-        <div class="col-md-6">
+            </div>
+            <div class="col-md-6">
 
-        <?php
+                <?php
 
 session_start();
 include("config.php");
@@ -69,117 +69,111 @@ foreach($_POST as $key=>$value)
 
 $query="SELECT * FROM Customer";
 $result=mysqli_query($con, $query);
+$is_true=False;
 while($row=mysqli_fetch_assoc($result))
 {
     //echo($row['username']." ");
-    if($row['username']==$_POST['customer-username-check'])
+    //echo($_POST['customer-username-check']);
+    if($row['username']==$_POST['customer-username-check'] && $row['email']==$_POST['customer-email-check'])
     {
+        $is_true=True;
+
+       // echo($row['username']);
         
         $_SESSION['customer-username1']= $row['username'];
-    }
-    else
-    {
-        if(!isset($_SESSION['empty-guy']) && !isset($_SESSION['customer-username1']))
-        {
-            $_SESSION['missmatch-username'] ='<h4>Customer username not found</h4>';
-            header("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/customers-manage.php");
-        
-
-        }
-        
-    }
-
-    if($row['email']==$_POST['customer-email-check'])
-    {
         $_SESSION['customer-email1']= $row['email'];
-    }
-    else
-    {
-        if(!isset($_SESSION['empty-guy']) && !isset($_SESSION['customer-email1']))
+
+
+
+
+        if(isset($_POST['change-customer-information']) && !isset($_SESSION['empty-guy']))
         {
-            $_SESSION['missmatch-email'] ='<h4>Customer email not found</h4>';
-            header("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/customers-manage.php");
+            echo '<div class="my_form-2 col-md-12">';
+            echo"<br>";
+            echo("<center>
+            <h2>Enter New Customer Information for ".$_POST['customer-username-check']."</h2>
+            </center>");
+            $array=[];
 
-        }
+            
+            //var_dump($_POST);
+
+            foreach($_POST as $key=>$value)
+            {
+            
+                
+                if($key=='customer-firstname')
+                {
+                    array_push($array, ' <input type="text" class="form-control" name="customer-firstname1" id="customerfirstname"
+                    placeholder="Enter Customer New First Name" required> ');
+                }
+
+                if($key=='customer-lastname')
+                {
+                    array_push($array, ' <input type="text" class="form-control" name="customer-lastname1" id="customerlastname"
+                    placeholder="Enter Customer New Last Name" required>');
+                }
+
+                if($key=='customer-phonenumber')
+                {
+                    array_push($array, ' <input type="tel" class="form-control" name="customer-phonenumber1" id="customerphonenmber"
+                    placeholder="Enter Customer New Phone Number" required>');
+                }
+
+                if($key=='customer-email')
+                {
+                    array_push($array, ' <input type="email" class="form-control" name="customer-email1" id="customeremail"
+                    placeholder="Enter Customer New Email" required>');
+                }
+
+                if($key=='customer-username')
+                {
+                    array_push($array, ' <input type="text" class="form-control" name="customer-username1" id="customerusername"
+                    placeholder="Enter Customer New Username" required>');
+                }
+
+                if($key=='customer-password')
+                {
+                    array_push($array, ' <input type="password" class="form-control" name="customer-password1" id="customerpassword"
+                    placeholder="Enter Customer New Password" required>');
+                }
+            }
+            echo"<br>";
+            echo '<form action="customer-changes-submit.php" method="POST"> ';
+
+            for($i=0; $i<count($array); $i++)
+            {
+
+                echo $array[$i]."<br>";
+
+            }
+
+            echo "<button type='submit' class='btn btn-light'>Submit Changes </button>";
+
+            echo "</form>";
+            echo"<br>";
+            echo '</div>';
         
+        }
+
     }
 
     
-    
+}
+
+
+if($is_true==False)
+{
+    $_SESSION['missmatch-username'] ='<h4>Customer information not found. Double Check to make sure everything was spelled right.</h4>';
+    header("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/customers-manage.php");
+        
 }
 
     
 
 
 
-    if(isset($_POST['change-customer-information']) && !isset($_SESSION['empty-guy']))
-    {
-        echo '<div class="my_form-2 col-md-12">';
-        echo"<br>";
-        echo("<center>
-        <h2>Enter New Customer Information for ".$_POST['customer-username-check']."</h2>
-        </center>");
-        $array=[];
-
-        
-        //var_dump($_POST);
-
-        foreach($_POST as $key=>$value){
-           
-            
-            if($key=='customer-firstname')
-            {
-                array_push($array, ' <input type="text" class="form-control" name="customer-firstname1" id="customerfirstname"
-                 placeholder="Enter Customer New First Name" required> ');
-            }
-
-            if($key=='customer-lastname')
-            {
-                array_push($array, ' <input type="text" class="form-control" name="customer-lastname1" id="customerlastname"
-                 placeholder="Enter Customer New Last Name" required>');
-            }
-
-            if($key=='customer-phonenumber')
-            {
-                array_push($array, ' <input type="tel" class="form-control" name="customer-phonenumber1" id="customerphonenmber"
-                 placeholder="Enter Customer New Phone Number" required>');
-            }
-
-            if($key=='customer-email')
-            {
-                array_push($array, ' <input type="email" class="form-control" name="customer-email1" id="customeremail"
-                 placeholder="Enter Customer New Email" required>');
-            }
-
-            if($key=='customer-username')
-            {
-                array_push($array, ' <input type="text" class="form-control" name="customer-username1" id="customerusername"
-                 placeholder="Enter Customer New Username" required>');
-            }
-
-            if($key=='customer-password')
-            {
-                array_push($array, ' <input type="password" class="form-control" name="customer-password1" id="customerpassword"
-                 placeholder="Enter Customer New Password" required>');
-            }
-        }
-        echo"<br>";
-        echo '<form action="customer-changes-submit.php" method="POST"> ';
-
-        for($i=0; $i<count($array); $i++)
-        {
-
-            echo $array[$i]."<br>";
-
-        }
-
-        echo "<button type='submit' class='btn btn-light'>Submit Changes </button>";
-
-        echo "</form>";
-        echo"<br>";
-        echo '</div>';
-        
-    }
+    
 
 
 
@@ -198,10 +192,11 @@ while($row=mysqli_fetch_assoc($result))
 
 ?>
 
+            </div>
+            <div class="col-md-3"></div>
         </div>
-        <div class="col-md-3"></div>
     </div>
-</div>
 
 </body>
+
 </html>
