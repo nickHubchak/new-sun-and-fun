@@ -141,7 +141,7 @@ if(!isset($_SESSION['name']))
                                         <p class="par-style">Customer First Name</p>
                                     </label>
                                     <input type="text" class="form-control" name="customer-name" id="customername"
-                                        aria-describedby="getname" placeholder="Enter First Nameame">
+                                        aria-describedby="getname" placeholder="Enter First Name" required>
 
                                 </div>
                                 <hr class="new-hr">
@@ -151,7 +151,7 @@ if(!isset($_SESSION['name']))
                                         <p class="par-style">Customer Last Name</p>
                                     </label>
                                     <input type="text" class="form-control" name="customer-last" id="customerlast"
-                                        aria-describedby="getlast" placeholder="Enter Last Name">
+                                        aria-describedby="getlast" placeholder="Enter Last Name" required>
 
 
                                 </div>
@@ -162,7 +162,7 @@ if(!isset($_SESSION['name']))
                                         <p class="par-style">Customer Phone Number</p>
                                     </label>
                                     <input type="tel" class="form-control" name="customer-phone" id="customerphone"
-                                        aria-describedby="getphone" placeholder="Enter Phone Number">
+                                        aria-describedby="getphone" placeholder="Enter Phone Number" required>
 
 
                                 </div>
@@ -173,7 +173,7 @@ if(!isset($_SESSION['name']))
                                         <p class="par-style">Customer Email</p>
                                     </label>
                                     <input type="email" class="form-control" name="customer-email" id="customeremail"
-                                        aria-describedby="getemail" placeholder="Enter Email">
+                                        aria-describedby="getemail" placeholder="Enter Email" required>
 
                                 </div>
                                 <hr class="new-hr">
@@ -184,7 +184,7 @@ if(!isset($_SESSION['name']))
                                     </label>
                                     <input type="text" class="form-control" name="customer-username"
                                         id="customerusername" aria-describedby="getusername"
-                                        placeholder="Enter Username">
+                                        placeholder="Enter Username" required>
 
 
                                 </div>
@@ -194,7 +194,7 @@ if(!isset($_SESSION['name']))
                                         <p class="par-style">Password</p>
                                     </label>
                                     <input type="password" name="customer-password" class="form-control"
-                                        id="exampleInputPassword1" placeholder="Password">
+                                        id="exampleInputPassword1" placeholder="Password" required>
 
                                 </div>
                                 <hr class="new-hr">
@@ -240,7 +240,7 @@ if(!isset($_SESSION['name']))
                                 </p>
                             </label>
                             <input type="text" class="form-control" name="customer-username" id="customerusername"
-                                aria-describedby="getusername" placeholder="Enter Username">
+                                aria-describedby="getusername" placeholder="Enter Username" required>
 
                         </div>
                         <hr class="new-hr">
@@ -251,7 +251,7 @@ if(!isset($_SESSION['name']))
                                 </p>
                             </label>
                             <input type="email" class="form-control" name="customer-email" id="customeremail"
-                                aria-describedby="getemail" placeholder="Enter Email">
+                                aria-describedby="getemail" placeholder="Enter Email" required>
 
                         </div>
                         <hr class="new-hr">
@@ -304,7 +304,7 @@ if(!isset($_SESSION['name']))
                                 </p>
                             </label>
                             <input type="text" class="form-control" name="customer-username-check" id="customerusername"
-                                aria-describedby="getusername" placeholder="Enter Username">
+                                aria-describedby="getusername" placeholder="Enter Username" required>
 
                         </div>
 
@@ -315,7 +315,7 @@ if(!isset($_SESSION['name']))
                                 </p>
                             </label>
                             <input type="email" class="form-control" name="customer-email-check" id="customeremail"
-                                aria-describedby="getemail" placeholder="Enter Email">
+                                aria-describedby="getemail" placeholder="Enter Email" required>
 
                         </div>
                         <hr class="new-hr">

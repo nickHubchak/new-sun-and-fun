@@ -130,37 +130,37 @@ while($row=mysqli_fetch_assoc($result))
             if($key=='customer-firstname')
             {
                 array_push($array, ' <input type="text" class="form-control" name="customer-firstname1" id="customerfirstname"
-                 placeholder="Enter Customer New First Name">');
+                 placeholder="Enter Customer New First Name" required> ');
             }
 
             if($key=='customer-lastname')
             {
                 array_push($array, ' <input type="text" class="form-control" name="customer-lastname1" id="customerlastname"
-                 placeholder="Enter Customer New Last Name">');
+                 placeholder="Enter Customer New Last Name" required>');
             }
 
             if($key=='customer-phonenumber')
             {
                 array_push($array, ' <input type="tel" class="form-control" name="customer-phonenumber1" id="customerphonenmber"
-                 placeholder="Enter Customer New Phone Number">');
+                 placeholder="Enter Customer New Phone Number" required>');
             }
 
             if($key=='customer-email')
             {
                 array_push($array, ' <input type="email" class="form-control" name="customer-email1" id="customeremail"
-                 placeholder="Enter Customer New Email">');
+                 placeholder="Enter Customer New Email" required>');
             }
 
             if($key=='customer-username')
             {
                 array_push($array, ' <input type="text" class="form-control" name="customer-username1" id="customerusername"
-                 placeholder="Enter Customer New Username">');
+                 placeholder="Enter Customer New Username" required>');
             }
 
             if($key=='customer-password')
             {
                 array_push($array, ' <input type="password" class="form-control" name="customer-password1" id="customerpassword"
-                 placeholder="Enter Customer New Password">');
+                 placeholder="Enter Customer New Password" required>');
             }
         }
         echo"<br>";
