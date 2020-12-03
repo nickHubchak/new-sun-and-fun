@@ -278,7 +278,7 @@ if(isset( $_SESSION['updated-description']))
                     while ($row = mysqli_fetch_array($results)) {
                         $count++;
 
-                        if($count%2==0)
+                        if($count%2!=0)
                         {
                             $new_color="table-warning";
                         }
@@ -288,7 +288,7 @@ if(isset( $_SESSION['updated-description']))
                         }
                         
                         echo "<tr class=$new_color><th scope='row'>".($row['product_id'])."</th><td>".($row['Name'])."</td><td>".($row['quantity_in_stock'])."</td>
-                        <td>".($row['Description'])."</td><td>".($row['image_link'])."</td></tr>";
+                        <td>".($row['Description'])."</td><td><img src='".($row['image_link'])."' style='height:50px; width: 50px;'></td></tr>";
                 
                     }
                     ?>

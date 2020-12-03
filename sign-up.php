@@ -1,6 +1,7 @@
 <?php
 
 include("config.php");
+var_dump($_REQUEST);
 
 if(isset($_POST['customer-username']) && isset($_POST['customer-password1'])&& isset($_POST['customer-username']) && $_POST['customer-password1']==$_POST['customer-password2'] && isset($_POST['customer-firstname']) && isset($_POST['customer-lastname']))
 {
@@ -32,18 +33,19 @@ if(isset($_POST['customer-username']) && isset($_POST['customer-password1'])&& i
 
    
     $hash=password_hash($password, PASSWORD_DEFAULT);
+    //echo($hash);
 
     $query = "INSERT INTO Customer (firstname, lastname ,phonenumber, email, username, password) 
     VALUES ('$firstname', '$lastname','$phone', '$email', '$username', '$hash')";
     
-    if(mysqli_query($con, $query)){
+    if($result=mysqli_query($con, $query)){
         echo("Registered Sussecfully");
-        $_SESSION['registered']="You have been registered, Please Log in";
+        $_SESSION['registered']="<h4>You have been registered, Please Log in</h4>";
         header("Location: http://localhost/new-sun-and-fun/customer-login-form.php");
     }
     else
     {
-        echo"Entry Overlap in DB";
+        echo("Error description: " . mysqli_error($con));
     }
 }
         

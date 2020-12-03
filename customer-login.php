@@ -25,6 +25,8 @@ session_start();
                           $_SESSION["customer-username"] = $_POST["customer-username"]; 
                           $_SESSION['customer-loggedin']=True; 
                           $_SESSION['customer-credentials']=null;
+                          $_SESSION['customer_id']=$row["customer_id"];
+                          
                           
                           header("location: http://localhost/new-sun-and-fun/index.php");  
                      }  
@@ -34,6 +36,7 @@ session_start();
                           echo '<script>alert("Wrong User Details")</script>';  
                           $_SESSION['customer-loggedin']=False;
                           $_SESSION['customer-credentials']='Incorrect username and/or password!';
+                          $_SESSION['customer_id']=null;
                           header("location: http://localhost/new-sun-and-fun/customer-login-form.php");  
                      }  
                 }  

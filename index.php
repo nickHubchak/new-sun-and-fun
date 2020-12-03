@@ -74,7 +74,19 @@
                 <div class="col-md-2 col-12 text-right">
                   <p class="my-md-4 header-links">
 
-                      <a href="http://localhost/new-sun-and-fun/admin-site\admin-login-form.php" class="px-1"> Admin Login</a>
+                  <?php
+                  if(isset($_SESSION['name']))
+                  {
+                    echo('<a href="http://localhost/new-sun-and-fun/admin-site\admin-login-form.php" class="px-1"> Welcome ' . $_SESSION['name'] . '!</a>');
+                    
+                  }
+                  else
+                  {
+                    echo('<a href="http://localhost/new-sun-and-fun/admin-site\admin-login-form.php">Admin Login</a>');
+                  }
+                  ?>
+
+                      
                   </p>
               </div>
             </div>
@@ -114,7 +126,19 @@
                       }
                       ?> </li>
                     </ul>
-                    <a href="shopping-cart.html">
+                    <?php
+                    if($_SESSION['customer-loggedin']==True)
+                    {
+                      $cart_page="shopping-cart.php";
+
+                    }
+                    else
+                    {
+                       $cart_page="empty-shopping-cart.php";
+
+                    }
+                    ?>
+                    <a href=<?php echo($cart_page) ?>>
                       <li class="nav-item border rounded-circle circle mx-2 basket-icon">
                         <i class="fas fa-shopping-basket p-2"></i>
                     </li>
@@ -324,6 +348,12 @@
                         <div class="cart-details">
                             <h6 class="pro-title p-0">Top Seller! American flag in flower field</h6>
                             <div class="rating">
+                              <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                
+                              
                                 
                             </div>
                             <div class="pro-price py-2">
@@ -1104,7 +1134,7 @@
               </p>
             </div>
             <div class="col-md-6 col-12 my-md-0 my-3 pl-md-0 pl-5">
-              <h3 style="color:#EFC711;">Thank you for visiting us, come visit us in person too :)</h3>
+              <h3 style="color:#EFC711;">Thank you for visiting us, come visit us in person too</h3>
             </div>
           </div>
         </div>

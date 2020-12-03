@@ -37,21 +37,21 @@ function add_field(){
     // set input field name 
     name.setAttribute("name", "name["+counter+"]");
     name.setAttribute("id", "name["+counter+"]");
-    name.setAttribute("placeholder", "Name");
+    name.setAttribute("placeholder", "Name ["+counter+"]");
     name.setAttribute("class", "my_input");
     quatity_in_stock.setAttribute("name", "quantity_in_stock["+counter+"]");
     quatity_in_stock.setAttribute("id", "quantity_in_stock["+counter+"]");
-    quatity_in_stock.setAttribute("placeholder", "Quantity");
+    quatity_in_stock.setAttribute("placeholder", "Quantity ["+counter+"]");
     quatity_in_stock.setAttribute("class", "my_input");
 
     description.setAttribute("name", "description["+counter+"]");
     description.setAttribute("id", "description["+counter+"]");
-    description.setAttribute("placeholder", "description");
+    description.setAttribute("placeholder", "description ["+counter+"]");
     description.setAttribute("class", "my_input");
 
     image_url.setAttribute("name", "image_url["+counter+"]");
     image_url.setAttribute("id", "image_url["+counter+"]");
-    image_url.setAttribute("placeholder", "image URL");
+    image_url.setAttribute("placeholder", "image URL ["+counter+"]");
     image_url.setAttribute("class", "my_input");
 
     
@@ -110,7 +110,7 @@ function add_delete_field()
    
     name.setAttribute("name", "name-delete["+counter2+"]");
     name.setAttribute("id", "name-delete["+counter2+"]");
-    name.setAttribute("placeholder", "Name");
+    name.setAttribute("placeholder", "Name ["+counter2+"]");
     name.setAttribute("class", "my_input_2");
     var new_hr=document.createElement("hr");
     new_hr.setAttribute("style", "width:100%;text-align:center;margin-left:0");
@@ -159,12 +159,12 @@ function add_quantiy_field()
 
     name.setAttribute("name", "quantity-name["+counter3+"]");
     name.setAttribute("id", "quantity-name["+counter3+"]");
-    name.setAttribute("placeholder", "Current Name");
+    name.setAttribute("placeholder", "Current Name ["+counter3+"]");
     name.setAttribute("class", "my_input");
     quatity_in_stock.setAttribute("type", "number");
     quatity_in_stock.setAttribute("name", "quantity-updated["+counter3+"]");
     quatity_in_stock.setAttribute("id", "quantity-updated["+counter3+"]");
-    quatity_in_stock.setAttribute("placeholder", "New Quantity");
+    quatity_in_stock.setAttribute("placeholder", "New Quantity ["+counter3+"]");
     quatity_in_stock.setAttribute("class", "my_input");
     
 
@@ -217,11 +217,11 @@ function add_description_field()
 
     name.setAttribute("name", "description-name["+counter4+"]");
     name.setAttribute("id", "description-name["+counter4+"]");
-    name.setAttribute("placeholder", "Current Name");
+    name.setAttribute("placeholder", "Current Name ["+counter4+"]");
     name.setAttribute("class", "my_input");
     description.setAttribute("name", "description-change["+counter4+"]");
     description.setAttribute("id", "description-change["+counter4+"]");
-    description.setAttribute("placeholder", "Updated Description");
+    description.setAttribute("placeholder", "Updated Description ["+counter4+"]");
     description.setAttribute("class", "my_input");
     
 
