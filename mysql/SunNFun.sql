@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 30, 2020 at 05:01 AM
+-- Generation Time: Dec 03, 2020 at 05:01 AM
 -- Server version: 5.6.37
 -- PHP Version: 5.6.31
 
@@ -33,14 +33,14 @@ CREATE TABLE IF NOT EXISTS `Admin` (
   `email` varchar(25) CHARACTER SET latin1 NOT NULL,
   `username` varchar(20) CHARACTER SET latin1 NOT NULL,
   `password` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `Admin`
 --
 
 INSERT INTO `Admin` (`admin_id`, `firstname`, `lastname`, `email`, `username`, `password`) VALUES
-(1, 'Nick', 'Hubchak', 'nickhubchak@aol.com', 'nickhubchak', '$2y$10$z6RNP2FqlomEAX4UsJ5rReOEeiizL6miXv8XeuWbmxfqFH032OJMi');
+(1, 'Nick', 'Hubchak', 'nickhubchak@aol.com', 'nickhubchak', '$2y$10$HI1dOgqr2UDMF.PL2foaF..aDm/Vpg5XKu7PMDBfbLxJ8B35d9Zm6');
 
 -- --------------------------------------------------------
 
@@ -56,14 +56,15 @@ CREATE TABLE IF NOT EXISTS `Customer` (
   `email` varchar(20) NOT NULL,
   `username` varchar(30) NOT NULL,
   `password` varchar(255) CHARACTER SET utf8 NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `Customer`
 --
 
 INSERT INTO `Customer` (`customer_id`, `firstname`, `lastname`, `phonenumber`, `email`, `username`, `password`) VALUES
-(0, 'John', 'Doe', '6655544333', 'johndoe@gmail.com', 'johndoe', '$2y$10$nqOccFXE34Mr/qPhXxRrRuhJ9L7DoOzRrYeMHvR7FOfmo6v8jdtgu');
+(1, 'Nick', 'Hubchak', '7777777777', 'nickhubchak@aol.com', 'nickhubchak', '$2y$10$IEmU6tBRBGpJhgwohQhcE.OlrYsVxgdVHw1Ve2djQJSrit4Kbd7v2'),
+(2, 'John', 'Doe', '7325543219', 'johndoe@gmail.com', 'johndoe', '$2y$10$fWWSz5e53dyJJ5BboL4hX.C84/EQS5E.eXJ/DpurlUxW0VIAztusa');
 
 -- --------------------------------------------------------
 
@@ -75,9 +76,16 @@ CREATE TABLE IF NOT EXISTS `Orders` (
   `order_id` int(20) NOT NULL,
   `customer_id` int(20) NOT NULL,
   `order_status` tinyint(1) NOT NULL,
-  `order_date` date NOT NULL,
-  `order_time` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `order_date` varchar(10) NOT NULL,
+  `order_time` varchar(10) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `Orders`
+--
+
+INSERT INTO `Orders` (`order_id`, `customer_id`, `order_status`, `order_date`, `order_time`) VALUES
+(1, 1, 0, '12/02/2020', '04:52:36');
 
 -- --------------------------------------------------------
 
@@ -111,7 +119,6 @@ CREATE TABLE IF NOT EXISTS `product` (
 --
 
 INSERT INTO `product` (`product_id`, `Name`, `quantity_in_stock`, `Description`, `image_link`) VALUES
-(1, 'Chair', 3, 'wooden chair', 'http://localhost/new-sun-and-fun/admin-site/dashboard/manage-inventory.php'),
 (2, 'Beach cups', 1, 'Beach themed cups', 'https://localhost/new-sun-and-fun/media/project-images/bags/lg000951.jpg'),
 (3, 'White anchor bag', 1, 'white bag with anchor images', 'https://localhost/new-sun-and-fun/media/project-images/bags/lg002005.jpg'),
 (4, 'Blue anchor bag', 1, 'blue bag with a single white anchor', 'https://localhost/new-sun-and-fun/media/project-images/bags/lg003135.jpg'),
@@ -236,6 +243,21 @@ ALTER TABLE `vendor`
 --
 
 --
+-- AUTO_INCREMENT for table `Admin`
+--
+ALTER TABLE `Admin`
+  MODIFY `admin_id` int(20) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `Customer`
+--
+ALTER TABLE `Customer`
+  MODIFY `customer_id` int(20) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `Orders`
+--
+ALTER TABLE `Orders`
+  MODIFY `order_id` int(20) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
@@ -253,7 +275,13 @@ ALTER TABLE `vendor`
 -- Constraints for table `Orders`
 --
 ALTER TABLE `Orders`
-  ADD CONSTRAINT `order_id` FOREIGN KEY (`order_id`) REFERENCES `order_item` (`order_id`);
+  ADD CONSTRAINT `customer_id` FOREIGN KEY (`customer_id`) REFERENCES `Customer` (`customer_id`);
+
+--
+-- Constraints for table `order_item`
+--
+ALTER TABLE `order_item`
+  ADD CONSTRAINT `order_id` FOREIGN KEY (`order_id`) REFERENCES `Orders` (`order_id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
