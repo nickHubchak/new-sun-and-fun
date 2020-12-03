@@ -13,7 +13,7 @@ if(isset($_POST['admin-username']) && isset($_POST['admin-password1'])&& isset($
    
     $hash=password_hash($password, PASSWORD_DEFAULT);
 
-    $query = "INSERT INTO Admin (firstname, lastname ,email, username, password) 
+    $query = "INSERT INTO admin (firstname, lastname ,email, username, password) 
     VALUES ('$firstname', '$lastname', '$email', '$username', '$hash');";
     
     if(mysqli_query($con, $query)){
