@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: black solid;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: orange;
+}
+
+.my_form {
+  border-style: solid;
+  border-color: black;
+  background-color: #efc711;
+  padding: 10px;
+  width: 100%;
+}
