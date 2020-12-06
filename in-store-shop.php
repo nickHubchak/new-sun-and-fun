@@ -12,7 +12,7 @@ session_start();
   <title>Sun N' Fun</title>
 
   <!--Favicon-->
-  <link rel="icon" type="image/png" href="http://localhost/new-sun-and-fun/media\Stock-images\yellow_beach-chair-and-umbrella_icon-icons.com_59553.ico" />
+  <link rel="icon" type="image/png" href="http://localhost/new-sun-and-fun/in-store-images\Stock-images\yellow_beach-chair-and-umbrella_icon-icons.com_59553.ico" />
 
   <!--BootstrapCDN-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -118,48 +118,61 @@ session_start();
 
   </header>
   <!--/header-->
-  <div class="col">
-    <!--vendor contact-->
-    <center>
-      <form class="contact" style="border-style: solid; width:50%; margin-top:30px; " action="contact-us.php" method="post">
-        <center>
-          <div class="img-logo">
-            <img src="media/Logo.png" width="300px" length="300px" />
-          </div>
-          <br>
-          <h5><b>Custom Home Decor Request Form</b></h5>
-          <p>
-            We specialize in making custom home decor like benches, chairs, mailboxes, and more!<br>
-            Use the form below to request a custom home decor piece.<br>
-            After you fill out the form we will follow up with you via phone within 24 business hours.
-          </p>
-        </center>
-        <!--name input-->
-        <fieldset>
-          <input type="text" name="name" placeholder="Full Name">
-        </fieldset>
-        <!--email input-->
-        <fieldset>
-          <input type="email" name="email" placeholder="Email address">
-        </fieldset>
-        <!--phone input-->
-        <fieldset>
-          <input type="phone" name="phone" placeholder="Phone number">
-        </fieldset>
-        <!--description input-->
-        <fieldset>
-          <textarea id="desc" name="description" placeholder="Write a brief description of your custom design. Please also state the type of home decor item you would like customized. " style="height:100%"></textarea>
-        </fieldset>
-        <!--submit input-->
-        <fieldset>
-          <input type="submit" name="submit" Value="Submit" />
-        </fieldset>
-      </form>
-      <!--end contact vendor-->
-  </div>
-
+  <br>
+  <center>
+    <h1 class="font-roboto-bold">Come Visit Us In Store!</h1>
+    <pre class="font-roboto">
+        We have much more products available in store. Please visit us in the
+        summer in Ocean City, NJ. We look forward to meeting you and earning
+        your business. Below are picutres of our custom furniture and other
+        inventory we have in store.
+      </pre>
   </center>
+
+
+
+
+  <!--Image Collage-->
+  <center>
+    <div class="row">
+      <div class="col">
+        <img src="in-store-images/1.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/4.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/5.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/6.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/7.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/9.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/10.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/11.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/12.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/13.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/16.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/17.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/18.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/19.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/20.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/k.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/22.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/23.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/24.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/25.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/g.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/h.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/i.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/b.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/c.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/f.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/26.jpg" style="width:150px" style="height:150px">
+        <img src="in-store-images/a.jpg" style="width:150px" style="height:150px">
+
+      </div>
+    </div>
+  </center>
+
+  <script src="custom-decor.js">
+  </script>
 </body>
+
 <!-- Facilities -->
 <div class="container-fluid p-0">
   <div class="site-info">
@@ -204,8 +217,8 @@ session_start();
         <div class="row pl-md-1 text-secondary">
           <div class="col-12">
             <a class="special-link" href="https://www.google.com/maps/dir/?api=1&destination=39.272964803182%2C-
-                  74.577751383453&fbclid=IwAR2CEaczWch0FDCUKxHTmVuqj7djDRKjJ5YtNoNjhyh_7Ohe_
-                  ivG275xnas" target="_blank">
+              74.577751383453&fbclid=IwAR2CEaczWch0FDCUKxHTmVuqj7djDRKjJ5YtNoNjhyh_7Ohe_
+              ivG275xnas" target="_blank">
               <i class="fa fa-home px-md-2"></i>
               <small>1212 Boardwalk Ocean City, NJ 08226</small></a>
           </div>
@@ -341,7 +354,6 @@ session_start();
   </div>
 
 </footer>
-
 
 
 
