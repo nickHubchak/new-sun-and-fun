@@ -1,10 +1,9 @@
 <?php
-   session_start();
+session_start();
 
-   if(!isset($_SESSION['name']))
-   {
-     header("Location: http://localhost/new-sun-and-fun/admin-site/admin-login-form.php");
-   }
+if (!isset($_SESSION['name'])) {
+  header("Location: http://localhost/new-sun-and-fun/admin-site/admin-login-form.php");
+}
 ?>
 
 <html lang="en" dir="ltr">
@@ -14,8 +13,8 @@
   <title>SunNFun Admin Homepage</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-   <!--Favicon-->
-   <link rel="icon" type="image/png" href="http://localhost/new-sun-and-fun/media\Stock-images\yellow_beach-chair-and-umbrella_icon-icons.com_59553.ico"/>
+  <!--Favicon-->
+  <link rel="icon" type="image/png" href="http://localhost/new-sun-and-fun/media\Stock-images\yellow_beach-chair-and-umbrella_icon-icons.com_59553.ico" />
 
   <!-- Bootstrap core CSS -->
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +40,7 @@
 </head>
 
 <body>
-  
+
 
   <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
     <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="http://localhost/new-sun-and-fun/admin-site/admin-login.php
@@ -79,6 +78,11 @@
               </a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="view-vendor-requests.php">
+                <span data-feather="mail"></span>View Vendor Requests
+              </a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="http://localhost/new-sun-and-fun/admin-site/dashboard/manage-inventory.php">
                 <span data-feather="shopping-cart"></span>Manage Inventory
               </a>
@@ -86,6 +90,11 @@
             <li class="nav-item">
               <a class="nav-link" href="http://localhost/new-sun-and-fun/admin-site/dashboard/customers-manage.php">
                 <span data-feather="users"></span> Customers
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="view-admin.php">
+                <span data-feather="eye"></span>View Admin
               </a>
             </li>
             <li class="nav-item">
@@ -99,16 +108,16 @@
 
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h2">Welcome <?php echo($_SESSION['name']); ?> !</h1>
+          <h1 class="h2">Welcome <?php echo ($_SESSION['name']); ?> !</h1>
           <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group mr-2">
-              
+
             </div>
           </div>
         </div>
 
         <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
-        
+
         <h2>Recent Sales</h2>
         <div class="table-responsive">
           <table class="table table-striped table-sm">
