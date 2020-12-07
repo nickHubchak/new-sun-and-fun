@@ -17,7 +17,9 @@ if(!isset($_SESSION['name']))
 
 
     <title>Sun N' Fun Manage Inventory</title>
-
+    <!--Favicon-->
+    <link rel="icon" type="image/png"
+        href="http://localhost/new-sun-and-fun/media/home-page\Stock-images\yellow_beach-chair-and-umbrella_icon-icons.com_59553.ico" />
     <!--Favicon-->
     <link rel="icon" type="image/png"
         href="http://localhost/new-sun-and-fun/media\Stock-images\yellow_beach-chair-and-umbrella_icon-icons.com_59553.ico" />

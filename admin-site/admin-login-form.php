@@ -40,6 +40,9 @@ header ("Location: http://localhost/new-sun-and-fun/dashboard.php");
 	<link rel="stylesheet" type="text/css" href="http://localhost/new-sun-and-fun\css/util.css">
 	<link rel="stylesheet" type="text/css"  href="http://localhost/new-sun-and-fun/admin-site/admin-login-main.css">
 
+	<!--Favicon-->
+    <link rel="icon" type="image/png"
+        href="http://localhost/new-sun-and-fun/media/home-page\Stock-images\yellow_beach-chair-and-umbrella_icon-icons.com_59553.ico" />
 </head>
 <body>
 
