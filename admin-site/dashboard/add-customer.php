@@ -4,35 +4,35 @@ var_dump($_REQUEST);
 
 //echo(count($_POST['name']));
 
-    if($_POST['name'][$i]==''||$_POST['quantity_in_stock'][$i]==''||$_POST['description'][$i]==''||$_POST['image_url'][$i]=='')
-    {
-        $_SESSION['empty-boy']="One of your entries was empty please rentry";
-        header("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/manage-inventory.php");
-    }
+  
     
-    else
-    {
-        $name=$_POST['name'][$i];
-    $quanitity=$_POST['quantity_in_stock'][$i];
-    $desc=$_POST['description'][$i];
-    $image=$_POST['image_url'][$i];
 
 
-    $query = "INSERT INTO Product (Name, quantity_in_stock ,Description, image_link) 
-    VALUES ('$name', '$quanitity', '$desc', '$image')";
+        $first=$_POST['customer-name'];
+    $lastname=$_POST['customer-last'];
+    $phonenumber=$_POST['customer-phone'];
+    $email=$_POST['customer-email'];
+    $username=$_POST['customer-username'];
+    $pass=$_POST['customer-password'];
+
+    $hash = password_hash($pass, PASSWORD_DEFAULT);
+
+
+    $query = "INSERT INTO Customer (firstname, lastname, phonenumber, email, username, password) 
+    VALUES ('$first', '$lastname', '$phonenumber', '$email', '$username', '$hash')";
     
     
     if(mysqli_query($con, $query)){
         echo("Registered Sussecfully");
-        $_SESSION['added-to-inventory']="Successfully added items to inventory!";
-        header("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/manage-inventory.php");
+        $_SESSION['added-to-inventory']="<h4>Successfully added Customer to site!</h4>";
+        header("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/customers-manage.php");
     }
     else
     {
         echo"Error Registering";
     }
 
-    }
+
 
     
 

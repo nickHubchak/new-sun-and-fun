@@ -104,23 +104,30 @@
                   <div class="navbar-nav">
                     <ul class="nav navbar-nav" style="margin-right: 35px;">
                       <li><?php
+                      if(isset($_SESSION['customer-username']))
+                      {
+                        echo("Welcome ".($_SESSION['customer-username'])." !");
+                      }
+                      ?> </li>
+                    </ul>
+                    <?php
+                    //var_dump($_SESSION);
+                    if($_SESSION['customer-loggedin']==True && $_SESSION['logged-in-empty-shopping-cart']==true)
+                    {
+                        $cart_page="shopping-cart.php";
+                      
+                    }
+                    else if($_SESSION['customer-loggedin']==True && $_SESSION['logged-in-empty-shopping-cart']!=true)
+                    {
+                        $cart_page="logged-in-empty-shopping-cart.php";
+                    }
+                
+                    else
+                    {
+                        $cart_page="empty-shopping-cart.php";
                        
-                       if($_SESSION['customer-loggedin']==True && $_SESSION['logged-in-empty-shopping-cart']==true)
-                       {
-                           $cart_page="shopping-cart.php";
-                         
-                       }
-                       else if($_SESSION['customer-loggedin']==True && $_SESSION['logged-in-empty-shopping-cart']!=true)
-                       {
-                           $cart_page="logged-in-empty-shopping-cart.php";
-                       }
-                   
-                       else
-                       {
-                           $cart_page="empty-shopping-cart.php";
-                          
-                         
-                       }
+                      
+                    }
                     ?>
                     <a href=<?php echo($cart_page) ?>>
                     <li class="nav-item  basket-icon" style="padding: 2px 0; border-style:solid; border-radius: 100%; border-color: #EFC711;">
@@ -167,7 +174,11 @@
         <br><br>
         <div class="row">
             <div class="col-md-12" style="text-align:center;">
-                    <a href="http://localhost/new-sun-and-fun/customer-login-form.php"><button class="btn btn-danger btn-lg">Click here to loggin to add items to your cart</button></a>
+                    <a href="http://localhost/new-sun-and-fun/index.php"><button class="btn btn-danger btn-lg">Go add some fun items to your cart, 
+                    <?php
+                    echo($_SESSION['customer-username']);
+
+                    ?></button></a>
             </div>
         </div>
         <br><br>
