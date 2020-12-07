@@ -39,7 +39,7 @@ include('config.php');
 
       </div>
       <div class="col-md-2">
-        <a href="http://localhost/new-sun-and-fun/admin-site/dashboard/dashboard.php">
+        <a href="http://localhost/new-sun-and-fun/dashboard.php">
           <button class="btn btn-dark">Back to Dashboard</button>
         </a>
       </div>
