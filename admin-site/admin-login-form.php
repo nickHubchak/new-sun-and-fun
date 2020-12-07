@@ -2,8 +2,8 @@
 
 session_start();
 	if ($_SESSION['loggedin']==True) {
-	
-header ("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/dashboard.php");
+
+header ("Location: http://localhost/new-sun-and-fun/dashboard.php");
 
 	}
 
@@ -11,16 +11,16 @@ header ("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/dashboa
 	{
 		echo ('<script type="text/javascript">alert("Incorrect username and/or password!");</script>');
 		$_SESSION['admin-credentials']="";
-	} 
+	}
 
-	
+
 	?>
 <html lang="en">
 <head>
 	<title>Sun N Fun Admin Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<link rel="icon" type="image/png" href="http://localhost/new-sun-and-fun\media\Stock-images\yellow_beach-chair-and-umbrella_icon-icons.com_59553.ico"/>
 
 	<link rel="stylesheet" type="text/css" href="http://localhost/new-sun-and-fun\vendor\bootstrap\css\bootstrap.min.css">
@@ -34,7 +34,7 @@ header ("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/dashboa
 	<link rel="stylesheet" type="text/css" href="http://localhost/new-sun-and-fun\vendor/animsition/css/animsition.min.css">
 
 	<link rel="stylesheet" type="text/css" href="http://localhost/new-sun-and-fun\vendor/select2/select2.min.css">
-	
+
 	<link rel="stylesheet" type="text/css" href="http://localhost/new-sun-and-fun\vendor/daterangepicker/daterangepicker.css">
 
 	<link rel="stylesheet" type="text/css" href="http://localhost/new-sun-and-fun\css/util.css">
@@ -42,8 +42,8 @@ header ("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/dashboa
 
 </head>
 <body>
-	
-	
+
+
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
@@ -63,7 +63,7 @@ header ("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/dashboa
 					</div>
 
 					<div class="text-right p-t-13 p-b-23">
-						
+
 					</div>
 
 					<div class="container-login100-form-btn">
@@ -84,10 +84,10 @@ header ("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/dashboa
 				</form>
 			</div>
 		</div>
-		
+
 	</div>
-	
-	
+
+
 
 	<script src="http://localhost/new-sun-and-fun\vendor/jquery/jquery-3.2.1.min.js"></script>
 

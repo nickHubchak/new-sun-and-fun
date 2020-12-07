@@ -28,8 +28,6 @@ session_start();
   <!--Custom StyleSheet-->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/about-us.css" />
-
-
 </head>
 
 <body onload="checkDate()">
@@ -88,7 +86,7 @@ session_start();
               <a class="nav-link" href="http://localhost/new-sun-and-fun/in-store-shop.php">WHAT'S IN STORE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="http://localhost/new-sun-and-fun/consumer-side/inventory/main-inventory-page.php">SHOP ONLINE</a>
+              <a class="nav-link" href="http://localhost/new-sun-and-fun/online-shop.php">SHOP ONLINE</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="http://localhost/new-sun-and-fun/custom-home-decor.php">CUSTOM HOME DECOR</a>
@@ -123,10 +121,67 @@ session_start();
     <center>
       <form class="contact" style="border-style: solid; width:50%; margin-top:30px; " action="contact-us.php" method="post">
         <center>
-          <div class="img-logo">
-            <img src="media/Logo.png" width="300px" length="300px" />
-          </div>
-          <br>
+              <div class="row slider-two text-center">
+                <div class="col-md-12 product pt-md-5 ">
+                    <img src="media\in-store-images/1.jpg" class="img-fluid" alt="Banner 1">
+                  </div>
+
+                  <div class="col-md-12 product pt-md-5 ">
+                    <img src="media\in-store-images/2.jpg" class="img-fluid" alt="Banner 2">
+                  </div>
+
+                  <div class="col-md-12 product pt-md-5 ">
+                    <img src="media\in-store-images/3.jpg" class="img-fluid" alt="Banner 3">
+                  </div>
+
+                  <div class="col-md-12 product pt-md-5 ">
+                    <img src="media\in-store-images/4.jpg" class="img-fluid" alt="Banner 4">
+                  </div>
+
+                  <div class="col-md-12 product pt-md-5 ">
+                    <img src="media\in-store-images/14.jpg" class="img-fluid" alt="Banner 5">
+                  </div>
+
+                  <div class="col-md-12 product pt-md-5 ">
+                    <img src="media\in-store-images/6.jpg" class="img-fluid" alt="Banner 6">
+                  </div>
+
+                  <div class="col-md-12 product pt-md-5 ">
+                    <img src="media\in-store-images/7.jpg" class="img-fluid" alt="Banner 7">
+                  </div>
+
+                    <div class="col-md-12 product pt-md-5 ">
+                      <img src="media\in-store-images/8.jpg" class="img-fluid" alt="Banner 12">
+                    </div>
+
+                    <div class="col-md-12 product pt-md-5 ">
+                      <img src="media\in-store-images/9.jpg" class="img-fluid" alt="Banner 9">
+                    </div>
+
+                    <div class="col-md-12 product pt-md-5 ">
+                      <img src="media\in-store-images/10.jpg" class="img-fluid" alt="Banner 10">
+                    </div>
+
+                    <div class="col-md-12 product pt-md-5 ">
+                      <img src="media\in-store-images/11.jpg" class="img-fluid" alt="Banner 11">
+                    </div>
+
+                    <div class="col-md-12 product pt-md-5 ">
+                      <img src="media\in-store-images/12.jpg" class="img-fluid" alt="Banner 12">
+                    </div>
+
+                    <div class="col-md-12 product pt-md-5 ">
+                      <img src="media\in-store-images/13.jpg" class="img-fluid" alt="Banner 13">
+                    </div>
+
+                    <div class="col-md-12 product pt-md-5 ">
+                      <img src="media\in-store-images/14.jpg" class="img-fluid" alt="Banner 14">
+                    </div>
+
+                  </div>
+
+<br>
+
           <h5><b>Custom Home Decor Request Form</b></h5>
           <p>
             We specialize in making custom home decor like benches, chairs, mailboxes, and more!<br>
@@ -148,7 +203,7 @@ session_start();
         </fieldset>
         <!--description input-->
         <fieldset>
-          <textarea id="desc" name="description" placeholder="Write a brief description of your custom design. Please also state the type of home decor item you would like customized. " style="height:100%"></textarea>
+          <textarea id="desc" name="description" placeholder="Write a brief description of the design you would like. Please also state the type of home decor item you would like customized. " style="height:100%"></textarea>
         </fieldset>
         <!--submit input-->
         <fieldset>

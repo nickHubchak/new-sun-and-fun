@@ -108,11 +108,6 @@ if(!isset($_SESSION['name']))
                         echo($_SESSION['customer-record-success']);
                         $_SESSION['customer-record-success']=null;
                     }
-                    if(isset($_SESSION['customer-deleted']))
-                    {
-                        echo($_SESSION['customer-deleted']);
-                        $_SESSION['customer-deleted']=null;
-                    }
 
                 ?>
             </div>
@@ -140,7 +135,7 @@ if(!isset($_SESSION['name']))
                         </div>
                         <div class="col-md-6">
                             <hr class="new-hr">
-                            <form action="add-customer.php" method="POST">
+                            <form action="add-costumer.php" method="POST">
                                 <div class="form-group">
                                     <label for="getname">
                                         <p class="par-style">Customer First Name</p>

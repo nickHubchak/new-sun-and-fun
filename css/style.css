@@ -89,29 +89,6 @@ header.site-title
 }
 
 
-
-.badge {
-    padding-left: 9px;
-    padding-right: 9px;
-    -webkit-border-radius: 9px;
-    -moz-border-radius: 9px;
-    border-radius: 10px;
-  }
-  
-  .label-warning[href],
-  .badge-warning[href] {
-    background-color: BLUE;
-  }
-  #lblCartCount {
-      font-size: 12px;
-      background: BLUE;
-      color: #fff;
-      padding: 2px 5px;
-      vertical-align: top;
-      margin-left: -10px; 
-  }
-
-
 /* Slider one*/
 .position-top
 {
