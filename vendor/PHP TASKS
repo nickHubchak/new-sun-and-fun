@@ -1,0 +1,30 @@
+--------------------------------To Do--------------------------------------------------------------
+1)Order Time - Get time when customer clicks submit order
+3)Mark Processed - Get time when process button is checked, store variable in customer_DB
+3)Mark Complete - Adjust Inventory DB, Add Row to Log_DB
+3)Mark In-complete - Only delete row from customer_order
+4)Contact Customer - ?
+5)Add item info to customer_order table when customer checks out(clicks submit)
+6)Add image upload option to inventory-add.php
+7)add image upload option to inventory-delete.php
+
+--------------Customer-Order Page &&& Final SQL_DB Version creation instructions--------------------
+
+0)Customer-Order Page --> View Inventory Info Next to quantity
+1)Customer-Order Page --> Insert Attributes --> Goal is to fill empty database
+2)Customer-Order Page --> Edit Attributes  --> Goal to populate row for user with name = "catch"
+Note: "catch" helps us get our particular table --> We want to fill the rest of the empty values.
+3)PHPMyAdmin-Add Queue Data base with the following attributes
+-queue_id                       -mark_complete
+-inventory_id                   -mark_processed
+-item_description               -phone_number               
+-request_pickup_time            -name
+-order_creation_time            -email_address
+
+
+---------------SQL Information about data Base, to complete final sunnfun.sql-----------------------
+
+1)Change all php files to reflect new database
+2)Change all types to "utf8_general_ci" should match "<meta charset="utf-8">"
+3)Customer_order should be called active_order to be more specific
+
