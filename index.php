@@ -70,8 +70,30 @@ if (isset($_SESSION['not_logged_in_cart'])) {
               ?>
             </p>
             <p class="col-sm-6 header-links" style="padding: 25px">
+            <!-- add php tag and it can work
 
-              <a href="http://localhost/new-sun-and-fun/admin-site\admin-login-form.php" class="px-1"> Admin Login</a>
+              if(isset($_SESSION['name']))
+              {
+                echo ('<a href="http://localhost/new-sun-and-fun/admin-site\admin-login-form.php" class="px-1"> Welcome '.$_SESSION['name'].'</a>');
+              }
+              else
+              {
+                echo ('<a href="http://localhost/new-sun-and-fun/admin-site\admin-login-form.php" class="px-1">Admin Login</a>');
+              }
+            ?>-->
+            <?php
+
+              if(isset($_SESSION['name']))
+              {
+                echo ('<a href="http://localhost/new-sun-and-fun/admin-site\admin-login-form.php" class="px-1"> Welcome '.$_SESSION['name'].'</a>');
+              }
+              else
+              {
+                echo ('<a href="http://localhost/new-sun-and-fun/admin-site\admin-login-form.php" class="px-1">Admin Login</a>');
+              }
+            ?>
+
+              
             </p>
           </div>
         </div>
@@ -111,9 +133,16 @@ if (isset($_SESSION['not_logged_in_cart'])) {
                 }
                 ?> </li>
           </ul>
-          <a href="shopping-cart.html">
-            <li class="nav-item border rounded-circle circle mx-2 basket-icon">
+          <a href="shopping-cart.php">
+            <li class="nav-item  basket-icon" style="padding: 2px 0; border-style:solid; border-radius: 100%; border-color: #EFC711;">
               <i class="fas fa-shopping-basket p-2"></i>
+              <span class='badge badge-warning' id='lblCartCount'>
+              <?php
+              if(isset($_SESSION['success-added-to-cart'])&&$_SESSION['order-complete']==false)
+              {
+                echo($_SESSION['success-added-to-cart']);
+              }
+              ?> </span>
             </li>
           </a>
         </div>
@@ -234,7 +263,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
               </div>
               <div class="cart mt-4">
                 <form method="post" action="add-to-cart.php">
-                  <button type="submit" name="blue or red beach bag" class="border site-btn btn-span" value="button1">Add to Cart</button>
+                  <button type="submit" name="submit" class="border site-btn btn-span" value="3">Add to Cart</button>
                 </form>
 
               </div>
