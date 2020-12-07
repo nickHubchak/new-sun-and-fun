@@ -41,6 +41,9 @@ header ("Location: http://localhost/new-sun-and-fun/index.php");
         <title>Sun N Fun Customer Login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Favicon-->
+    <link rel="icon" type="image/png"
+        href="http://localhost/new-sun-and-fun/media/home-page\Stock-images\yellow_beach-chair-and-umbrella_icon-icons.com_59553.ico" />
         
         <link rel="icon" type="image/png" href="http://localhost/new-sun-and-fun\media\Stock-images\yellow_beach-chair-and-umbrella_icon-icons.com_59553.ico"/>
     
