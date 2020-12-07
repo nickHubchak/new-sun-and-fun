@@ -12,8 +12,8 @@ session_start();
   <title>Sun N' Fun Admin Home</title>
 
   <!--Favicon-->
-  <link rel="icon" type="image/png" href="http://localhost/new-sun-and-fun/media\Stock-images\yellow_beach-chair-and-umbrella_icon-icons.com_59553.ico" />
-
+  <link rel="icon" type="image/png"
+        href="http://localhost/new-sun-and-fun/media/home-page\Stock-images\yellow_beach-chair-and-umbrella_icon-icons.com_59553.ico" />
   <!--BootstrapCDN-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
@@ -75,7 +75,7 @@ session_start();
                   <h3 class="h3"><b>Welcome <?php echo ($_SESSION['name']); ?> to the Admin Home Page!</b></h3>
                   <br>
                     <h4>Choose a task:</h4>
-                    <a class="nav-link" href="http://localhost/new-sun-and-fun/index.phpss">
+                    <a class="nav-link" href="http://localhost/new-sun-and-fun/index.php">
                       <span data-feather="file"></span>Website Home
                     </a>
 

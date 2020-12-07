@@ -56,7 +56,7 @@ if(!isset($_SESSION['name']))
             <div class="col-md-2">
                 <br>
 
-                <a href="http://localhost/new-sun-and-fun/admin-site/dashboard/dashboard.php">
+                <a href="http://localhost/new-sun-and-fun/dashboard.php">
                     <button class="btn btn-dark">Back to Dashboard</button>
                 </a>
 
@@ -135,7 +135,7 @@ if(!isset($_SESSION['name']))
                         </div>
                         <div class="col-md-6">
                             <hr class="new-hr">
-                            <form action="add-costumer.php" method="POST">
+                            <form action="add-customer.php" method="POST">
                                 <div class="form-group">
                                     <label for="getname">
                                         <p class="par-style">Customer First Name</p>
