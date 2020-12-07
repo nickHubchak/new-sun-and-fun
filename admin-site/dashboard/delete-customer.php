@@ -8,7 +8,7 @@ session_start();
     $delete = "DELETE FROM Customer WHERE username = '$username'";
     if (mysqli_query($con, $delete)) {
       $_SESSION['customer-deleted']="<h4>Successfully deleted Customer.</h4>";
-      header("Location: customer-manage.php");
+      header("Location: customers-manage.php");
     } else {
       echo "error could not delete admin";
     }
