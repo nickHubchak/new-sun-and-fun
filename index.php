@@ -212,11 +212,11 @@ if (isset($_SESSION['not_logged_in_cart'])) {
                     </div>
                     <div class="col-md-8 product pt-md-5 ">
                         <img src="media\home-page\ping-pong-paddles.png" alt="Toys">
-                        <span class="border site-btn btn-span">Kids & Toys</span>
+                        <span class="border site-btn btn-span">Toys</span>
                     </div>
                     <div class="col-md-8 product pt-md-5">
                         <img src="media\home-page\sweatshirts.png" alt="Sweatshirts">
-                        <span class="border site-btn btn-span">Towels & Clothes</span>
+                        <span class="border site-btn btn-span">Clothes</span>
                     </div>
                 </div>
 
@@ -351,6 +351,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
                         <div class="cart-details">
                             <h6 class="pro-title p-0">Top Seller! American flag in flower field</h6>
                             <div class="rating">
+                                <br>
 
                             </div>
                             <div class="pro-price py-2">
@@ -514,7 +515,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
                             </div>
                             <div class="pro-price py-2">
                                 <h5>
-
+                                    <br>
                                     <span>Flip flops flag</span>
                                 </h5>
                             </div>

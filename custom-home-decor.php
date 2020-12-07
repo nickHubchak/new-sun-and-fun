@@ -438,7 +438,7 @@ session_start();
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/jquery-3.5.1.js" type="text/javascript"></script>
 <script src="js/slick.js" type="text/javascript"></script>
-<script src="js/main.js"></script>
+<script src="js/main.js" type="text/javascript"></script>
 </body>
 
 </html>

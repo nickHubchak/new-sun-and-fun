@@ -40,11 +40,12 @@ const breakpoint = [
   $(".slider-two")
     .not(".slick-intialized")
     .slick({
+      autoplay: true,
       prevArrow: ".site-slider-two .next",
       nextArrow: ".site-slider-two .prev",
       slidesToShow: 5,
       slidesToScroll: 1,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 4050,
       responsive: breakpoint
     });
   

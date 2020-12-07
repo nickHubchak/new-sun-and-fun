@@ -220,7 +220,8 @@
 
 
           <div class="slider-btn">
-            <span class="prev position-top-special"><i class="fas fa-chevron-left fa-2x text-secondary"></i></span>
+            <span class="prev position-top-special" style="position:absolute; left:0;">
+            <i class="fas fa-chevron-left fa-2x text-secondary"></i></span>
             <span class="next position-top-special right-0"><i class="fas fa-chevron-right fa-2x text-secondary"></i></span>
           </div>
 
@@ -417,7 +418,7 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.12.1/slick/slick.min.js"></script>
 <script src="js/jquery-3.5.1.js" type="text/javascript"></script>
 <script src="js/slick.js" type="text/javascript"></script>
-<script src="js/main.js"></script>
+<script src="js/main.js" type="text/javascript"></script>
 </body>
 
 </html>
