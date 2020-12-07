@@ -104,29 +104,37 @@
                   <div class="navbar-nav">
                     <ul class="nav navbar-nav" style="margin-right: 35px;">
                       <li><?php
-                      if(isset($_SESSION['customer-username']))
-                      {
-                        echo("Welcome ".($_SESSION['customer-username'])." !");
-                      }
-                      ?> </li>
-                    </ul>
-                    <?php
-                    if($_SESSION['customer-loggedin']==True)
-                    {
-                        $cart_page="shopping-cart.php";
-                      
-                    }
-                    else
-                    {
-                        $cart_page="empty-shopping-cart.php";
                        
-                      
-                    }
+                       if($_SESSION['customer-loggedin']==True && $_SESSION['logged-in-empty-shopping-cart']==true)
+                       {
+                           $cart_page="shopping-cart.php";
+                         
+                       }
+                       else if($_SESSION['customer-loggedin']==True && $_SESSION['logged-in-empty-shopping-cart']!=true)
+                       {
+                           $cart_page="logged-in-empty-shopping-cart.php";
+                       }
+                   
+                       else
+                       {
+                           $cart_page="empty-shopping-cart.php";
+                          
+                         
+                       }
                     ?>
                     <a href=<?php echo($cart_page) ?>>
-                      <li class="nav-item border rounded-circle circle mx-2 basket-icon">
-                        <i class="fas fa-shopping-basket p-2"></i>
-                    </li>
+                    <li class="nav-item  basket-icon" style="padding: 2px 0; border-style:solid; border-radius: 100%; border-color: #EFC711;">
+                            <i class="fas fa-shopping-basket p-2"></i>
+                            <span class='badge badge-warning' id='lblCartCount'>
+                            <?php
+                                if(isset($_SESSION['success-added-to-cart'])&&$_SESSION['order-complete']==false)
+                                {
+                                    echo($_SESSION['success-added-to-cart']);
+                                }
+                            ?> 
+                            </span>
+
+                        </li>
                     </a>
                   </div>
               </nav>
