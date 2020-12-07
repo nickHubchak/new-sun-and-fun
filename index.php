@@ -70,30 +70,8 @@ if (isset($_SESSION['not_logged_in_cart'])) {
               ?>
             </p>
             <p class="col-sm-6 header-links" style="padding: 25px">
-            <!-- add php tag and it can work
 
-              if(isset($_SESSION['name']))
-              {
-                echo ('<a href="http://localhost/new-sun-and-fun/admin-site\admin-login-form.php" class="px-1"> Welcome '.$_SESSION['name'].'</a>');
-              }
-              else
-              {
-                echo ('<a href="http://localhost/new-sun-and-fun/admin-site\admin-login-form.php" class="px-1">Admin Login</a>');
-              }
-            ?>-->
-            <?php
-
-              if(isset($_SESSION['name']))
-              {
-                echo ('<a href="http://localhost/new-sun-and-fun/admin-site\admin-login-form.php" class="px-1"> Welcome '.$_SESSION['name'].'</a>');
-              }
-              else
-              {
-                echo ('<a href="http://localhost/new-sun-and-fun/admin-site\admin-login-form.php" class="px-1">Admin Login</a>');
-              }
-            ?>
-
-              
+              <a href="http://localhost/new-sun-and-fun/admin-site\admin-login-form.php" class="px-1"> Admin Login</a>
             </p>
           </div>
         </div>
@@ -115,7 +93,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
               <a class="nav-link" href="http://localhost/new-sun-and-fun/in-store-shop.php">WHAT'S IN STORE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="http://localhost/new-sun-and-fun/consumer-side/inventory/main-inventory-page.php">SHOP ONLINE</a>
+              <a class="nav-link" href="http://localhost/new-sun-and-fun/online-shop.php">SHOP ONLINE</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="http://localhost/new-sun-and-fun/custom-home-decor.php">CUSTOM HOME DECOR</a>
@@ -133,16 +111,9 @@ if (isset($_SESSION['not_logged_in_cart'])) {
                 }
                 ?> </li>
           </ul>
-          <a href="shopping-cart.php">
-            <li class="nav-item  basket-icon" style="padding: 2px 0; border-style:solid; border-radius: 100%; border-color: #EFC711;">
+          <a href="shopping-cart.html">
+            <li class="nav-item border rounded-circle circle mx-2 basket-icon">
               <i class="fas fa-shopping-basket p-2"></i>
-              <span class='badge badge-warning' id='lblCartCount'>
-              <?php
-              if(isset($_SESSION['success-added-to-cart'])&&$_SESSION['order-complete']==false)
-              {
-                echo($_SESSION['success-added-to-cart']);
-              }
-              ?> </span>
             </li>
           </a>
         </div>
@@ -165,16 +136,16 @@ if (isset($_SESSION['not_logged_in_cart'])) {
           <div class="side-slider">
             <div class="slider-one">
               <div>
-                <img src="media\Welcome to Sun.png" class="img-fluid" alt="Banner 1">
+                <img src="media\home-page\Welcome to Sun.png" class="img-fluid" alt="Banner 1">
               </div>
               <div>
-                <img src="media\Hat Sale.png" class="img-fluid" alt="Banner 2">
+                <img src="media\home-page\Hat Sale.png" class="img-fluid" alt="Banner 2">
               </div>
               <div>
-                <img src="media\Flag Sale.png" class="img-fluid" alt="Banner 3">
+                <img src="media\home-page\Flag Sale.png" class="img-fluid" alt="Banner 3">
               </div>
               <div>
-                <img src="media\Beach Accesories.png" class="img-fluid" alt="Banner 3">
+                <img src="media\home-page\Beach Accesories.png" class="img-fluid" alt="Banner 3">
               </div>
             </div>
 
@@ -197,27 +168,27 @@ if (isset($_SESSION['not_logged_in_cart'])) {
       <div class="site-slider-two px-md-4">
         <div class="row slider-two text-center">
           <div class="col-md-8 product pt-md-5 ">
-            <img src="media\blue-bag.png" alt="Bags">
+            <img src="media\home-page\blue-bag.png" alt="Bags">
             <span class="border site-btn btn-span">Bags</span>
           </div>
           <div class="col-md-8 product pt-md-5 ">
-            <img src="media\red-chair.png" alt="Chairs">
+            <img src="media\home-page\red-chair.png" alt="Chairs">
             <span class="border site-btn btn-span">Chairs</span>
           </div>
           <div class="col-md-8 product pt-md-5 ">
-            <img src="media\hat-pin-ribbon.png" alt="Hats">
+            <img src="media\home-page\hat-pin-ribbon.png" alt="Hats">
             <span class="border site-btn btn-span">Hats</span>
           </div>
           <div class="col-md-8 product pt-md-5 ">
-            <img src="media\flower-flag.png" alt="Flags">
+            <img src="media\home-page\flower-flag.png" alt="Flags">
             <span class="border site-btn btn-span">Flags</span>
           </div>
           <div class="col-md-8 product pt-md-5 ">
-            <img src="media\ping-pong-paddles.png" alt="Toys">
+            <img src="media\home-page\ping-pong-paddles.png" alt="Toys">
             <span class="border site-btn btn-span">Kids & Toys</span>
           </div>
           <div class="col-md-8 product pt-md-5">
-            <img src="media\sweatshirts.png" alt="Sweatshirts">
+            <img src="media\home-page\sweatshirts.png" alt="Sweatshirts">
             <span class="border site-btn btn-span">Towels & Clothes</span>
           </div>
         </div>
@@ -235,7 +206,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
     <!--Features-->
     <div class="container text-center">
       <div class="features">
-        <h1>Features Products</h1>
+        <h1>Featured Products</h1>
         <p class="text-secondary">
           Here we have some of our favorite products that we
           think you will love. They make excellent gift ideas and more.
@@ -248,7 +219,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
       <div class="site-slider-three px-md-4">
         <div class="row slider-three  text-center px-4">
           <div class="col-md-8 product pt-md-5">
-            <img src="media/Revamped/7.png" class="img-fluid" alt="Image 1">
+            <img src="media\home-page\Revamped\7.png" class="img-fluid" alt="Image 1">
             <div class="cart-details">
               <h6 class="pro-title p-0">Beach bag with red or blue ankors</h6>
               <div class="rating">
@@ -263,14 +234,14 @@ if (isset($_SESSION['not_logged_in_cart'])) {
               </div>
               <div class="cart mt-4">
                 <form method="post" action="add-to-cart.php">
-                  <button type="submit" name="submit" class="border site-btn btn-span" value="3">Add to Cart</button>
+                  <button type="submit" name="blue or red beach bag" class="border site-btn btn-span" value="button1">Add to Cart</button>
                 </form>
 
               </div>
             </div>
           </div>
           <div class="col-md-8 product pt-md-5">
-            <img src="media/Revamped/10.png" class="img-fluid" alt="Image 2">
+            <img src="media\home-page\Revamped\10.png" class="img-fluid" alt="Image 2">
             <div class="cart-details">
               <h6 class="pro-title p-0">Sun Hat with blue pattern and belt</h6>
               <div class="rating">
@@ -289,7 +260,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
             </div>
           </div>
           <div class="col-md-8 product pt-md-5">
-            <img src="media/Revamped/12.png" class="img-fluid" alt="Image 3">
+            <img src="media\home-page\Revamped\12.png" class="img-fluid" alt="Image 3">
             <div class="cart-details">
               <h6 class="pro-title p-0">Mens kahki sun hat with blue strap</h6>
               <div class="rating">
@@ -308,7 +279,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
             </div>
           </div>
           <div class="col-md-8 product pt-md-5">
-            <img src="media/Revamped/14.png" class="img-fluid" alt="Image 4">
+            <img src="media\home-page\Revamped\14.png" class="img-fluid" alt="Image 4">
             <div class="cart-details">
               <h6 class="pro-title p-0">Red foldable beach chair with arm rest</h6>
               <div class="rating">
@@ -327,7 +298,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
             </div>
           </div>
           <div class="col-md-8 product pt-md-5">
-            <img src="media/Revamped/17.png" class="img-fluid" alt="Image 5">
+            <img src="media\home-page\Revamped\17.png" class="img-fluid" alt="Image 5">
             <div class="cart-details">
               <h6 class="pro-title p-0">Large beach blue toy shovel with handle</h6>
               <div class="rating">
@@ -346,7 +317,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
             </div>
           </div>
           <div class="col-md-8 product pt-md-5">
-            <img src="media/Revamped/1.png" class="img-fluid" alt="Image 6">
+            <img src="media\home-page\Revamped\1.png" class="img-fluid" alt="Image 6">
             <div class="cart-details">
               <h6 class="pro-title p-0">Top Seller! American flag in flower field</h6>
               <div class="rating">
@@ -454,7 +425,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
       <div class="site-slider-four px-md-4">
         <div class="row slider-four  text-center px-4">
           <div class="col-md-8 product pt-md-5">
-            <img src="media/flag1.png" class="img-fluid" alt="Image 1">
+            <img src="media\home-page\flag1.png" class="img-fluid" alt="Image 1">
             <div class="cart-details">
               <h6 class="pro-title p-0">Product Description</h6>
               <div class="rating">
@@ -476,7 +447,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
             </div>
           </div>
           <div class="col-md-8 product pt-md-5">
-            <img src="media/flag2.png" class="img-fluid" alt="Image 2">
+            <img src="media\home-page\flag2.png" class="img-fluid" alt="Image 2">
             <div class="cart-details">
               <h6 class="pro-title p-0">Product Description</h6>
               <div class="rating">
@@ -498,7 +469,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
             </div>
           </div>
           <div class="col-md-8 product pt-md-5">
-            <img src="media/flag3.png" class="img-fluid" alt="Image 3">
+            <img src="media\home-page\flag3.png" class="img-fluid" alt="Image 3">
             <div class="cart-details">
               <h6 class="pro-title p-0">Product Description</h6>
               <div class="rating">
@@ -520,7 +491,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
             </div>
           </div>
           <div class="col-md-8 product pt-md-5">
-            <img src="media/flag4.png" class="img-fluid" alt="Image 4">
+            <img src="media\home-page\flag4.png" class="img-fluid" alt="Image 4">
             <div class="cart-details">
               <h6 class="pro-title p-0">Product Description</h6>
               <div class="rating">
@@ -542,7 +513,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
             </div>
           </div>
           <div class="col-md-8 product pt-md-5">
-            <img src="media/flag5.png" class="img-fluid" alt="Image 5">
+            <img src="media\home-page\flag5.png" class="img-fluid" alt="Image 5">
             <div class="cart-details">
               <h6 class="pro-title p-0">Product Description</h6>
               <div class="rating">
@@ -564,7 +535,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
             </div>
           </div>
           <div class="col-md-8 product pt-md-5">
-            <img src="media/flag6.png" class="img-fluid" alt="Image 6">
+            <img src="media\home-page\flag6.png" class="img-fluid" alt="Image 6">
             <div class="cart-details">
               <h6 class="pro-title p-0">Product Description</h6>
               <div class="rating">
@@ -697,7 +668,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
             <div class="row py-3">
               <div class="col-md-3 p-0">
                 <div class="items border">
-                  <img src="media/Revamped/21.png" alt="Image 1" class="img-fluid">
+                  <img src="media\home-page\Revamped\21.png" alt="Image 1" class="img-fluid">
                 </div>
               </div>
               <div class="col-md-9 p-0 py-4 py-md-0">
@@ -717,7 +688,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
             <div class="row py-3">
               <div class="col-md-3 p-0">
                 <div class="items border">
-                  <img src="media/Revamped/25.png" alt="Image 2" class="img-fluid">
+                  <img src="media\home-page\Revamped\25.png" alt="Image 2" class="img-fluid">
                 </div>
               </div>
               <div class="col-md-9 p-0 py-4 py-md-0">
@@ -738,7 +709,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
             <div class="row py-3">
               <div class="col-md-3 p-0">
                 <div class="items border">
-                  <img src="media/Revamped/19.png" alt="Image 3" class="img-fluid">
+                  <img src="media\home-page\Revamped\19.png" alt="Image 3" class="img-fluid">
                 </div>
               </div>
               <div class="col-md-9 p-0 py-4 py-md-0">
@@ -761,7 +732,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
             <div class="row py-3">
               <div class="col-md-3 p-0">
                 <div class="items border">
-                  <img src="media/Revamped/26.png" alt="Image 1" class="img-fluid">
+                  <img src="media\home-page\Revamped\26.png" alt="Image 1" class="img-fluid">
                 </div>
               </div>
               <div class="col-md-9 p-0 py-4 py-md-0">
@@ -781,7 +752,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
             <div class="row py-3">
               <div class="col-md-3 p-0">
                 <div class="items border">
-                  <img src="media/Revamped/28.png" alt="Image 2" class="img-fluid">
+                  <img src="media\home-page\Revamped\28.png" alt="Image 2" class="img-fluid">
                 </div>
               </div>
               <div class="col-md-9 p-0 py-4 py-md-0">
@@ -802,7 +773,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
             <div class="row py-3">
               <div class="col-md-3 p-0">
                 <div class="items border">
-                  <img src="media/Revamped/18.png" alt="Image 3" class="img-fluid">
+                  <img src="media\home-page\Revamped\18.png" alt="Image 3" class="img-fluid">
                 </div>
               </div>
               <div class="col-md-9 p-0 py-4 py-md-0">
@@ -825,7 +796,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
             <div class="row py-3">
               <div class="col-md-3 p-0">
                 <div class="items border">
-                  <img src="media/Revamped/14.png" alt="Image 1" class="img-fluid">
+                  <img src="media\home-page\Revamped\14.png" alt="Image 1" class="img-fluid">
                 </div>
               </div>
               <div class="col-md-9 p-0 py-4 py-md-0">
@@ -845,7 +816,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
             <div class="row py-3">
               <div class="col-md-3 p-0">
                 <div class="items border">
-                  <img src="media/Revamped/29.png" alt="Image 2" class="img-fluid">
+                  <img src="media\home-page\Revamped\29.png" alt="Image 2" class="img-fluid">
                 </div>
               </div>
               <div class="col-md-9 p-0 py-4 py-md-0">
@@ -865,7 +836,7 @@ if (isset($_SESSION['not_logged_in_cart'])) {
             <div class="row py-3">
               <div class="col-md-3 p-0">
                 <div class="items border">
-                  <img src="media/Revamped/8.png" alt="Image 3" class="img-fluid">
+                  <img src="media\home-page\Revamped\8.png" alt="Image 3" class="img-fluid">
                 </div>
               </div>
               <div class="col-md-9 p-0 py-4 py-md-0">
@@ -900,25 +871,25 @@ if (isset($_SESSION['not_logged_in_cart'])) {
 
         <div class="slider-five px-5">
           <div>
-            <img src="media\116764246_10222927514041039_754006768752273849_n.jpg" alt="Brand 1" class="img-fluid">
+            <img src="media\home-page\Customers\customer1.jpg" alt="Brand 1" class="img-fluid">
           </div>
           <div>
-            <img src="media\123543262_10217996096115523_4885886980119544228_o.jpg" alt="Brand 2" class="img-fluid">
+            <img src="media\home-page\Customers\customer2.jpg" alt="Brand 2" class="img-fluid">
           </div>
           <div>
-            <img src="media\micheal walsh.jpg" alt="Brand 3" class="img-fluid">
+            <img src="media\home-page\Customers\customer3.jpg" alt="Brand 3" class="img-fluid">
           </div>
           <div>
-            <img src="media\71700286_10215684632892991_8943111011175497728_n.jpg" alt="Brand 4" class="img-fluid">
+            <img src="media\home-page\Customers\customer4.jpg" alt="Brand 4" class="img-fluid">
           </div>
           <div>
-            <img src="media\68596137_2354069827979354_685702236159868928_n.jpg" alt="Brand 2" class="img-fluid">
+            <img src="media\home-page\Customers\customer7.jpg" alt="Brand 2" class="img-fluid">
           </div>
           <div>
-            <img src="media\12004114_868417666568992_667749546724646882_n.jpg" alt="Brand 1" class="img-fluid">
+            <img src="media\home-page\Customers\customer8.jpg" alt="Brand 1" class="img-fluid">
           </div>
           <div>
-            <img src="media\14291808_704289064173_7566163803550967262_n.jpg" alt="Brand 3" class="img-fluid">
+            <img src="media\home-page\Customers\customer9.jpg" alt="Brand 3" class="img-fluid">
           </div>
         </div>
         <div class="slider-btn">
@@ -1117,19 +1088,19 @@ if (isset($_SESSION['not_logged_in_cart'])) {
           <a class="special-link" href="https://www.facebook.com/SunNfunOceanCity/" target="_blank">
             <h4>Follow Us On Facebook</h4>
             <div class="d-flex flex-row">
-              <img src="media\118667903_4254507021289360_2197803998915949660_n.jpg" alt="Instagram 1" class="img-fluid">
-              <img src="media\119839906_4352670871472974_1814202431251105270_o.jpg" alt="Instagram 2" class="img-fluid">
-              <img src="media\120062846_4368477369892324_8893932204510902117_n.jpg" alt="Instagram 3" class="img-fluid">
+              <img src="media\Footer\1.jpg" alt="Instagram 1" class="img-fluid">
+              <img src="media\Footer\2.jpg" alt="Instagram 2" class="img-fluid">
+              <img src="media\Footer\3.jpg" alt="Instagram 3" class="img-fluid">
             </div>
             <div class="d-flex flex-row">
-              <img src="media\120058941_4368477609892300_9147711556160142421_n.jpg" alt="Instagram 1" class="img-fluid">
-              <img src="media\120048460_4368477189892342_3043475331437972721_n.jpg" alt="Instagram 2" class="img-fluid">
-              <img src="media\119181741_4321601857913209_1968708199348362309_o.jpg" alt="Instagram 3" class="img-fluid">
+              <img src="media\Footer\4.jpg" alt="Instagram 1" class="img-fluid">
+              <img src="media\Footer\5.jpg" alt="Instagram 2" class="img-fluid">
+              <img src="media\Footer\6.jpg" alt="Instagram 3" class="img-fluid">
             </div>
             <div class="d-flex flex-row">
-              <img src="media\119087679_4321601797913215_8445605877984447321_o.jpg" alt="Instagram 1" class="img-fluid">
-              <img src="media\118835508_4277183319021730_4923998645826504211_n.jpg" alt="Instagram 2" class="img-fluid">
-              <img src="media\119018957_4321601864579875_4142002986398605122_o.jpg" alt="Instagram 3" class="img-fluid">
+              <img src="media\Footer\7.jpg" alt="Instagram 1" class="img-fluid">
+              <img src="media\Footer\8.jpg" alt="Instagram 2" class="img-fluid">
+              <img src="media\Footer\9.jpg" alt="Instagram 3" class="img-fluid">
             </div>
           </a>
         </div>

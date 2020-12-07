@@ -5,7 +5,7 @@
 session_start();
 include("config.php");
 
-	
+
 
 
 
@@ -23,12 +23,12 @@ if ($stmt = $con->prepare('SELECT admin_id, password FROM Admin WHERE username =
 	$stmt->execute();
 	// Store the result so we can check if the account exists in the database.
     $stmt->store_result();
-    
+
     if ($stmt->num_rows > 0) {
         $stmt->bind_result($id, $password);
         $stmt->fetch();
         // Account exists, now we verify the password.
-        
+
 
 
         /*Used to pull things from database, specifically a specific cell
@@ -44,21 +44,21 @@ if ($stmt = $con->prepare('SELECT admin_id, password FROM Admin WHERE username =
             {
                 $my_salt=$rows['salt'];
             }
-          
+
         }
           Only for internal use  */
-       
-        
+
+
           $my_password=$_POST['pass'];
         //$hashed_pass= password_hash($my_password, PASSWORD_DEFAULT);
-        
-        
+
+
         //echo "".$_POST['pass']."<br>";
         //echo "".$hashed_pass."<br>";
         //echo"".$password."<br>";
         // Note: remember to use password_hash in your registration file to store the hashed passwords.
         if (password_verify($my_password, $password)) {
-            
+
             // Verification success! User has loggedin!
             // Create sessions so we know the user is logged in, they basically act like cookies but remember the data on the server.
             session_regenerate_id();
@@ -66,20 +66,20 @@ if ($stmt = $con->prepare('SELECT admin_id, password FROM Admin WHERE username =
             $_SESSION['name'] = $_POST['username'];
             $_SESSION['id'] = $id;
             echo 'Welcome ' . $_SESSION['name'] . '!';
-            header("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/dashboard.php");
+            header("Location: http://localhost/new-sun-and-fun/dashboard.php");
         } else {
             // Incorrect password
             $_SESSION['admin-credentials']='Incorrect username and/or password!';
             header("Location: http://localhost/new-sun-and-fun/admin-site/admin-login-form.php");
-            
-            
-        }  
-        
+
+
+        }
+
     } else {
         // Incorrect username
         $_SESSION['admin-credentials']='Incorrect username and/or password!';
             header("Location: http://localhost/new-sun-and-fun/admin-site/admin-login-form.php");
-       
+
     }
 
 

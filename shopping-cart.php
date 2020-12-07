@@ -1,17 +1,6 @@
 <?php
   session_start();
   include("config.php");
-
-  if(!isset($_SESSION['customer-loggedin']))
-  {
-      header("Location: http://localhost/new-sun-and-fun/empty-shopping-cart.php");
-    
-  }
-  if($_SESSION['order-complete']==true)
-  {
-      header("Location: http://localhost/new-sun-and-fun/logged-in-empty-shopping-cart.php");
-  }
-
  
   
 ?>
@@ -48,7 +37,7 @@
 <!--       onload="checkDate()"       -->
 
 <body>
-    <!--The Check Date function is located in main.js..-->
+    <!--The Check Date function is located in main.js and is not functional yet...-->
 
     <!--header-->
     <header>
@@ -127,47 +116,29 @@
                 </div>
                 <div class="navbar-nav">
                     <ul class="nav navbar-nav" style="margin-right: 35px;">
-                    <li>
-                    <?php
-                    
+                        <li><?php
                       if(isset($_SESSION['customer-username']))
                       {
-                        
                         echo("Welcome ".($_SESSION['customer-username'])." !");
                       }
-                      ?></li>
+                      ?> </li>
                     </ul>
                     <?php
+                    if($_SESSION['customer-loggedin']==True)
+                    {
+                        $cart_page="shopping-cart.php";
+                      
+                    }
+                    else
+                    {
+                        $cart_page="empty-shopping-cart.php";
                        
-                       if($_SESSION['customer-loggedin']==True && $_SESSION['logged-in-empty-shopping-cart']==true)
-                       {
-                           $cart_page="shopping-cart.php";
-                         
-                       }
-                       else if($_SESSION['customer-loggedin']==True && $_SESSION['logged-in-empty-shopping-cart']!=true)
-                       {
-                           $cart_page="logged-in-empty-shopping-cart.php";
-                       }
-                   
-                       else
-                       {
-                           $cart_page="empty-shopping-cart.php";
-                          
-                         
-                       }
+                      
+                    }
                     ?>
                     <a href=<?php echo($cart_page) ?>>
-                        <li class="nav-item  basket-icon" style="padding: 2px 0; border-style:solid; border-radius: 100%; border-color: #EFC711;">
+                        <li class="nav-item border rounded-circle circle mx-2 basket-icon">
                             <i class="fas fa-shopping-basket p-2"></i>
-                            <span class='badge badge-warning' id='lblCartCount'>
-                            <?php
-                                if(isset($_SESSION['success-added-to-cart'])&&$_SESSION['order-complete']==false)
-                                {
-                                    echo($_SESSION['success-added-to-cart']);
-                                }
-                            ?> 
-                            </span>
-
                         </li>
                     </a>
                 </div>
@@ -179,182 +150,53 @@
     <!--/header-->
 
     <main>
-    
 
 
 		<?php
-            
 		
 		
 			$my_customer_id=intval($_SESSION['customer_id']);
 			//echo($my_customer_id);
 			//var_dump($_SESSION);
-            $my_order_id=null;
-            if(!isset($_SESSION['cart-created']))
-            {
-                $_SESSION['cart-created']=false;
-            }
-            if(!isset($_SESSION['logged-in-empty-shopping-cart']))
-            {
-                $_SESSION['logged-in-empty-shopping-cart']=true;
-            }
-           
+			$my_order_id=null;
 
 			if($_SESSION['cart-created']==True)
 			{
-               
 				$query = "SELECT * FROM Orders WHERE customer_id=$my_customer_id";
 				
 				if($result=mysqli_query($con, $query))// check if the customer has an active cart
 				{
-                    
 					
 					
-                    //echo("Registered Sussecfully");
-                    //$my_order_id='';
+					//echo("Registered Sussecfully");
 					echo("<br><br>");
 					$_SESSION['cart-exists']="<center><h4>Here is your shopping cart</h4></center>";
-					//echo($_SESSION['cart-exists']);
+					echo($_SESSION['cart-exists']);
 					$_SESSION['cart-created']=True;
 
 
 					if(mysqli_num_rows($result)>0)
 					{
-                        
-						while($row=mysqli_fetch_array($result))
+						while($rows=mysqli_fetch_assoc($result))
 						{
-                            
 							if($row['customer_id']==$my_customer_id)
 							{
-                                
-                                $my_order_id=$row['order_id'];
-                                $my_order_time_and_date="".$row['order_date']." ".$row['order_time'];
+								$my_order_id=$row['order_id'];
 							}
 							
 						}
-                    }
-                    $_SESSION['order_id']=$my_order_id;
-                    if($_SESSION['logged-in-empty-shopping-cart']==true)
-                    {
-                        echo '<script>window.location.href = "http://localhost/new-sun-and-fun/logged-in-empty-shopping-cart.php";</script>';
-                        
-        
-                    }
-                    
-					//echo($my_order_id);
+					}
+					echo($my_order_id);
 				
-                    //if there is an exisiting cart check what products it has
-
-                    $customer_shopping_cart_items=[];
-                    
-                    
-                    $query_for_order_item="SELECT * FROM order_item";
-                    if($new_result= mysqli_query($con, $query_for_order_item))
-                    {
-                                            
-                        if(mysqli_num_rows($new_result)>0)
-					    {
-                            //echo("hello");
-                        
-                            $count=0;
-                            echo ('
-                            <table class="table table-striped table-hover">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Product ID</th>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Quantity</th>
-                                        <th scope="col">Image</th>
-                                        <th scope="col">Delete</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                ');
-                                //echo($my_order_id);
-                            while($row=mysqli_fetch_array($new_result))
-                            {
-                                //echo($my_order_id);
-                                
-                                if($row['order_id']==$my_order_id)
-                                {
-                                    $product_id=$row['product_id'];
-                                    $quantity= $row['quantity'];
-                                    //echo ($product_id);
-
-                                    $product_query="SELECT * FROM product WHERE product_id=$product_id";
-                                    if($product_result=mysqli_query($con, $product_query))
-                                    {
-                                        //echo("hello");
-                                        if(mysqli_num_rows($product_result)>0)
-					                    {
-                                            while($product_row=mysqli_fetch_array($product_result))
-                                            {
-                                                $count++;
-                                                //echo("hello");
-                                                
-                                                if($count%2==0)
-                                                {
-                                                    $new_color="table-warning";
-                                                }
-                                                else
-                                                {
-                                                    $new_color="table-light";
-                                                }
-                                                $productid=$product_row['product_id'];
-                                                $productname=($product_row['Name']);
-                                                $productquantity=$quantity;
-                                                $productimage=$product_row['image_link'];
-                                                
-                                                echo "<tr class=$new_color><th scope='row'>".($product_row['product_id'])."</th><td>".($product_row['Name'])."</td><td>".($quantity)."</td>
-                                                <td><img src='".($product_row['image_link'])."' style='height: 100px; width:110px;' /></td><td><a href='#'> Delete</a></td></tr>";
-
-
-                                            }
-                                        }
-
-                                    }
-                                    
-                                   
-                            
-                                    
-                                       
-                                }
-                                
-                            }
-                            echo"</tbody></table>";
-
-                            echo'
-                            <br>
-                            <center>
-                            <form method="post" action="submit-cart.php">
-                            <input type="hidden" name="productid" value="'.$productid.'" placeholder="'.$productid.'">
-                            <input type="hidden" name="productname" value="'.$productname.'" placeholder="'.$productname.'">
-                            <input type="hidden" name="productquantity" value="'.$productquantity.'" placeholder="'.$productquantity.'">
-                            <input type="hidden" name="productimage" value="'.$productimage.'" placeholder="'.$productimage.'">
-                            <input type="hidden" name="orderdate" value="'.$my_order_time_and_date.'" placeholder="'.$my_order_time_and_date.'">
-                            <br><br><button type="submit" class="btn btn-warning"> Submit Order</button>
-                            </form></center>
-                            ';
-                            //var_dump($_SESSION);
-                        }
-                        else
-                        {
-                            $_SESSION['logged-in-empty-shopping-cart']=true;
-                            
-                            
-                        }
-
-                    }
+					//if there is an exisiting cart check what products it has
 					
 
 			
-                }
-               
+				}
 
 			}
-			else  //create the cart
+			else if($_SESSION['cart-created']!=True) //create the cart
 			{
-                echo("hello");
 				$order_status=0; //Which means not yet placed. (if 1 then the order has been placed).
 				$date= date("m/d/Y");
 				$amNY = new DateTime('America/New_York');
@@ -371,9 +213,8 @@
 
 				if($result2=mysqli_query($con, $sql))
 				{
-                    $_SESSION['cart-created']=True;
-                    echo '<script>window.location.href = "http://localhost/new-sun-and-fun/shopping-cart.php";</script>';
-					
+					$_SESSION['cart-created']=True;
+					$_SESSION['cart-exists']==True;
 				
 				}
 				else

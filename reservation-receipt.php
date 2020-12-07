@@ -6,7 +6,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-12">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Sun N' Fun</title>
@@ -15,11 +15,11 @@
   <link rel="icon" type="image/png" href="http://localhost/new-sun-and-fun/media\Stock-images\yellow_beach-chair-and-umbrella_icon-icons.com_59553.ico" />
 
   <!--BootstrapCDN-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha3124-TX12t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
 
   <!--Font Awesome CDN-->
-  <script src="https://kit.fontawesome.com/fd1212353b612.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/fd88353b68.js" crossorigin="anonymous"></script>
 
   <!--Slick Slider-->
   <link rel="stylesheet" type="text/css" href="css/slick.css" />
@@ -30,12 +30,14 @@
 
 
 </head>
+<!--       onload="checkDate()"       -->
 
-<body onload="checkDate()">
+<body>
   <!--The Check Date function is located in main.js and is not functional yet...-->
 
   <!--header-->
   <header>
+
     <div class="container-fluid">
       <!--Top Banner-->
       <div class="row">
@@ -45,7 +47,7 @@
             </button>
             <div class="dropdown-menu">
               <a href="mailto:sunnfun12st@gmail.com" class="dropdown-item">Email</a>
-              <a href="tel:609-3912-63123" class="dropdown-item">Phone Number</a>
+              <a href="tel:609-398-6383" class="dropdown-item">Phone Number</a>
             </div>
           </div>
         </div>
@@ -84,7 +86,7 @@
               <a class="nav-link" href="http://localhost/new-sun-and-fun/index.php">HOME <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="http://localhost/new-sun-and-fun/media\in-store-shop.php">WHAT'S IN STORE</a>
+              <a class="nav-link" href="http://localhost/new-sun-and-fun/in-store-shop.php">WHAT'S IN STORE</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="http://localhost/new-sun-and-fun/online-shop.php">SHOP ONLINE</a>
@@ -117,87 +119,25 @@
 
   </header>
   <!--/header-->
-  <br>
-  <center>
-    <h1 class="font-roboto-bold">Come Visit Us In Store!</h1>
-    <p="font-roboto">
-        We have much more products available in store. Please visit us in the summer in Ocean City, NJ.<br>
-        We look forward to meeting you and earning your business.<br>
-        Swipe through the photos below to see what it's like in our shop!<br>
-      </pss>
+
+  <body>
+      <pre>
+
+
+
+
+
+    </pre>
+    <div class="row">
+      <div class="col font-Roboto align-center">
+    <center>
+    <h1><b>THANK YOU!</b></h1>
+    Your order request has been sent to our staff. <br />
+    Your order number is: <br />
+    We will call you to confirm your order within the next hour. <br />
   </center>
-
-
-  <div class="container-fluid">
-    <div class="site-slider-two px-md-4">
-      <div class="row slider-two text-center">
-        <div class="col-md-12 product pt-md-5 ">
-            <img src="media\in-store-images/a.jpg" class="img-fluid" alt="Banner 1">
-          </div>
-
-          <div class="col-md-12 product pt-md-5 ">
-            <img src="media\in-store-images/b.jpg" class="img-fluid" alt="Banner 2">
-          </div>
-
-          <div class="col-md-12 product pt-md-5 ">
-            <img src="media\in-store-images/c.jpg" class="img-fluid" alt="Banner 3">
-          </div>
-
-          <div class="col-md-12 product pt-md-5 ">
-            <img src="media\in-store-images/d.jpg" class="img-fluid" alt="Banner 4">
-          </div>
-
-          <div class="col-md-12 product pt-md-5 ">
-            <img src="media\in-store-images/e.jpg" class="img-fluid" alt="Banner 5">
-          </div>
-
-          <div class="col-md-12 product pt-md-5 ">
-            <img src="media\in-store-images/f.jpg" class="img-fluid" alt="Banner 6">
-          </div>
-
-          <div class="col-md-12 product pt-md-5 ">
-            <img src="media\in-store-images/g.jpg" class="img-fluid" alt="Banner 7">
-          </div>
-
-            <div class="col-md-12 product pt-md-5 ">
-              <img src="media\in-store-images/l.jpg" class="img-fluid" alt="Banner 12">
-            </div>
-
-            <div class="col-md-12 product pt-md-5 ">
-              <img src="media\in-store-images/m.jpg" class="img-fluid" alt="Banner 9">
-            </div>
-
-            <div class="col-md-12 product pt-md-5 ">
-              <img src="media\in-store-images/n.jpg" class="img-fluid" alt="Banner 10">
-            </div>
-
-            <div class="col-md-12 product pt-md-5 ">
-              <img src="media\in-store-images/o.jpg" class="img-fluid" alt="Banner 11">
-            </div>
-
-            <div class="col-md-12 product pt-md-5 ">
-              <img src="media\in-store-images/p.jpg" class="img-fluid" alt="Banner 12">
-            </div>
-
-            <div class="col-md-12 product pt-md-5 ">
-              <img src="media\in-store-images/r.jpg" class="img-fluid" alt="Banner 13">
-            </div>
-
-            <div class="col-md-12 product pt-md-5 ">
-              <img src="media\in-store-images/s.jpg" class="img-fluid" alt="Banner 14">
-            </div>
-
-          </div>
-
-
-          <div class="slider-btn">
-            <span class="prev position-top-special"><i class="fas fa-chevron-left fa-2x text-secondary"></i></span>
-            <span class="next position-top-special right-0"><i class="fas fa-chevron-right fa-2x text-secondary"></i></span>
-          </div>
-
-        </div>
-      </div>
-</body>
+</div>
+</div>
 
 <!-- Facilities -->
 <div class="container-fluid p-0">
@@ -207,7 +147,7 @@
         <div class="row justify-content-center text-light">
           <i class="fas fa-car-side fa-4x px-4"></i>
           <div class="py-2 font-roboto text-left">
-            <h6 class="m-0">media\in-store Pick-Up</h6>
+            <h6 class="m-0">In-store Pick-Up</h6>
             <small>Place an order today!</small>
           </div>
         </div>
@@ -234,19 +174,22 @@
   </div>
 </div>
 <!-- /Facilities -->
-</main>
-<footer>
+  </body>
+
+
+
+  <footer>
   <div class="container-fluid px-5">
     <div class="row">
       <div class="col-md-4 col-sm-12">
         <h4>Contact Us</h4>
         <div class="row pl-md-1 text-secondary">
           <div class="col-12">
-            <a class="special-link" href="https://www.google.com/maps/dir/?api=1&destination=39.27296412031122%2C-
-              74.5777513123453&fbclid=IwAR2CEaczWch0FDCUKxHTmVuqj7djDRKjJ5YtNoNjhyh_7Ohe_
-              ivG275xnas" target="_blank">
+            <a class="special-link" href="https://www.google.com/maps/dir/?api=1&destination=39.272964803182%2C-
+                74.577751383453&fbclid=IwAR2CEaczWch0FDCUKxHTmVuqj7djDRKjJ5YtNoNjhyh_7Ohe_
+                ivG275xnas" target="_blank">
               <i class="fa fa-home px-md-2"></i>
-              <small>1212 Boardwalk Ocean City, NJ 012226</small></a>
+              <small>1212 Boardwalk Ocean City, NJ 08226</small></a>
           </div>
         </div>
         <div class="row pl-md-1 text-secondary py-4">
@@ -258,9 +201,9 @@
         </div>
         <div class="row pl-md-1 text-secondary">
           <div class="col-12">
-            <a class="special-link" href="tel:(609)-3912-63123" target="_blank">
+            <a class="special-link" href="tel:(609)-398-6383" target="_blank">
               <i class="fa fa-phone-volume px-md-2"></i>
-              <small>(609)-3912-63123</small>
+              <small>(609)-398-6383</small>
             </a>
           </div>
         </div>
@@ -322,7 +265,7 @@
             </a>
           </small>
           <small>
-            <a href="media\in-store-shop.php" style="color:gray">
+            <a href="in-store-shop.php" style="color:gray">
               Collection
             </a>
           </small>
@@ -382,13 +325,10 @@
 </footer>
 
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw12HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha3124-ho+j7jyWK12fNQe+A12Hb12AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.12.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/jquery-3.5.1.js" type="text/javascript"></script>
 <script src="js/slick.js" type="text/javascript"></script>
 <script src="js/main.js"></script>
 </body>
-
-</html>

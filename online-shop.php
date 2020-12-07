@@ -91,13 +91,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="http://localhost/new-sun-and-fun/index.html">HOME <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="http://localhost/new-sun-and-fun/index.php">HOME <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="http://localhost/new-sun-and-fun/in-store-shop.php">WHAT'S IN STORE</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="http://localhost/new-sun-and-fun/consumer-side/inventory/main-inventory-page.php">SHOP ONLINE</a>
+                <a class="nav-link" href="http://localhost/new-sun-and-fun/online-shop.php">SHOP ONLINE</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="http://localhost/new-sun-and-fun/custom-home-decor.php">CUSTOM HOME DECOR</a>
@@ -130,20 +130,19 @@
     <!--/header-->
     <br>
       <div class="container text-center">
-        <h2 class="font-roboto-bold">
-          Reserve Select Items Online,
-          Pick Up In Store.
-        </h2>
-        <h4 class="font-roboto">
-          Heading to the beach? <br>
-          Forget something at home? <br>
-          Don't worry, we've got your back.
-        </h4>
-        <pre class="font-roboto">
-          Quickly reserve available beach accessories online. We'll give you a call when your order is ready.
-          You can then either pay on the phone before arrival, or pay when you get here.
+        <center>
+          <img src="media/home-page/Beach Accesories.png" alt="bag2" style="width:100%">
+
+        </center>
+          </br>
+        <h5 class="font-roboto-bold">
+          Quickly reserve available beach accessories online.
+          <br>
+          We'll give you a call when your order is ready.
+          <br>
+          Payments can be made over the phone before pick-up or in store at the time of pick-ups
           <hr>
-        </pre>
+        </h5>
 
       </div>
 
@@ -151,120 +150,18 @@
 
     <div class="album">
       <div class="container">
+        <center>
+        <h5><b>Bags</b></h5>
+        <p>Pick a style, all bags are $9.99!</p>
+      </center>
         <div class="row">
-
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
               <center>
-                <img src="lg001338.jpg" alt="boogie boards" style="width:53%">
-              </center>              <div class="card-body">
-                <p class="card-text">Boogie Boards</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <center>
-                <img src="lg002005.jpg" alt="sweatshirts" style="width:75%">
-              </center>              <div class="card-body">
-                <p class="card-text">Sweatshirts</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <center>
-                <img src="lg002011.jpg" alt="beach bags" style="width:100%">
-              </center>              <div class="card-body">
-                <p class="card-text">Beach Bags</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <center>
-                <img src="mn001763.jpg" alt="beach bag" style="width:46%">
-              </center>              <div class="card-body">
-                <p class="card-text">beach bag</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <center>
-                <img src="mn001337.jpg" alt="Board Bracelet" style="width:22%">
-              </center>              <div class="card-body">
-                <p class="card-text">Board Bracelet</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <center>
-                <img src="mn001213.jpg" alt="skinboards" style="width:40%">
-              </center>              <div class="card-body">
-                <p class="card-text">Skin Board</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <center>
-                <img src="lg000906.jpg" alt="Yellow Frisbie" style="width:53%">
-              </center>              <div class="card-body" >
-                <p class="card-text">Yellow Frisbie</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <center>
-                <img src="lg000910.jpg" alt="Red Frisbie" style="width:53%">
+                <img src="media/home-page/revamped/7.png" alt="bag2" style="width:53%">
               </center>
-              <div class="card-body" >
-                <p class="card-text">Red Frisbie</p>
+                <div class="card-body">
+                <p class="card-text"></p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
@@ -277,10 +174,10 @@
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
               <center>
-                <img src="lg000911.jpg" alt="aqua frisbie" style="width:53%">
+                <img src="media/home-page/revamped/8.png" alt="bag3" style="width:53%">
               </center>
-              <div class="card-body" >
-                <p class="card-text">Aqua Frisbie</p>
+                <div class="card-body">
+                <p class="card-text"></p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
@@ -293,10 +190,10 @@
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
               <center>
-                <img src="lg000915.jpg" alt="Wiffle Ball" style="width:20%">
+                <img src="media/home-page/revamped/9.png" alt="bag4" style="width:53%">
               </center>
-              <div class="card-body" >
-                <p class="card-text">Wiffle Ball</p>
+                <div class="card-body">
+                <p class="card-text"></p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
@@ -309,10 +206,10 @@
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
               <center>
-                <img src="lg000928.jpg" alt="football" style="width:68%">
+                <img src="media/home-page/revamped/25.png" alt="bag5" style="width:53%">
               </center>
-              <div class="card-body" >
-                <p class="card-text">Football</p>
+                <div class="card-body">
+                <p class="card-text"></p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
@@ -325,10 +222,10 @@
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
               <center>
-                <img src="lg000930.jpg" alt="football" style="width:53%">
+                <img src="media/home-page/revamped/26.png" alt="bag6" style="width:53%">
               </center>
-              <div class="card-body">
-                <p class="card-text">Football</p>
+                <div class="card-body">
+                <p class="card-text"></p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
@@ -341,42 +238,10 @@
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
               <center>
-                <img src="lg000937.jpg" alt="shovels" style="width:40%">
+                <img src="media/home-page/blue-bag.png" alt="bag7" style="width:53%">
               </center>
-              <div class="card-body">
-                <p class="card-text">Shovels</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <center>
-                <img src="lg000944.jpg" alt="rackets" style="width:53%">
-              </center>
-              <div class="card-body">
-                <p class="card-text">Rackets</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <center>
-                <img src="lg000951.jpg" alt="bottles" style="width:29%">
-              </center>
-              <div class="card-body">
-                <p class="card-text">Bottles</p>
+                <div class="card-body">
+                <p class="card-text"></p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
@@ -386,6 +251,572 @@
             </div>
           </div>
         </div>
+<!---/Bags--->
+
+<!---Chairs--->
+        <center>
+          <h5><b>Chairs</b></h5>
+          <p>All chairs are $14.99!</p>
+        </center>
+        <div class="row">
+          <br>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/revamped/14.png" alt="chair1" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/revamped/15.png" alt="chair2" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/revamped/16.png" alt="chair3" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!--/Chairs-->
+
+<!---Games--->
+        <center>
+          <h5><b>Games</b></h5>
+          <p>All games are $14.99!</p>
+        </center>
+        <div class="row">
+          <br>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/revamped/17.png" alt="game1" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/revamped/18.png" alt="game2" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media//home-page/revamped/19.png" alt="game3" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/revamped/20.png" alt="game4" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+ <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/revamped/21.png" alt="game5" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+ <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media//home-page/revamped/24.png" alt="game6" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+ <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/revamped/27.png" alt="game7" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+ <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/revamped/28.png" alt="game8" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+ <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/revamped/29.png" alt="game9" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+ <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/revamped/30.png" alt="game10" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+ <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/ping-pong-paddles.png" alt="game11" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!--/games-->
+
+<!---hats--->
+        <center>
+          <h5><b>hats</b></h5>
+          <p>All hats are $14.99!</p>
+        </center>
+        <div class="row">
+          <br>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/hat-pin-ribbon.png" alt="hat2" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/revamped/10.png" alt="hat3" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/revamped/11.png" alt="hat4" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+ <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/revamped/12.png" alt="hat5" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+ <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/revamped/13.png" alt="hat6" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+<!--/hats-->
+
+<!---Clothes and Towels--->
+        <center>
+          <h5><b>Sweatshirts & Blankets</b></h5>
+          <p>Sweatshirts and Blankets are $14.99/each </p>
+        </center>
+        <div class="row">
+          <br>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/sweatshirts.png" alt="sweatshirt" style="width:60%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+<!--clothes-towels-blankets-->
+
+
+
+<!---Flags--->
+        <center>
+          <h5><b>Flags</b></h5>
+          <p>All Flags are $14.99!</p>
+        </center>
+        <div class="row">
+          <br>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/flag1.png" alt="flag1" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/flag2.png" alt="flag2" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/flag3.png" alt="flag3" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/flag4.png" alt="flag4" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+ <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/flag5.png" alt="flag5" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+ <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/flag6.png" alt="flag6" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+ <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/flag7.png" alt="flag7" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+ <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/flag8.png" alt="flag8" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+ <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/revamped/4.png" alt="flag9" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+ <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/revamped/3.png" alt="flag10" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+ <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/revamped/6.png" alt="flag26" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <center>
+                <img src="media/home-page/revamped/5.png" alt="flag12" style="width:53%">
+              </center>
+              <div class="card-body">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!--flagss-->
+
+
+
       </div>
     </div>
 
@@ -433,8 +864,8 @@
             <div class="row pl-md-1 text-secondary">
               <div class="col-12">
                 <a class="special-link" href="https://www.google.com/maps/dir/?api=1&destination=39.272964803182%2C-
-              74.577751383453&fbclid=IwAR2CEaczWch0FDCUKxHTmVuqj7djDRKjJ5YtNoNjhyh_7Ohe_
-              ivG275xnas" target="_blank">
+                    74.577751383453&fbclid=IwAR2CEaczWch0FDCUKxHTmVuqj7djDRKjJ5YtNoNjhyh_7Ohe_
+                    ivG275xnas" target="_blank">
                   <i class="fa fa-home px-md-2"></i>
                   <small>1212 Boardwalk Ocean City, NJ 08226</small></a>
               </div>
@@ -471,7 +902,7 @@
             <div class="row social text-secondary">
               <div class="col-12 py-3">
                 <a href="#top">
-                  <img src="http://localhost/new-sun-and-fun/media/Main Logo.jpg" alt="Main Logo" width=200; height=200;>
+                  <img src="media/Main Logo.jpg" alt="Main Logo" width=200; height=200;>
                 </a>
 
 
@@ -496,30 +927,50 @@
           <div class="col-md-2 col-sm-12">
             <h4>Extras</h4>
             <div class="d-flex flex-column pl-md-3">
-              <small class="pt-0">About Store</small>
-              <small>Collection</small>
-              <small>Contact Us</small>
-              <small>Products</small>
-              <small>Our Sitemap</small>
+              <small class="pt-0">
+                <a href="about-us.php" style="color:gray">
+                  About Store
+                </a>
+              </small>
+              <small>
+                <a href="main-inventory-page.php" style="color:gray">
+                  Products
+                </a>
+              </small>
+              <small>
+                <a href="about-us.php" style="color:gray">
+                  Contact Us
+                </a>
+              </small>
+              <small>
+                <a href="in-store-shop.php" style="color:gray">
+                  Collection
+                </a>
+              </small>
+              <small>
+                <a href="index.php" style="color:gray">
+                  Our Sitemap
+                </a>
+              </small>
             </div>
           </div>
           <div class="col-md-4 follow-us col-sm-12">
             <a class="special-link" href="https://www.facebook.com/SunNfunOceanCity/" target="_blank">
               <h4>Follow Us On Facebook</h4>
               <div class="d-flex flex-row">
-                <img src="http://localhost/new-sun-and-fun/media\118667903_4254507021289360_2197803998915949660_n.jpg" alt="Instagram 1" class="img-fluid">
-                <img src="http://localhost/new-sun-and-fun/media\119839906_4352670871472974_1814202431251105270_o.jpg" alt="Instagram 2" class="img-fluid">
-                <img src="http://localhost/new-sun-and-fun/media\120062846_4368477369892324_8893932204510902117_n.jpg" alt="Instagram 3" class="img-fluid">
+                <img src="media\Footer\1.jpg" alt="Instagram 1" class="img-fluid">
+                <img src="media\Footer\2.jpg" alt="Instagram 2" class="img-fluid">
+                <img src="media\Footer\3.jpg" alt="Instagram 3" class="img-fluid">
               </div>
               <div class="d-flex flex-row">
-                <img src="http://localhost/new-sun-and-fun/media\120058941_4368477609892300_9147711556160142421_n.jpg" alt="Instagram 1" class="img-fluid">
-                <img src="http://localhost/new-sun-and-fun/media\120048460_4368477189892342_3043475331437972721_n.jpg" alt="Instagram 2" class="img-fluid">
-                <img src="http://localhost/new-sun-and-fun/media\119181741_4321601857913209_1968708199348362309_o.jpg" alt="Instagram 3" class="img-fluid">
+                <img src="media\Footer\4.jpg" alt="Instagram 1" class="img-fluid">
+                <img src="media\Footer\5.jpg" alt="Instagram 2" class="img-fluid">
+                <img src="media\Footer\6.jpg" alt="Instagram 3" class="img-fluid">
               </div>
               <div class="d-flex flex-row">
-                <img src="http://localhost/new-sun-and-fun/media\119087679_4321601797913215_8445605877984447321_o.jpg" alt="Instagram 1" class="img-fluid">
-                <img src="http://localhost/new-sun-and-fun/media\118835508_4277183319021730_4923998645826504211_n.jpg" alt="Instagram 2" class="img-fluid">
-                <img src="http://localhost/new-sun-and-fun/media\119018957_4321601864579875_4142002986398605122_o.jpg" alt="Instagram 3" class="img-fluid">
+                <img src="media\Footer\7.jpg" alt="Instagram 1" class="img-fluid">
+                <img src="media\Footer\8.jpg" alt="Instagram 2" class="img-fluid">
+                <img src="media\Footer\9.jpg" alt="Instagram 3" class="img-fluid">
               </div>
             </a>
           </div>
@@ -533,10 +984,10 @@
               Are you a product Creator?
             </h4>
             <p class="m-0 p-0 text-secondary">
-              <a class="special-link" href="about-us.html">Contact us today, to register your product</a>
+              <a class="special-link" href="about-us.php">Contact us today, to register your product</a>
             </p>
           </div>
-          <div class="col-md-6 col-12 my-md-0 my-3 pl-md-0 pl-5">
+          <div class="col-md-6 col-12 my-md-0 my-3 pl-md-0 pl-5" style="text-align:right">
             <h3 style="color:#EFC711;">Thank you for visiting us, come visit us in person too :)</h3>
           </div>
         </div>
@@ -544,12 +995,13 @@
 
       <div class="container text-center">
         <p class="pt-5">
-          <img src="http://localhost/new-sun-and-fun/media/Stock-images/payment.png" alt="payment image" class="img-fluid">
+
         </p>
         <small class="text-secondary py-4">Sun N Fun © 2020 Ocean City, NJ. All Rights Reserved.</small>
       </div>
 
     </footer>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script>
