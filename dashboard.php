@@ -79,7 +79,7 @@ session_start();
                       <span data-feather="file"></span>Website Home
                     </a>
 
-<a class="nav-link" href="#">
+<a class="nav-link" href="http://localhost/new-sun-and-fun/admin-site/dashboard/view-order.php">
   <span data-feather="file"></span>View Orders
 </a>
 
