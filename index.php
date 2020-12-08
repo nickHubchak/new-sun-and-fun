@@ -323,7 +323,10 @@ if (isset($_SESSION['not_logged_in_cart'])) {
 
                             </div>
                             <div class="cart mt-4">
-                                <button class="border site-btn btn-span">Add to Cart</button>
+                            <form method="post" action="add-to-cart.php">
+                                    <button type="submit" name="submit" class="border site-btn btn-span" value="11">Add
+                                        to Cart</button>
+                                </form>
                             </div>
                         </div>
                     </div>

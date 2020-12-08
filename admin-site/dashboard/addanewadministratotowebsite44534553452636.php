@@ -18,7 +18,7 @@ if(isset($_POST['admin-username']) && isset($_POST['admin-password1'])&& isset($
     
     if(mysqli_query($con, $query)){
         echo("Registered Sussecfully");
-        header("Location: http://localhost/new-sun-and-fun/admin-site/dashboard/dashboard.php");
+        header("Location: http://localhost/new-sun-and-fun/dashboard.php");
     }
     else
     {
